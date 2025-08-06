@@ -322,23 +322,24 @@ jobs:
         
         # Generate test summary
         $summaryFile = "TestReports/test-summary.md"
-        @"
+        $summaryContent = @"
 # 🧪 KOTOR.ai Test Results
-        
+
 **Build Configuration:** ${{ env.BUILD_CONFIGURATION }}
 **Platform:** Win64
 **Timestamp:** $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss UTC')
 **Commit:** ${{ github.sha }}
-        
+
 ## Test Categories
 - ✅ End-to-End Integration Tests
-- ✅ Animation & Music Pipeline Tests  
+- ✅ Animation & Music Pipeline Tests
 - ✅ Complete Game Experience Tests
 - ✅ Master Integration Test Suite
-        
+
 ## Results
 All KOTOR.ai integration tests passed successfully! 🎉
-"@ | Out-File -FilePath $summaryFile -Encoding UTF8
+"@
+        $summaryContent | Out-File -FilePath $summaryFile -Encoding UTF8
         
         Write-Host "✅ Test results processed"
 
