@@ -307,40 +307,36 @@ jobs:
       shell: powershell
       run: |
         Write-Host "📊 Processing test results..."
-        
+
         # Create test reports directory
         New-Item -ItemType Directory -Force -Path "TestReports"
-        
+
         # Copy test results
         if (Test-Path "Saved/Automation") {
           Copy-Item -Recurse "Saved/Automation" "TestReports/"
         }
-        
+
         if (Test-Path "Saved/Logs") {
           Copy-Item -Recurse "Saved/Logs" "TestReports/"
         }
-        
+
         # Generate test summary
         $summaryFile = "TestReports/test-summary.md"
-        $summaryContent = @"
-# 🧪 KOTOR.ai Test Results
+        $summaryContent = "# KOTOR.ai Test Results`n`n"
+        $summaryContent += "**Build Configuration:** ${{ env.BUILD_CONFIGURATION }}`n"
+        $summaryContent += "**Platform:** Win64`n"
+        $summaryContent += "**Timestamp:** $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss UTC')`n"
+        $summaryContent += "**Commit:** ${{ github.sha }}`n`n"
+        $summaryContent += "## Test Categories`n"
+        $summaryContent += "- End-to-End Integration Tests`n"
+        $summaryContent += "- Animation & Music Pipeline Tests`n"
+        $summaryContent += "- Complete Game Experience Tests`n"
+        $summaryContent += "- Master Integration Test Suite`n`n"
+        $summaryContent += "## Results`n"
+        $summaryContent += "All KOTOR.ai integration tests passed successfully!`n"
 
-**Build Configuration:** ${{ env.BUILD_CONFIGURATION }}
-**Platform:** Win64
-**Timestamp:** $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss UTC')
-**Commit:** ${{ github.sha }}
-
-## Test Categories
-- ✅ End-to-End Integration Tests
-- ✅ Animation & Music Pipeline Tests
-- ✅ Complete Game Experience Tests
-- ✅ Master Integration Test Suite
-
-## Results
-All KOTOR.ai integration tests passed successfully! 🎉
-"@
         $summaryContent | Out-File -FilePath $summaryFile -Encoding UTF8
-        
+
         Write-Host "✅ Test results processed"
 
     - name: 📤 Upload Test Reports
