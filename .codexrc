@@ -1,0 +1,278 @@
+# 🤖 KOTOR.ai MCP Codex Configuration
+# Advanced prompt engineering for automated bug resolution
+
+[project]
+name = "KOTOR.ai"
+description = "Advanced AI-driven RPG framework with Python AIDM + Unreal Engine 5"
+version = "1.0.0"
+language = "cpp"
+framework = "unreal_engine_5"
+
+[context]
+# Project structure context for MCP
+folder_map = """
+Source/KOTOR_Clone/
+├── Public/
+│   ├── AI/                          # AI Director and core AI systems
+│   ├── Animation/                   # Animation and performance systems
+│   ├── Audio/                       # Music and audio systems
+│   ├── Companions/                  # Companion AI and reactions
+│   ├── Cinematics/                  # Cinematic and sequencer systems
+│   ├── Core/                        # Core game systems and startup
+│   ├── UI/                          # User interface and debug panels
+│   └── Multiplayer/                 # Multiplayer and networking
+├── Private/                         # Implementation files
+└── Tests/                           # Integration test suite
+"""
+
+# Critical system files that require special attention
+critical_files = [
+    "Source/KOTOR_Clone/Public/AI/AIDirectorSubsystem.h",
+    "Source/KOTOR_Clone/Public/Audio/ProceduralMusicSubsystemV2.h",
+    "Source/KOTOR_Clone/Public/Animation/ProceduralPerformanceComponentV2.h",
+    "Source/KOTOR_Clone/Public/Companions/CompanionReactionSystem.h",
+    "Source/KOTOR_Clone/Public/Core/GameStartupSubsystem.h"
+]
+
+[prompts]
+# Base prompt template for MCP bug resolution
+base_template = """
+You are an expert Unreal Engine 5 C++ developer working on KOTOR.ai, the most advanced AI-driven RPG framework ever created.
+
+SYSTEM CONTEXT:
+- Project: KOTOR.ai (Python AIDM + UE5 integration)
+- Framework: Unreal Engine 5.4
+- Language: C++17 with UE5 conventions
+- Architecture: 12-phase modular system with AI Director coordination
+
+CODING STANDARDS:
+- Use UE5 naming conventions (UClass, FStruct, EEnum)
+- Always include proper null checks with IsValid()
+- Use UE5 smart pointers (TObjectPtr, TWeakObjectPtr)
+- Follow RAII principles for resource management
+- Include comprehensive error handling
+- Add detailed comments for complex logic
+
+COMMON PATTERNS:
+- Subsystems: Inherit from UGameInstanceSubsystem or UWorldSubsystem
+- Components: Inherit from UActorComponent or USceneComponent  
+- Data structures: Use USTRUCT with GENERATED_BODY()
+- Delegates: Use DECLARE_DYNAMIC_MULTICAST_DELEGATE for events
+- Async operations: Use UE5 async task system
+
+TASK: {task_description}
+FILE: {file_path}
+ERROR: {error_context}
+
+Analyze the code, identify the root cause, and provide a complete fix that:
+1. Resolves the specific error
+2. Follows UE5 best practices
+3. Maintains system architecture integrity
+4. Includes proper validation and error handling
+5. Preserves existing functionality
+
+Return the corrected code with clear comments explaining the fixes.
+"""
+
+# Specific prompt for AI Director issues
+ai_director_prompt = """
+SPECIALIZED CONTEXT: AI Director Subsystem
+This is the core AI system that coordinates all Python AIDM integration with UE5.
+
+KEY RESPONSIBILITIES:
+- Campaign and quest generation from Python
+- NPC behavior coordination
+- Music and animation event triggering
+- Player choice tracking and consequence generation
+- Cross-subsystem communication
+
+COMMON ISSUES:
+- Python integration failures
+- Subsystem initialization order
+- Event broadcasting problems
+- Memory leaks in AI data structures
+- Thread safety in async operations
+
+CRITICAL PATTERNS:
+- Always validate Python data before processing
+- Use weak references for cross-subsystem communication
+- Implement proper cleanup in EndPlay()
+- Handle async operations with proper cancellation
+- Validate all pointers before dereferencing
+
+{base_template}
+"""
+
+# Specific prompt for music subsystem issues
+music_subsystem_prompt = """
+SPECIALIZED CONTEXT: Procedural Music Subsystem V2
+This system manages dynamic music adaptation based on AI Director events.
+
+KEY RESPONSIBILITIES:
+- Biome and tone-based music selection
+- Real-time stem layering and crossfading
+- MetaSound parameter control
+- Narrative event music triggering
+- Performance optimization for audio streaming
+
+COMMON ISSUES:
+- Audio streaming interruptions
+- MetaSound parameter synchronization
+- Memory leaks in audio assets
+- Thread safety in audio callbacks
+- Stem activation/deactivation timing
+
+CRITICAL PATTERNS:
+- Always check audio device availability
+- Use audio thread-safe operations
+- Implement proper audio asset lifecycle management
+- Handle audio interruptions gracefully
+- Validate MetaSound parameters before setting
+
+{base_template}
+"""
+
+# Specific prompt for animation system issues
+animation_prompt = """
+SPECIALIZED CONTEXT: Procedural Performance Component V2
+This system handles AI-driven character animation and performance.
+
+KEY RESPONSIBILITIES:
+- Emotion and tone-based animation selection
+- MetaHuman facial animation control
+- Voice-animation synchronization
+- Performance metadata processing
+- Animation montage management
+
+COMMON ISSUES:
+- Animation montage null references
+- Synchronization timing problems
+- MetaHuman rig compatibility
+- Performance metadata validation
+- Animation state machine conflicts
+
+CRITICAL PATTERNS:
+- Always validate animation assets before playing
+- Use animation blueprints for complex state logic
+- Implement proper animation cleanup
+- Handle animation interruptions gracefully
+- Synchronize with audio systems properly
+
+{base_template}
+"""
+
+# Specific prompt for companion system issues
+companion_prompt = """
+SPECIALIZED CONTEXT: Companion Reaction System
+This system manages AI companion behavior and reactions to player actions.
+
+KEY RESPONSIBILITIES:
+- Player choice reaction generation
+- Companion relationship tracking
+- Emote and dialogue triggering
+- Morality-based behavior adaptation
+- Cross-companion interaction coordination
+
+COMMON ISSUES:
+- Null companion actor references
+- Reaction timing synchronization
+- Relationship data persistence
+- Emote animation conflicts
+- Memory leaks in reaction data
+
+CRITICAL PATTERNS:
+- Always validate companion actors before interaction
+- Use weak references for companion tracking
+- Implement proper reaction cooldowns
+- Handle companion state persistence
+- Coordinate with animation and audio systems
+
+{base_template}
+"""
+
+[file_patterns]
+# Automatic prompt selection based on file patterns
+"**/AI/**" = "ai_director_prompt"
+"**/Audio/**" = "music_subsystem_prompt"  
+"**/Animation/**" = "animation_prompt"
+"**/Companions/**" = "companion_prompt"
+"**/Core/**" = "base_template"
+"**/Tests/**" = "test_specific_prompt"
+
+[mcp_settings]
+# MCP-specific configuration
+model = "claude-3-5-sonnet-20241022"
+temperature = 0.1
+max_tokens = 4000
+timeout = 30
+
+# Auto-fix triggers
+auto_fix_enabled = true
+auto_fix_patterns = [
+    "null pointer",
+    "access violation", 
+    "uninitialized variable",
+    "memory leak",
+    "assertion failed",
+    "crash",
+    "segmentation fault"
+]
+
+# Safety settings
+max_files_per_fix = 5
+require_human_review = true
+create_backup = true
+
+[integration]
+# GitHub integration settings
+github_auto_pr = true
+pr_title_template = "🤖 MCP Auto-Fix: {error_type}"
+pr_body_template = """
+## 🤖 Automated Fix Applied
+
+**Error Type:** {error_type}
+**Files Modified:** {file_count}
+**Confidence:** {confidence_score}%
+
+### Changes Made
+{change_summary}
+
+### Testing Required
+- [ ] Build verification
+- [ ] Integration test execution
+- [ ] Manual functionality testing
+
+**Generated by MCP Codex Auto-Fix System**
+"""
+
+# Slack/Discord notifications
+notify_on_fix = true
+notify_webhook = "${SLACK_WEBHOOK_URL}"
+
+[testing]
+# Test-specific prompts and patterns
+test_framework = "unreal_automation"
+test_patterns = [
+    "IMPLEMENT_SIMPLE_AUTOMATION_TEST",
+    "TestTrue",
+    "TestEqual", 
+    "TestNotNull"
+]
+
+# Test generation prompt
+test_generation_prompt = """
+Generate comprehensive Unreal Engine 5 automation tests for this C++ module.
+
+REQUIREMENTS:
+- Use IMPLEMENT_SIMPLE_AUTOMATION_TEST macro
+- Include setup and teardown logic
+- Test both success and failure cases
+- Use appropriate TestTrue, TestEqual, TestNotNull assertions
+- Follow KOTOR.ai integration test patterns
+- Include performance benchmarks where appropriate
+
+MODULE: {module_name}
+CODE: {module_code}
+
+Generate complete test file with proper includes and test categories.
+"""

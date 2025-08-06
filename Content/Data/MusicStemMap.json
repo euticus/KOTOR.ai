@@ -1,0 +1,511 @@
+{
+  "version": "1.0",
+  "description": "Music Stem Mapping for KOTOR.ai Procedural Music System",
+  "last_updated": "2024-01-01",
+  
+  "biome_compositions": {
+    "taris_undercity": {
+      "composition_id": "taris_undercity_ambient",
+      "primary_mood": "dark",
+      "primary_context": "exploration",
+      "layers": [
+        {
+          "layer_id": "taris_ambient_pad",
+          "layer_type": "ambient",
+          "audio_file": "Taris_Ambient_Pad.wav",
+          "volume": 0.7,
+          "priority": 1,
+          "supported_moods": ["dark", "mysterious", "tense"],
+          "supported_contexts": ["exploration", "stealth"]
+        },
+        {
+          "layer_id": "taris_industrial_drones",
+          "layer_type": "atmospheric",
+          "audio_file": "Taris_Industrial_Drones.wav",
+          "volume": 0.5,
+          "priority": 2,
+          "supported_moods": ["dark", "neutral"],
+          "supported_contexts": ["exploration", "ambient"]
+        },
+        {
+          "layer_id": "taris_danger_synth",
+          "layer_type": "tension",
+          "audio_file": "Taris_Danger_Synth.wav",
+          "volume": 0.0,
+          "priority": 3,
+          "supported_moods": ["tense", "suspenseful"],
+          "supported_contexts": ["stealth", "combat"]
+        }
+      ]
+    },
+    
+    "dantooine_plains": {
+      "composition_id": "dantooine_peaceful",
+      "primary_mood": "peaceful",
+      "primary_context": "exploration",
+      "layers": [
+        {
+          "layer_id": "dantooine_wind_pad",
+          "layer_type": "ambient",
+          "audio_file": "Dantooine_Wind_Pad.wav",
+          "volume": 0.8,
+          "priority": 1,
+          "supported_moods": ["peaceful", "serene", "neutral"],
+          "supported_contexts": ["exploration", "meditation"]
+        },
+        {
+          "layer_id": "dantooine_strings",
+          "layer_type": "strings",
+          "audio_file": "Dantooine_Strings.wav",
+          "volume": 0.6,
+          "priority": 2,
+          "supported_moods": ["peaceful", "romantic", "melancholic"],
+          "supported_contexts": ["exploration", "dialogue"]
+        },
+        {
+          "layer_id": "dantooine_flute",
+          "layer_type": "woodwinds",
+          "audio_file": "Dantooine_Flute.wav",
+          "volume": 0.4,
+          "priority": 3,
+          "supported_moods": ["peaceful", "serene"],
+          "supported_contexts": ["meditation", "ambient"]
+        }
+      ]
+    },
+    
+    "korriban_tombs": {
+      "composition_id": "korriban_dark",
+      "primary_mood": "dark",
+      "primary_context": "exploration",
+      "layers": [
+        {
+          "layer_id": "korriban_dark_choir",
+          "layer_type": "choir",
+          "audio_file": "Korriban_Dark_Choir.wav",
+          "volume": 0.6,
+          "priority": 1,
+          "supported_moods": ["dark", "mysterious", "dramatic"],
+          "supported_contexts": ["exploration", "cutscene"]
+        },
+        {
+          "layer_id": "korriban_ancient_whispers",
+          "layer_type": "effects",
+          "audio_file": "Korriban_Ancient_Whispers.wav",
+          "volume": 0.3,
+          "priority": 2,
+          "supported_moods": ["mysterious", "dark"],
+          "supported_contexts": ["exploration", "discovery"]
+        },
+        {
+          "layer_id": "korriban_sith_motif",
+          "layer_type": "melody",
+          "audio_file": "Korriban_Sith_Motif.wav",
+          "volume": 0.0,
+          "priority": 4,
+          "supported_moods": ["dark", "aggressive", "dramatic"],
+          "supported_contexts": ["combat", "boss"]
+        }
+      ]
+    }
+  },
+
+  "encounter_compositions": {
+    "lightsaber_combat": {
+      "composition_id": "lightsaber_duel",
+      "primary_mood": "action",
+      "primary_context": "combat",
+      "layers": [
+        {
+          "layer_id": "combat_drums",
+          "layer_type": "percussion",
+          "audio_file": "Combat_Drums_Intense.wav",
+          "volume": 0.8,
+          "priority": 1,
+          "supported_moods": ["action", "tense", "aggressive"],
+          "supported_contexts": ["combat"]
+        },
+        {
+          "layer_id": "combat_brass_stabs",
+          "layer_type": "brass",
+          "audio_file": "Combat_Brass_Stabs.wav",
+          "volume": 0.7,
+          "priority": 2,
+          "supported_moods": ["action", "dramatic", "heroic"],
+          "supported_contexts": ["combat", "boss"]
+        },
+        {
+          "layer_id": "force_theme_combat",
+          "layer_type": "melody",
+          "audio_file": "Force_Theme_Combat.wav",
+          "volume": 0.5,
+          "priority": 3,
+          "supported_moods": ["heroic", "epic", "dramatic"],
+          "supported_contexts": ["combat", "boss"]
+        },
+        {
+          "layer_id": "lightsaber_energy",
+          "layer_type": "synth",
+          "audio_file": "Lightsaber_Energy_Synth.wav",
+          "volume": 0.4,
+          "priority": 4,
+          "supported_moods": ["action", "tense"],
+          "supported_contexts": ["combat"]
+        }
+      ]
+    },
+    
+    "boss_finale": {
+      "composition_id": "epic_boss_battle",
+      "primary_mood": "epic",
+      "primary_context": "boss",
+      "layers": [
+        {
+          "layer_id": "epic_choir",
+          "layer_type": "choir",
+          "audio_file": "Epic_Choir_Full.wav",
+          "volume": 0.9,
+          "priority": 1,
+          "supported_moods": ["epic", "dramatic", "triumphant"],
+          "supported_contexts": ["boss", "cutscene"]
+        },
+        {
+          "layer_id": "epic_orchestra",
+          "layer_type": "strings",
+          "audio_file": "Epic_Orchestra_Strings.wav",
+          "volume": 0.8,
+          "priority": 2,
+          "supported_moods": ["epic", "heroic", "dramatic"],
+          "supported_contexts": ["boss", "cutscene"]
+        },
+        {
+          "layer_id": "epic_brass_fanfare",
+          "layer_type": "brass",
+          "audio_file": "Epic_Brass_Fanfare.wav",
+          "volume": 0.7,
+          "priority": 3,
+          "supported_moods": ["epic", "triumphant", "heroic"],
+          "supported_contexts": ["boss", "victory"]
+        },
+        {
+          "layer_id": "epic_percussion",
+          "layer_type": "percussion",
+          "audio_file": "Epic_Percussion_Full.wav",
+          "volume": 0.6,
+          "priority": 4,
+          "supported_moods": ["epic", "action", "dramatic"],
+          "supported_contexts": ["boss", "combat"]
+        }
+      ]
+    }
+  },
+
+  "alignment_compositions": {
+    "light_side_theme": {
+      "composition_id": "jedi_light",
+      "primary_mood": "heroic",
+      "primary_context": "dialogue",
+      "layers": [
+        {
+          "layer_id": "light_side_strings",
+          "layer_type": "strings",
+          "audio_file": "Light_Side_Strings.wav",
+          "volume": 0.7,
+          "priority": 1,
+          "supported_moods": ["heroic", "peaceful", "triumphant"],
+          "supported_contexts": ["dialogue", "cutscene", "meditation"]
+        },
+        {
+          "layer_id": "light_side_harp",
+          "layer_type": "melody",
+          "audio_file": "Light_Side_Harp.wav",
+          "volume": 0.5,
+          "priority": 2,
+          "supported_moods": ["peaceful", "serene", "romantic"],
+          "supported_contexts": ["dialogue", "meditation"]
+        },
+        {
+          "layer_id": "light_side_choir",
+          "layer_type": "choir",
+          "audio_file": "Light_Side_Choir.wav",
+          "volume": 0.4,
+          "priority": 3,
+          "supported_moods": ["heroic", "triumphant", "epic"],
+          "supported_contexts": ["cutscene", "victory"]
+        }
+      ]
+    },
+    
+    "dark_side_theme": {
+      "composition_id": "sith_dark",
+      "primary_mood": "dark",
+      "primary_context": "dialogue",
+      "layers": [
+        {
+          "layer_id": "dark_side_low_strings",
+          "layer_type": "strings",
+          "audio_file": "Dark_Side_Low_Strings.wav",
+          "volume": 0.8,
+          "priority": 1,
+          "supported_moods": ["dark", "aggressive", "dramatic"],
+          "supported_contexts": ["dialogue", "cutscene", "combat"]
+        },
+        {
+          "layer_id": "dark_side_dissonance",
+          "layer_type": "synth",
+          "audio_file": "Dark_Side_Dissonance.wav",
+          "volume": 0.6,
+          "priority": 2,
+          "supported_moods": ["dark", "tense", "mysterious"],
+          "supported_contexts": ["dialogue", "stealth"]
+        },
+        {
+          "layer_id": "dark_side_choir",
+          "layer_type": "choir",
+          "audio_file": "Dark_Side_Choir.wav",
+          "volume": 0.5,
+          "priority": 3,
+          "supported_moods": ["dark", "dramatic", "epic"],
+          "supported_contexts": ["cutscene", "boss"]
+        }
+      ]
+    }
+  },
+
+  "emotional_compositions": {
+    "character_romance": {
+      "composition_id": "romantic_theme",
+      "primary_mood": "romantic",
+      "primary_context": "dialogue",
+      "layers": [
+        {
+          "layer_id": "romance_strings",
+          "layer_type": "strings",
+          "audio_file": "Romance_Strings_Warm.wav",
+          "volume": 0.7,
+          "priority": 1,
+          "supported_moods": ["romantic", "peaceful", "melancholic"],
+          "supported_contexts": ["dialogue", "cutscene"]
+        },
+        {
+          "layer_id": "romance_piano",
+          "layer_type": "melody",
+          "audio_file": "Romance_Piano_Gentle.wav",
+          "volume": 0.6,
+          "priority": 2,
+          "supported_moods": ["romantic", "sad", "peaceful"],
+          "supported_contexts": ["dialogue"]
+        },
+        {
+          "layer_id": "romance_flute",
+          "layer_type": "woodwinds",
+          "audio_file": "Romance_Flute_Solo.wav",
+          "volume": 0.4,
+          "priority": 3,
+          "supported_moods": ["romantic", "serene"],
+          "supported_contexts": ["dialogue", "ambient"]
+        }
+      ]
+    },
+    
+    "character_loss": {
+      "composition_id": "melancholic_theme",
+      "primary_mood": "sad",
+      "primary_context": "cutscene",
+      "layers": [
+        {
+          "layer_id": "loss_strings_low",
+          "layer_type": "strings",
+          "audio_file": "Loss_Strings_Low.wav",
+          "volume": 0.8,
+          "priority": 1,
+          "supported_moods": ["sad", "melancholic", "dramatic"],
+          "supported_contexts": ["cutscene", "dialogue"]
+        },
+        {
+          "layer_id": "loss_cello_solo",
+          "layer_type": "strings",
+          "audio_file": "Loss_Cello_Solo.wav",
+          "volume": 0.6,
+          "priority": 2,
+          "supported_moods": ["sad", "melancholic"],
+          "supported_contexts": ["cutscene", "dialogue"]
+        },
+        {
+          "layer_id": "loss_rain_ambience",
+          "layer_type": "atmospheric",
+          "audio_file": "Loss_Rain_Ambience.wav",
+          "volume": 0.3,
+          "priority": 3,
+          "supported_moods": ["sad", "melancholic", "peaceful"],
+          "supported_contexts": ["ambient", "cutscene"]
+        }
+      ]
+    }
+  },
+
+  "special_event_compositions": {
+    "artifact_discovery": {
+      "composition_id": "discovery_wonder",
+      "primary_mood": "mysterious",
+      "primary_context": "discovery",
+      "layers": [
+        {
+          "layer_id": "discovery_ethereal_pad",
+          "layer_type": "ambient",
+          "audio_file": "Discovery_Ethereal_Pad.wav",
+          "volume": 0.7,
+          "priority": 1,
+          "supported_moods": ["mysterious", "peaceful", "dramatic"],
+          "supported_contexts": ["discovery", "cutscene"]
+        },
+        {
+          "layer_id": "discovery_chimes",
+          "layer_type": "effects",
+          "audio_file": "Discovery_Magic_Chimes.wav",
+          "volume": 0.5,
+          "priority": 2,
+          "supported_moods": ["mysterious", "peaceful"],
+          "supported_contexts": ["discovery", "meditation"]
+        },
+        {
+          "layer_id": "discovery_rising_strings",
+          "layer_type": "strings",
+          "audio_file": "Discovery_Rising_Strings.wav",
+          "volume": 0.6,
+          "priority": 3,
+          "supported_moods": ["dramatic", "triumphant", "mysterious"],
+          "supported_contexts": ["discovery", "cutscene"]
+        }
+      ]
+    },
+    
+    "betrayal_reveal": {
+      "composition_id": "betrayal_shock",
+      "primary_mood": "dramatic",
+      "primary_context": "cutscene",
+      "layers": [
+        {
+          "layer_id": "betrayal_dissonant_strings",
+          "layer_type": "strings",
+          "audio_file": "Betrayal_Dissonant_Strings.wav",
+          "volume": 0.8,
+          "priority": 1,
+          "supported_moods": ["dramatic", "dark", "tense"],
+          "supported_contexts": ["cutscene", "dialogue"]
+        },
+        {
+          "layer_id": "betrayal_shock_stab",
+          "layer_type": "brass",
+          "audio_file": "Betrayal_Shock_Stab.wav",
+          "volume": 0.9,
+          "priority": 4,
+          "supported_moods": ["dramatic", "aggressive"],
+          "supported_contexts": ["cutscene"]
+        },
+        {
+          "layer_id": "betrayal_dark_choir",
+          "layer_type": "choir",
+          "audio_file": "Betrayal_Dark_Choir.wav",
+          "volume": 0.6,
+          "priority": 2,
+          "supported_moods": ["dark", "dramatic"],
+          "supported_contexts": ["cutscene", "boss"]
+        }
+      ]
+    }
+  },
+
+  "layer_type_definitions": {
+    "ambient": {
+      "description": "Background atmospheric layers",
+      "typical_volume_range": [0.3, 0.8],
+      "blend_characteristics": "Smooth, long fades"
+    },
+    "melody": {
+      "description": "Main melodic content",
+      "typical_volume_range": [0.4, 0.9],
+      "blend_characteristics": "Musical phrase-aware blending"
+    },
+    "harmony": {
+      "description": "Harmonic support layers",
+      "typical_volume_range": [0.3, 0.7],
+      "blend_characteristics": "Chord-change synchronized"
+    },
+    "rhythm": {
+      "description": "Rhythmic elements",
+      "typical_volume_range": [0.5, 1.0],
+      "blend_characteristics": "Beat-synchronized blending"
+    },
+    "percussion": {
+      "description": "Drum and percussion layers",
+      "typical_volume_range": [0.6, 1.0],
+      "blend_characteristics": "Measure-aligned transitions"
+    },
+    "tension": {
+      "description": "Tension-building elements",
+      "typical_volume_range": [0.0, 0.8],
+      "blend_characteristics": "Intensity-based fading"
+    },
+    "effects": {
+      "description": "Special sound effects and textures",
+      "typical_volume_range": [0.2, 0.6],
+      "blend_characteristics": "Event-triggered activation"
+    }
+  },
+
+  "mood_intensity_mappings": {
+    "peaceful": {
+      "low_intensity": ["ambient", "melody"],
+      "medium_intensity": ["ambient", "melody", "harmony"],
+      "high_intensity": ["ambient", "melody", "harmony", "strings"]
+    },
+    "action": {
+      "low_intensity": ["rhythm", "bass"],
+      "medium_intensity": ["rhythm", "bass", "brass"],
+      "high_intensity": ["rhythm", "bass", "brass", "percussion"]
+    },
+    "dark": {
+      "low_intensity": ["ambient", "effects"],
+      "medium_intensity": ["ambient", "effects", "tension"],
+      "high_intensity": ["ambient", "effects", "tension", "choir"]
+    },
+    "epic": {
+      "low_intensity": ["strings", "brass"],
+      "medium_intensity": ["strings", "brass", "choir"],
+      "high_intensity": ["strings", "brass", "choir", "percussion"]
+    }
+  },
+
+  "context_layer_priorities": {
+    "exploration": {
+      "primary_layers": ["ambient", "melody"],
+      "secondary_layers": ["harmony", "atmospheric"],
+      "accent_layers": ["effects"]
+    },
+    "combat": {
+      "primary_layers": ["percussion", "brass"],
+      "secondary_layers": ["rhythm", "tension"],
+      "accent_layers": ["synth", "effects"]
+    },
+    "dialogue": {
+      "primary_layers": ["strings", "melody"],
+      "secondary_layers": ["harmony", "ambient"],
+      "accent_layers": ["woodwinds"]
+    },
+    "cutscene": {
+      "primary_layers": ["strings", "brass", "choir"],
+      "secondary_layers": ["melody", "harmony"],
+      "accent_layers": ["effects", "atmospheric"]
+    }
+  },
+
+  "blend_timing_settings": {
+    "instant": 0.0,
+    "quick": 0.5,
+    "normal": 2.0,
+    "slow": 4.0,
+    "dramatic": 8.0,
+    "cinematic": 12.0
+  }
+}

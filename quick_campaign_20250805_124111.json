@@ -1,0 +1,311 @@
+{
+  "config": {
+    "game_length_hours": 12,
+    "estimated_planets": 4,
+    "story_seed": "i want a 12-hour adventure about finding ancient jedi artifacts",
+    "time_period": "old republic",
+    "alignment_focus": "light"
+  },
+  "planets": [
+    {
+      "name": "Tatooine",
+      "biome": "forest",
+      "climate": "mild",
+      "population": "Massive (Trillions)",
+      "government": "Theocracy",
+      "layouts": [
+        {
+          "name": "Wilderness Beta",
+          "layout_type": "wilderness",
+          "description": "A wilderness area featuring dense forests, rivers",
+          "estimated_time_hours": 2.25,
+          "key_features": [
+            "dense forests",
+            "rivers",
+            "wildlife"
+          ]
+        },
+        {
+          "name": "Wilderness Alpha",
+          "layout_type": "wilderness",
+          "description": "A wilderness area featuring dense forests, rivers",
+          "estimated_time_hours": 2.25,
+          "key_features": [
+            "dense forests",
+            "rivers",
+            "hidden temples"
+          ]
+        },
+        {
+          "name": "Wilderness Gamma",
+          "layout_type": "wilderness",
+          "description": "A wilderness area featuring wildlife, rivers",
+          "estimated_time_hours": 2.25,
+          "key_features": [
+            "wildlife",
+            "rivers",
+            "dense forests"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Tatooine",
+      "side_quests": [
+        "Uncover corruption in the local government",
+        "Rescue missing persons from dangerous areas"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a forest world with a mild climate, home to a massive (trillions) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "desert",
+      "climate": "hot",
+      "population": "Sparse (Thousands)",
+      "government": "Anarchist Collective",
+      "layouts": [
+        {
+          "name": "Caves Alpha",
+          "layout_type": "caves",
+          "description": "A caves area featuring oases, canyons",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "oases",
+            "canyons",
+            "sand dunes"
+          ]
+        },
+        {
+          "name": "New District",
+          "layout_type": "settlement",
+          "description": "A settlement area featuring canyons, oases",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "canyons",
+            "oases",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Ancient Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring canyons, ancient ruins",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "canyons",
+            "ancient ruins",
+            "sand dunes"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Coruscant",
+      "side_quests": [
+        "Uncover corruption in the local government",
+        "Defend settlements from hostile forces"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a desert world with a hot climate, home to a sparse (thousands) population \ngoverned by a anarchist collective. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "volcanic",
+      "climate": "dangerous",
+      "population": "Sparse (Thousands)",
+      "government": "Anarchist Collective",
+      "layouts": [
+        {
+          "name": "Observatory Prime",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring lava flows, geysers",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "geysers",
+            "crystals"
+          ]
+        },
+        {
+          "name": "Lava Tubes Alpha",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring lava flows, geysers",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "geysers",
+            "mining operations"
+          ]
+        },
+        {
+          "name": "Mining Facility Prime",
+          "layout_type": "mining facility",
+          "description": "A mining facility area featuring crystals, lava flows",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "crystals",
+            "lava flows",
+            "geysers"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
+      "side_quests": [
+        "Rescue missing persons from dangerous areas",
+        "Help local merchants deal with smuggler problems"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 2,
+      "lore_description": "Naboo is a volcanic world with a dangerous climate, home to a sparse (thousands) population \ngoverned by a anarchist collective. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Hoth",
+      "biome": "desert",
+      "climate": "arid",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Military Junta",
+      "layouts": [
+        {
+          "name": "Caves Prime",
+          "layout_type": "caves",
+          "description": "A caves area featuring ancient ruins, oases",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "ancient ruins",
+            "oases",
+            "sand dunes"
+          ]
+        },
+        {
+          "name": "Central Spaceport",
+          "layout_type": "spaceport",
+          "description": "A spaceport area featuring sand dunes, oases",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "sand dunes",
+            "oases",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Ancient Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring canyons, ancient ruins",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "canyons",
+            "ancient ruins",
+            "sand dunes"
+          ]
+        }
+      ],
+      "main_quest": "Prevent a civil war from erupting on Hoth",
+      "side_quests": [
+        "Help local merchants deal with smuggler problems",
+        "Uncover corruption in the local government"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 3,
+      "lore_description": "Hoth is a desert world with a arid climate, home to a small (hundreds of thousands) population \ngoverned by a military junta. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    }
+  ],
+  "final_boss": {
+    "name": "Admiral Kethan",
+    "title": "Destroyer",
+    "species": "Chiss",
+    "motivation": "aims to unlock forbidden Sith knowledge",
+    "backstory": "Admiral Kethan, known as Destroyer, is a Chiss who aims to unlock forbidden Sith knowledge. \n\nBorn during the old republic era, Admiral Kethan was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves aims to unlock forbidden sith knowledge, which directly threatens the stability \nof the galaxy. The events described in \"i want a 12-hour adventure about finding ancient jedi artifacts\" are merely the beginning \nof their grand design.\n\nAdmiral Kethan has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "mechanics": [
+      "Boss gains new abilities and changes tactics at 75%, 50%, and 25% health",
+      "Boss summons waves of minions throughout the fight",
+      "Boss demonstrates mastery of multiple weapon types during combat"
+    ],
+    "phases": [
+      {
+        "name": "Opening Assault",
+        "health_range": "100-75%",
+        "abilities": [
+          "Dark Rage",
+          "Force Choke"
+        ],
+        "tactics": "Aggressive attacks to test the player's strength",
+        "special_effects": "None"
+      },
+      {
+        "name": "Escalation",
+        "health_range": "75-50%",
+        "abilities": [
+          "Dark Rage",
+          "Mind Control",
+          "Force Choke"
+        ],
+        "tactics": "Introduces environmental hazards and summons minions",
+        "special_effects": "Arena becomes more dangerous"
+      },
+      {
+        "name": "Desperation",
+        "health_range": "50-25%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery"
+        ],
+        "tactics": "Uses most powerful abilities and becomes more unpredictable",
+        "special_effects": "All mechanics active simultaneously"
+      },
+      {
+        "name": "Final Stand",
+        "health_range": "25-0%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery",
+          "Mind Control"
+        ],
+        "tactics": "Unleashes full power in a last desperate attempt",
+        "special_effects": "Boss gains new ultimate abilities"
+      }
+    ],
+    "arena_description": "Ancient Jedi ruins with crumbling architecture and Force echoes Located on Hoth, this jedi_ruins reflects the planet's desert environment. Broken lightsaber crystals litter the ground, still glowing faintly with residual energy.",
+    "loot_drop": {
+      "name": "Admiral Kethan's Legacy",
+      "rarity": "legendary",
+      "item_type": "weapon",
+      "bonuses": {
+        "attack": 15,
+        "force_power": 10,
+        "dark_side": 5
+      },
+      "flavor_text": "The final remnant of Destroyer Admiral Kethan's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "value_credits": 62000,
+      "level_requirement": 12,
+      "faction_theme": "dark"
+    },
+    "challenge_rating": 8.4,
+    "hit_points": 520,
+    "armor_class": 22,
+    "special_abilities": [
+      "Force Lightning",
+      "Force Choke",
+      "Dark Rage",
+      "Sith Sorcery",
+      "Mind Control"
+    ],
+    "weaknesses": [
+      "Light side Force powers",
+      "Emotional connections",
+      "Overconfidence",
+      "Brief vulnerability during transitions",
+      "Vulnerable while summoning"
+    ],
+    "minions": [
+      "Sith Assassins",
+      "Dark Jedi",
+      "Corrupted Beasts",
+      "Shadow Troopers"
+    ]
+  },
+  "main_quest_outline": "MAIN QUEST: I Want A 12-Hour Adventure About Finding Ancient Jedi Artifacts\n\nACT I - The Call to Adventure\n- Begin on Tatooine: Discover the threat to the galaxy\n- Learn of Admiral Kethan's dark plans\n- Gather allies and begin your heroic journey\n\nACT II - The Hero's Journey\n- Travel to 1 worlds to stop the darkness\n- Save civilizations and gain powerful allies\n- Uncover Admiral Kethan's weakness\n\nACT III - The Light Triumphant\n- Confront Admiral Kethan on Hoth\n- Rally your allies for the final battle in Ancient Jedi ruins with crumbling architecture and Force echoes Located on Hoth, this jedi_ruins reflects the planet's desert environment. Broken lightsaber crystals litter the ground, still glowing faintly with residual energy.\n- Restore peace and balance to the galaxy",
+  "campaign_summary": "Campaign: I Want A 12-Hour Adventure About Finding Ancient Jedi Artifacts\nDuration: 12 hours\nEra: Old Republic\nAlignment: Light Side focus\n\nYour journey will take you across 4 worlds including Tatooine, Coruscant, Naboo, and 1 other worlds.\nThe ultimate confrontation awaits with Admiral Kethan, aims to unlock forbidden Sith knowledge.\n\nThis campaign emphasizes light side choices and is set during the old republic era."
+}

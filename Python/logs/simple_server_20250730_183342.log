@@ -1,0 +1,14 @@
+2025-07-30 18:33:42,556 - SIMPLE_SERVER - INFO - Starting Simple Test Server on port 8080
+2025-07-30 18:33:42,556 - SIMPLE_SERVER - INFO - Debug mode: False
+2025-07-30 18:33:42,681 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.0.0.163:8080
+2025-07-30 18:33:42,682 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-30 18:34:33,227 - SIMPLE_SERVER - INFO - Request: GET /api/ping
+2025-07-30 18:34:33,228 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 18:34:33] "GET /api/ping HTTP/1.1" 200 -
+2025-07-31 10:57:04,826 - SIMPLE_SERVER - INFO - Request: GET /api/ping
+2025-07-31 10:57:04,836 - werkzeug - INFO - 127.0.0.1 - - [31/Jul/2025 10:57:04] "GET /api/ping HTTP/1.1" 200 -
+2025-07-31 10:57:32,632 - SIMPLE_SERVER - INFO - Request: POST /api/campaign
+2025-07-31 10:57:32,644 - SIMPLE_SERVER - INFO - Mock campaign generated: External Drive Test
+2025-07-31 10:57:32,645 - werkzeug - INFO - 127.0.0.1 - - [31/Jul/2025 10:57:32] "POST /api/campaign HTTP/1.1" 200 -

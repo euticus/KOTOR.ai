@@ -1,0 +1,518 @@
+{
+  "Version": 1,
+  "Name": "KOTOR Editor Input Mapping Context",
+  "Description": "Developer-friendly input mapping context for KOTOR.ai development",
+  "Priority": 1,
+  "Mappings": [
+    {
+      "Action": "IA_Move",
+      "Key": "W",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ],
+      "Value": [0.0, 1.0, 0.0]
+    },
+    {
+      "Action": "IA_Move",
+      "Key": "S",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ],
+      "Value": [0.0, -1.0, 0.0]
+    },
+    {
+      "Action": "IA_Move",
+      "Key": "A",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ],
+      "Value": [-1.0, 0.0, 0.0]
+    },
+    {
+      "Action": "IA_Move",
+      "Key": "D",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ],
+      "Value": [1.0, 0.0, 0.0]
+    },
+    {
+      "Action": "IA_Look",
+      "Key": "Mouse2D",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ]
+    },
+    {
+      "Action": "IA_Interact",
+      "Key": "E",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Primary interaction key"
+    },
+    {
+      "Action": "IA_DialogueChoice1",
+      "Key": "One",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Select dialogue option 1"
+    },
+    {
+      "Action": "IA_DialogueChoice2",
+      "Key": "Two",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Select dialogue option 2"
+    },
+    {
+      "Action": "IA_DialogueChoice3",
+      "Key": "Three",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Select dialogue option 3"
+    },
+    {
+      "Action": "IA_DialogueChoice4",
+      "Key": "Four",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Select dialogue option 4"
+    },
+    {
+      "Action": "IA_ForcePower",
+      "Key": "F",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Use Force Power"
+    },
+    {
+      "Action": "IA_PhotoMode",
+      "Key": "F11",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle Photo Mode"
+    },
+    {
+      "Action": "IA_Meditate",
+      "Key": "M",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Enter Meditation"
+    },
+    {
+      "Action": "IA_LiveCoding",
+      "Key": "F11",
+      "Modifiers": ["Ctrl", "Alt"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Trigger Live Coding Compile"
+    },
+    {
+      "Action": "IA_Jump",
+      "Key": "SpaceBar",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Jump"
+    },
+    {
+      "Action": "IA_Run",
+      "Key": "LeftShift",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Down"
+        }
+      ],
+      "Description": "Run/Sprint"
+    },
+    {
+      "Action": "IA_OpenGalaxyMap",
+      "Key": "G",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Open Galaxy Map"
+    },
+    {
+      "Action": "IA_OpenInventory",
+      "Key": "I",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Open Inventory"
+    },
+    {
+      "Action": "IA_OpenMenu",
+      "Key": "Escape",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Open Main Menu"
+    },
+    {
+      "Action": "IA_QuickSave",
+      "Key": "F5",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Quick Save"
+    },
+    {
+      "Action": "IA_QuickLoad",
+      "Key": "F9",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Quick Load"
+    },
+    {
+      "Action": "IA_ToggleDevPanel",
+      "Key": "F12",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle AIDM Debug Panel"
+    },
+    {
+      "Action": "IA_ToggleConsole",
+      "Key": "Tilde",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle Console"
+    },
+    {
+      "Action": "IA_CaptureScreenshot",
+      "Key": "F10",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Capture Screenshot"
+    },
+    {
+      "Action": "IA_ToggleHUD",
+      "Key": "H",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle HUD Visibility"
+    },
+    {
+      "Action": "IA_ToggleUI",
+      "Key": "U",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle UI Visibility"
+    },
+    {
+      "Action": "IA_ReloadLevel",
+      "Key": "R",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Reload Current Level"
+    },
+    {
+      "Action": "IA_SpawnTestNPC",
+      "Key": "N",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Spawn Test NPC"
+    },
+    {
+      "Action": "IA_SpawnTestEnemy",
+      "Key": "E",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Spawn Test Enemy"
+    },
+    {
+      "Action": "IA_SpawnTestLoot",
+      "Key": "L",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Spawn Test Loot"
+    },
+    {
+      "Action": "IA_TriggerVision",
+      "Key": "V",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Trigger Force Vision"
+    },
+    {
+      "Action": "IA_RunAutoTests",
+      "Key": "T",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Run Auto Tests"
+    },
+    {
+      "Action": "IA_GenerateCampaign",
+      "Key": "C",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Generate Test Campaign"
+    },
+    {
+      "Action": "IA_ToggleFreeCam",
+      "Key": "F",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle Free Camera"
+    },
+    {
+      "Action": "IA_ToggleWireframe",
+      "Key": "W",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle Wireframe View"
+    },
+    {
+      "Action": "IA_ToggleCollision",
+      "Key": "C",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle Collision Visibility"
+    },
+    {
+      "Action": "IA_IncreaseTimeScale",
+      "Key": "Plus",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Increase Time Scale"
+    },
+    {
+      "Action": "IA_DecreaseTimeScale",
+      "Key": "Minus",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Decrease Time Scale"
+    },
+    {
+      "Action": "IA_ResetTimeScale",
+      "Key": "Zero",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Reset Time Scale to 1.0"
+    },
+    {
+      "Action": "IA_TeleportToSpawn",
+      "Key": "Home",
+      "Modifiers": [],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Teleport to Player Spawn"
+    },
+    {
+      "Action": "IA_TeleportToMouse",
+      "Key": "T",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Teleport to Mouse Position"
+    },
+    {
+      "Action": "IA_ToggleGodMode",
+      "Key": "G",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle God Mode"
+    },
+    {
+      "Action": "IA_ToggleNoClip",
+      "Key": "N",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Toggle No Clip"
+    },
+    {
+      "Action": "IA_ShowDebugInfo",
+      "Key": "D",
+      "Modifiers": ["Ctrl"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Show Debug Information"
+    },
+    {
+      "Action": "IA_ClearLog",
+      "Key": "L",
+      "Modifiers": ["Ctrl", "Shift"],
+      "Triggers": [
+        {
+          "Type": "Pressed"
+        }
+      ],
+      "Description": "Clear Console Log"
+    }
+  ],
+  "ContextSettings": {
+    "bIgnoreAllPressedKeysUntilRelease": false,
+    "bIgnoreLookInput": false,
+    "bIgnoreMoveInput": false
+  },
+  "DevNotes": [
+    "This input mapping context is optimized for KOTOR.ai development",
+    "All key bindings follow standard gaming conventions where possible",
+    "Developer-specific functions use Ctrl/Shift modifiers to avoid conflicts",
+    "F-keys are used for system functions (save, load, photo mode, etc.)",
+    "Number keys 1-4 are reserved for dialogue choices",
+    "WASD for movement, E for interaction, F for Force powers",
+    "Mouse for camera look, Shift for running, Space for jumping",
+    "Ctrl+Shift combinations for advanced developer functions",
+    "All bindings can be overridden in Blueprint or C++ as needed"
+  ]
+}

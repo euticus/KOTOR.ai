@@ -1,0 +1,362 @@
+{
+  "version": "1.0",
+  "description": "Animation Tag Mapping for KOTOR.ai Procedural Performance System",
+  "last_updated": "2024-01-01",
+  
+  "emotion_mappings": {
+    "neutral": {
+      "body_animation": "Idle_Neutral_Loop",
+      "face_animation": "Face_Neutral_Idle",
+      "blend_in_time": 0.25,
+      "blend_out_time": 0.25,
+      "looping": true,
+      "play_rate": 1.0
+    },
+    "happy": {
+      "body_animation": "Talk_Happy_Loop",
+      "face_animation": "Face_Smile_Gentle",
+      "blend_in_time": 0.3,
+      "blend_out_time": 0.3,
+      "looping": true,
+      "play_rate": 1.0
+    },
+    "sad": {
+      "body_animation": "Talk_Sad_Loop",
+      "face_animation": "Face_Sad_Frown",
+      "blend_in_time": 0.5,
+      "blend_out_time": 0.5,
+      "looping": true,
+      "play_rate": 0.8
+    },
+    "angry": {
+      "body_animation": "Talk_Angry_Loop",
+      "face_animation": "Face_Angry_Scowl",
+      "blend_in_time": 0.2,
+      "blend_out_time": 0.3,
+      "looping": true,
+      "play_rate": 1.2
+    },
+    "fear": {
+      "body_animation": "Cower_Fear_Loop",
+      "face_animation": "Face_Fear_Wide_Eyes",
+      "blend_in_time": 0.1,
+      "blend_out_time": 0.4,
+      "looping": true,
+      "play_rate": 1.1
+    },
+    "surprise": {
+      "body_animation": "React_Surprise_Once",
+      "face_animation": "Face_Surprise_Gasp",
+      "blend_in_time": 0.1,
+      "blend_out_time": 0.2,
+      "looping": false,
+      "play_rate": 1.0
+    },
+    "disgust": {
+      "body_animation": "Recoil_Disgust_Once",
+      "face_animation": "Face_Disgust_Wrinkle",
+      "blend_in_time": 0.2,
+      "blend_out_time": 0.3,
+      "looping": false,
+      "play_rate": 1.0
+    },
+    "contempt": {
+      "body_animation": "Dismiss_Contempt_Once",
+      "face_animation": "Face_Contempt_Sneer",
+      "blend_in_time": 0.3,
+      "blend_out_time": 0.3,
+      "looping": false,
+      "play_rate": 0.9
+    },
+    "pride": {
+      "body_animation": "Stand_Proud_Loop",
+      "face_animation": "Face_Pride_Chin_Up",
+      "blend_in_time": 0.4,
+      "blend_out_time": 0.4,
+      "looping": true,
+      "play_rate": 0.8
+    },
+    "shame": {
+      "body_animation": "Hang_Head_Shame_Loop",
+      "face_animation": "Face_Shame_Look_Down",
+      "blend_in_time": 0.5,
+      "blend_out_time": 0.5,
+      "looping": true,
+      "play_rate": 0.7
+    },
+    "hope": {
+      "body_animation": "Look_Up_Hope_Loop",
+      "face_animation": "Face_Hope_Gentle_Smile",
+      "blend_in_time": 0.4,
+      "blend_out_time": 0.4,
+      "looping": true,
+      "play_rate": 0.9
+    },
+    "despair": {
+      "body_animation": "Sit_Head_Down_Loop",
+      "face_animation": "Face_Despair_Empty_Stare",
+      "blend_in_time": 0.6,
+      "blend_out_time": 0.6,
+      "looping": true,
+      "play_rate": 0.6
+    },
+    "love": {
+      "body_animation": "Reach_Out_Love_Loop",
+      "face_animation": "Face_Love_Soft_Eyes",
+      "blend_in_time": 0.5,
+      "blend_out_time": 0.5,
+      "looping": true,
+      "play_rate": 0.8
+    },
+    "hate": {
+      "body_animation": "Clench_Fists_Hate_Loop",
+      "face_animation": "Face_Hate_Intense_Glare",
+      "blend_in_time": 0.2,
+      "blend_out_time": 0.3,
+      "looping": true,
+      "play_rate": 1.3
+    },
+    "determination": {
+      "body_animation": "Stand_Firm_Loop",
+      "face_animation": "Face_Determined_Set_Jaw",
+      "blend_in_time": 0.3,
+      "blend_out_time": 0.3,
+      "looping": true,
+      "play_rate": 1.0
+    },
+    "confusion": {
+      "body_animation": "Scratch_Head_Loop",
+      "face_animation": "Face_Confused_Raised_Brow",
+      "blend_in_time": 0.3,
+      "blend_out_time": 0.3,
+      "looping": true,
+      "play_rate": 1.0
+    }
+  },
+
+  "dialogue_tone_mappings": {
+    "normal": {
+      "body_animation": "Talk_Normal_Loop",
+      "face_animation": "Face_Talk_Normal",
+      "intensity_modifier": 1.0
+    },
+    "whisper": {
+      "body_animation": "Lean_In_Whisper_Loop",
+      "face_animation": "Face_Whisper_Pursed_Lips",
+      "intensity_modifier": 0.5
+    },
+    "shout": {
+      "body_animation": "Gesture_Big_Shout_Loop",
+      "face_animation": "Face_Shout_Open_Mouth",
+      "intensity_modifier": 1.5
+    },
+    "mocking": {
+      "body_animation": "Laugh_Mocking_Loop",
+      "face_animation": "Face_Mock_Smirk",
+      "intensity_modifier": 1.2
+    },
+    "urgent": {
+      "body_animation": "Gesture_Urgent_Loop",
+      "face_animation": "Face_Urgent_Wide_Eyes",
+      "intensity_modifier": 1.3
+    },
+    "threatening": {
+      "body_animation": "Point_Threatening_Loop",
+      "face_animation": "Face_Threat_Narrow_Eyes",
+      "intensity_modifier": 1.4
+    },
+    "pleading": {
+      "body_animation": "Hands_Together_Plead_Loop",
+      "face_animation": "Face_Plead_Puppy_Eyes",
+      "intensity_modifier": 0.8
+    },
+    "commanding": {
+      "body_animation": "Point_Command_Loop",
+      "face_animation": "Face_Command_Stern",
+      "intensity_modifier": 1.3
+    },
+    "questioning": {
+      "body_animation": "Tilt_Head_Question_Loop",
+      "face_animation": "Face_Question_Raised_Brow",
+      "intensity_modifier": 1.0
+    },
+    "storytelling": {
+      "body_animation": "Gesture_Story_Loop",
+      "face_animation": "Face_Story_Animated",
+      "intensity_modifier": 1.1
+    },
+    "mysterious": {
+      "body_animation": "Lean_Back_Mystery_Loop",
+      "face_animation": "Face_Mystery_Half_Smile",
+      "intensity_modifier": 0.9
+    },
+    "seductive": {
+      "body_animation": "Lean_Close_Seductive_Loop",
+      "face_animation": "Face_Seductive_Sultry",
+      "intensity_modifier": 0.8
+    },
+    "wise": {
+      "body_animation": "Nod_Wise_Loop",
+      "face_animation": "Face_Wise_Knowing_Look",
+      "intensity_modifier": 0.7
+    },
+    "childlike": {
+      "body_animation": "Bounce_Excited_Loop",
+      "face_animation": "Face_Child_Wide_Wonder",
+      "intensity_modifier": 1.2
+    },
+    "elderly": {
+      "body_animation": "Slow_Gesture_Loop",
+      "face_animation": "Face_Elderly_Weathered",
+      "intensity_modifier": 0.6
+    },
+    "robotic": {
+      "body_animation": "Stiff_Gesture_Loop",
+      "face_animation": "Face_Robot_Minimal",
+      "intensity_modifier": 0.4
+    }
+  },
+
+  "actor_role_mappings": {
+    "player": {
+      "default_idle": "Player_Idle_Confident",
+      "combat_ready": "Player_Combat_Stance",
+      "dialogue_base": "Player_Talk_Base"
+    },
+    "companion": {
+      "default_idle": "Companion_Idle_Relaxed",
+      "combat_ready": "Companion_Combat_Ready",
+      "dialogue_base": "Companion_Talk_Friendly"
+    },
+    "npc": {
+      "default_idle": "NPC_Idle_Neutral",
+      "combat_ready": "NPC_Combat_Defensive",
+      "dialogue_base": "NPC_Talk_Polite"
+    },
+    "enemy": {
+      "default_idle": "Enemy_Idle_Aggressive",
+      "combat_ready": "Enemy_Combat_Hostile",
+      "dialogue_base": "Enemy_Talk_Menacing"
+    },
+    "boss": {
+      "default_idle": "Boss_Idle_Imposing",
+      "combat_ready": "Boss_Combat_Dominant",
+      "dialogue_base": "Boss_Talk_Commanding",
+      "entrance": "Boss_Entrance_Dramatic"
+    },
+    "vendor": {
+      "default_idle": "Vendor_Idle_Welcoming",
+      "dialogue_base": "Vendor_Talk_Merchant"
+    },
+    "quest_giver": {
+      "default_idle": "Quest_Idle_Thoughtful",
+      "dialogue_base": "Quest_Talk_Important"
+    },
+    "guard": {
+      "default_idle": "Guard_Idle_Alert",
+      "combat_ready": "Guard_Combat_Protective",
+      "dialogue_base": "Guard_Talk_Authoritative"
+    },
+    "civilian": {
+      "default_idle": "Civilian_Idle_Casual",
+      "dialogue_base": "Civilian_Talk_Nervous"
+    },
+    "narrator": {
+      "default_idle": "Narrator_Idle_Ethereal",
+      "dialogue_base": "Narrator_Talk_Omniscient"
+    }
+  },
+
+  "special_combinations": {
+    "boss_angry_threatening": {
+      "body_animation": "Boss_Rage_Threatening_Loop",
+      "face_animation": "Face_Boss_Fury",
+      "blend_in_time": 0.1,
+      "blend_out_time": 0.4,
+      "looping": true,
+      "play_rate": 1.4,
+      "priority": 10
+    },
+    "companion_sad_pleading": {
+      "body_animation": "Companion_Reach_Out_Sad",
+      "face_animation": "Face_Companion_Tears",
+      "blend_in_time": 0.5,
+      "blend_out_time": 0.5,
+      "looping": false,
+      "play_rate": 0.8,
+      "priority": 8
+    },
+    "player_determined_commanding": {
+      "body_animation": "Player_Point_Forward_Command",
+      "face_animation": "Face_Player_Resolve",
+      "blend_in_time": 0.3,
+      "blend_out_time": 0.3,
+      "looping": false,
+      "play_rate": 1.1,
+      "priority": 7
+    },
+    "npc_fear_whisper": {
+      "body_animation": "NPC_Cower_Whisper_Loop",
+      "face_animation": "Face_NPC_Terror_Whisper",
+      "blend_in_time": 0.2,
+      "blend_out_time": 0.4,
+      "looping": true,
+      "play_rate": 0.9,
+      "priority": 6
+    },
+    "dark_reveal": {
+      "body_animation": "Point_Forward_Slow",
+      "face_animation": "Face_Dark_Revelation",
+      "blend_in_time": 0.5,
+      "blend_out_time": 0.5,
+      "looping": false,
+      "play_rate": 0.7,
+      "priority": 9
+    }
+  },
+
+  "fallback_mappings": {
+    "unknown_emotion": {
+      "body_animation": "Idle_Neutral_Loop",
+      "face_animation": "Face_Neutral_Idle"
+    },
+    "unknown_tone": {
+      "body_animation": "Talk_Normal_Loop",
+      "face_animation": "Face_Talk_Normal"
+    },
+    "unknown_role": {
+      "body_animation": "NPC_Idle_Neutral",
+      "face_animation": "Face_Neutral_Idle"
+    }
+  },
+
+  "animation_priorities": {
+    "special_combinations": 10,
+    "boss_specific": 9,
+    "emotion_specific": 8,
+    "tone_specific": 7,
+    "role_specific": 6,
+    "default": 5,
+    "fallback": 1
+  },
+
+  "blend_settings": {
+    "default_blend_in": 0.25,
+    "default_blend_out": 0.25,
+    "quick_blend_in": 0.1,
+    "quick_blend_out": 0.1,
+    "slow_blend_in": 0.5,
+    "slow_blend_out": 0.5,
+    "dramatic_blend_in": 0.8,
+    "dramatic_blend_out": 0.8
+  },
+
+  "play_rate_modifiers": {
+    "very_slow": 0.5,
+    "slow": 0.7,
+    "normal": 1.0,
+    "fast": 1.3,
+    "very_fast": 1.5,
+    "frantic": 2.0
+  }
+}
