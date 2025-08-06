@@ -1,4 +1,4 @@
-name: 🎮 KOTOR.ai UE5 Build & Test Pipeline
+name: KOTOR.ai UE5 Build & Test Pipeline
 
 on:
   push:
@@ -29,27 +29,27 @@ env:
 
 jobs:
   # ============================================================================
-  # 🔍 Pre-Build Validation
+  # Pre-Build Validation
   # ============================================================================
   validate:
-    name: 🔍 Validate Project Structure
+    name: Validate Project Structure
     runs-on: windows-latest
     outputs:
       project-valid: ${{ steps.validation.outputs.valid }}
       ue-version: ${{ steps.validation.outputs.ue-version }}
     
     steps:
-    - name: 📥 Checkout Repository
+    - name:  Checkout Repository
       uses: actions/checkout@v4
       with:
         lfs: true
         fetch-depth: 0
 
-    - name: 🔍 Validate Project Files
+    - name: Validate Project Files
       id: validation
       shell: powershell
       run: |
-        Write-Host "🔍 Validating KOTOR.ai project structure..."
+        Write-Host "Validating KOTOR.ai project structure..."
         
         # Check for required files
         $requiredFiles = @(
@@ -72,7 +72,7 @@ jobs:
         if (Test-Path "${{ env.PROJECT_NAME }}.uproject") {
           $uprojectContent = Get-Content "${{ env.PROJECT_NAME }}.uproject" | ConvertFrom-Json
           $engineVersion = $uprojectContent.EngineAssociation
-          Write-Host "🎮 Engine Version: $engineVersion"
+          Write-Host " Engine Version: $engineVersion"
           echo "ue-version=$engineVersion" >> $env:GITHUB_OUTPUT
         }
         
@@ -86,10 +86,10 @@ jobs:
         }
 
   # ============================================================================
-  # 🏗️ Build UE5 Project
+  #  Build UE5 Project
   # ============================================================================
   build:
-    name: 🏗️ Build UE5 Project (${{ matrix.platform }})
+    name:  Build UE5 Project (${{ matrix.platform }})
     runs-on: windows-latest
     needs: validate
     if: needs.validate.outputs.project-valid == 'true'
@@ -101,21 +101,21 @@ jobs:
         # platform: [Win64, Linux, Mac]
     
     steps:
-    - name: 📥 Checkout Repository
+    - name:  Checkout Repository
       uses: actions/checkout@v4
       with:
         lfs: true
         fetch-depth: 0
 
-    - name: 🎯 Setup MSBuild
+    - name:  Setup MSBuild
       uses: microsoft/setup-msbuild@v2
       with:
         vs-version: '17.0'
 
-    - name: 🎮 Setup Unreal Engine
+    - name:  Setup Unreal Engine
       shell: powershell
       run: |
-        Write-Host "🎮 Setting up Unreal Engine ${{ env.UE_VERSION }}..."
+        Write-Host " Setting up Unreal Engine ${{ env.UE_VERSION }}..."
         
         # Check for UE5 installation
         $ueInstallPaths = @(
@@ -143,7 +143,7 @@ jobs:
         echo "UE_ROOT=$uePath" >> $env:GITHUB_ENV
         echo "$uePath\Engine\Binaries\Win64" >> $env:GITHUB_PATH
 
-    - name: 📦 Restore Build Cache
+    - name:  Restore Build Cache
       uses: actions/cache@v4
       with:
         path: |
@@ -155,10 +155,10 @@ jobs:
           ue5-build-${{ matrix.platform }}-${{ env.BUILD_CONFIGURATION }}-
           ue5-build-${{ matrix.platform }}-
 
-    - name: 🔧 Generate Project Files
+    - name:  Generate Project Files
       shell: powershell
       run: |
-        Write-Host "🔧 Generating project files..."
+        Write-Host " Generating project files..."
         & "$env:UE_ROOT\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" -projectfiles -project="$PWD\${{ env.PROJECT_NAME }}.uproject" -game -rocket -progress
         
         if ($LASTEXITCODE -ne 0) {
@@ -167,10 +167,10 @@ jobs:
         }
         Write-Host "Project files generated successfully"
 
-    - name: 🏗️ Build Project
+    - name:  Build Project
       shell: powershell
       run: |
-        Write-Host "🏗️ Building ${{ env.PROJECT_NAME }} for ${{ matrix.platform }} (${{ env.BUILD_CONFIGURATION }})..."
+        Write-Host " Building ${{ env.PROJECT_NAME }} for ${{ matrix.platform }} (${{ env.BUILD_CONFIGURATION }})..."
         
         $buildArgs = @(
           "${{ env.PROJECT_NAME }}Editor",
@@ -189,10 +189,10 @@ jobs:
         }
         Write-Host "Build completed successfully"
 
-    - name: 📦 Package Build Artifacts
+    - name:  Package Build Artifacts
       shell: powershell
       run: |
-        Write-Host "📦 Packaging build artifacts..."
+        Write-Host " Packaging build artifacts..."
         
         # Create artifacts directory
         New-Item -ItemType Directory -Force -Path "Artifacts"
@@ -209,7 +209,7 @@ jobs:
         
         Write-Host "Artifacts packaged"
 
-    - name: 📤 Upload Build Artifacts
+    - name:  Upload Build Artifacts
       uses: actions/upload-artifact@v4
       with:
         name: build-artifacts-${{ matrix.platform }}-${{ env.BUILD_CONFIGURATION }}
@@ -217,51 +217,51 @@ jobs:
         retention-days: 7
 
   # ============================================================================
-  # 🧪 Run Integration Tests
+  #  Run Integration Tests
   # ============================================================================
   test:
-    name: 🧪 Run Integration Tests
+    name:  Run Integration Tests
     runs-on: windows-latest
     needs: build
     if: github.event.inputs.run_tests != 'false'
     
     steps:
-    - name: 📥 Checkout Repository
+    - name:  Checkout Repository
       uses: actions/checkout@v4
 
-    - name: 📦 Download Build Artifacts
+    - name:  Download Build Artifacts
       uses: actions/download-artifact@v4
       with:
         name: build-artifacts-Win64-${{ env.BUILD_CONFIGURATION }}
         path: ./
 
-    - name: 🎮 Setup Unreal Engine
+    - name:  Setup Unreal Engine
       shell: powershell
       run: |
         $uePath = "C:\Program Files\Epic Games\UE_${{ env.UE_VERSION }}"
         echo "UE_ROOT=$uePath" >> $env:GITHUB_ENV
         echo "$uePath\Engine\Binaries\Win64" >> $env:GITHUB_PATH
 
-    - name: 🏗️ Run Build.bat for Win64 Client
+    - name:  Run Build.bat for Win64 Client
       shell: powershell
       run: |
-        Write-Host "🏗️ Running Build.bat for Win64 client..."
+        Write-Host " Running Build.bat for Win64 client..."
 
         if (Test-Path "Scripts/Build.bat") {
           & "Scripts/Build.bat" Win64 ${{ env.BUILD_CONFIGURATION }}
           if ($LASTEXITCODE -ne 0) {
-            Write-Error "❌ Build.bat failed with exit code $LASTEXITCODE"
+            Write-Error " Build.bat failed with exit code $LASTEXITCODE"
             exit 1
           }
-          Write-Host "✅ Build.bat completed successfully"
+          Write-Host " Build.bat completed successfully"
         } else {
-          Write-Host "⚠️ Build.bat not found, using direct UBT build"
+          Write-Host " Build.bat not found, using direct UBT build"
         }
 
-    - name: 🧪 Run KOTOR.ai Integration Tests
+    - name:  Run KOTOR.ai Integration Tests
       shell: powershell
       run: |
-        Write-Host "🧪 Running KOTOR.ai integration tests..."
+        Write-Host " Running KOTOR.ai integration tests..."
 
         # Run comprehensive test suite
         $testSuites = @(
@@ -272,7 +272,7 @@ jobs:
         )
 
         foreach ($suite in $testSuites) {
-          Write-Host "🧪 Running test suite: $suite"
+          Write-Host " Running test suite: $suite"
 
           $testCommand = @(
             "$env:UE_ROOT\Engine\Binaries\Win64\UnrealEditor-Cmd.exe",
@@ -288,25 +288,25 @@ jobs:
           & $testCommand[0] $testCommand[1..($testCommand.Length-1)]
 
           if ($LASTEXITCODE -ne 0) {
-            Write-Error "❌ Test suite $suite failed with exit code $LASTEXITCODE"
+            Write-Error " Test suite $suite failed with exit code $LASTEXITCODE"
             # Continue with other test suites but mark as failed
             $global:TestsFailed = $true
           } else {
-            Write-Host "✅ Test suite $suite passed"
+            Write-Host " Test suite $suite passed"
           }
         }
 
         # Check overall test results
         if ($global:TestsFailed) {
-          Write-Error "❌ Some test suites failed"
+          Write-Error " Some test suites failed"
           exit 1
         }
-        Write-Host "✅ All KOTOR.ai integration tests passed!"
+        Write-Host " All KOTOR.ai integration tests passed!"
 
-    - name: 📊 Process Test Results
+    - name:  Process Test Results
       shell: powershell
       run: |
-        Write-Host "📊 Processing test results..."
+        Write-Host " Processing test results..."
 
         # Create test reports directory
         New-Item -ItemType Directory -Force -Path "TestReports"
@@ -337,9 +337,9 @@ jobs:
 
         $summaryContent | Out-File -FilePath $summaryFile -Encoding UTF8
 
-        Write-Host "✅ Test results processed"
+        Write-Host " Test results processed"
 
-    - name: 📤 Upload Test Reports
+    - name:  Upload Test Reports
       uses: actions/upload-artifact@v4
       with:
         name: test-reports-${{ env.BUILD_CONFIGURATION }}
@@ -347,18 +347,18 @@ jobs:
         retention-days: 30
 
   # ============================================================================
-  # 🚀 Deploy Success Notification
+  #  Deploy Success Notification
   # ============================================================================
   notify:
-    name: 🚀 Build Success Notification
+    name:  Build Success Notification
     runs-on: ubuntu-latest
     needs: [build, test]
     if: success()
     
     steps:
-    - name: 🎉 Success Notification
+    - name:  Success Notification
       run: |
-        echo "🎉 KOTOR.ai Build & Test Pipeline Completed Successfully!"
-        echo "✅ Build: Passed"
-        echo "✅ Tests: Passed"
-        echo "🚀 Ready for deployment!"
+        echo " KOTOR.ai Build & Test Pipeline Completed Successfully!"
+        echo " Build: Passed"
+        echo " Tests: Passed"
+        echo " Ready for deployment!"
