@@ -61,10 +61,10 @@ jobs:
         $allFilesExist = $true
         foreach ($file in $requiredFiles) {
           if (-not (Test-Path $file)) {
-            Write-Error "❌ Required file missing: $file"
+            Write-Error "Required file missing: $file"
             $allFilesExist = $false
           } else {
-            Write-Host "✅ Found: $file"
+            Write-Host "Found: $file"
           }
         }
         
@@ -79,9 +79,9 @@ jobs:
         echo "valid=$allFilesExist" >> $env:GITHUB_OUTPUT
         
         if ($allFilesExist) {
-          Write-Host "✅ Project validation successful!"
+          Write-Host "Project validation successful!"
         } else {
-          Write-Error "❌ Project validation failed!"
+          Write-Error "Project validation failed!"
           exit 1
         }
 
@@ -133,13 +133,13 @@ jobs:
         }
         
         if (-not $uePath) {
-          Write-Host "📦 UE5 not found locally, downloading..."
+          Write-Host "UE5 not found locally, downloading..."
           # Download UE5 (simplified - in production, use pre-installed runner)
-          Write-Host "⚠️ Using GitHub runner with pre-installed UE5"
+          Write-Host "Using GitHub runner with pre-installed UE5"
           $uePath = "C:\Program Files\Epic Games\UE_${{ env.UE_VERSION }}"
         }
         
-        Write-Host "✅ UE5 Path: $uePath"
+        Write-Host "UE5 Path: $uePath"
         echo "UE_ROOT=$uePath" >> $env:GITHUB_ENV
         echo "$uePath\Engine\Binaries\Win64" >> $env:GITHUB_PATH
 
@@ -162,10 +162,10 @@ jobs:
         & "$env:UE_ROOT\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" -projectfiles -project="$PWD\${{ env.PROJECT_NAME }}.uproject" -game -rocket -progress
         
         if ($LASTEXITCODE -ne 0) {
-          Write-Error "❌ Failed to generate project files"
+          Write-Error "Failed to generate project files"
           exit 1
         }
-        Write-Host "✅ Project files generated successfully"
+        Write-Host "Project files generated successfully"
 
     - name: 🏗️ Build Project
       shell: powershell
@@ -184,10 +184,10 @@ jobs:
         & "$env:UE_ROOT\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.exe" @buildArgs
         
         if ($LASTEXITCODE -ne 0) {
-          Write-Error "❌ Build failed with exit code $LASTEXITCODE"
+          Write-Error "Build failed with exit code $LASTEXITCODE"
           exit 1
         }
-        Write-Host "✅ Build completed successfully"
+        Write-Host "Build completed successfully"
 
     - name: 📦 Package Build Artifacts
       shell: powershell
@@ -207,7 +207,7 @@ jobs:
           Copy-Item -Recurse "Saved/Logs" "Artifacts/"
         }
         
-        Write-Host "✅ Artifacts packaged"
+        Write-Host "Artifacts packaged"
 
     - name: 📤 Upload Build Artifacts
       uses: actions/upload-artifact@v4
