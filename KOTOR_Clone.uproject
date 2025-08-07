@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "5.6",
 	"Category": "",
 	"Description": "KOTOR.ai - The Ultimate AI-Driven RPG Framework",
 	"Modules": [
@@ -10,149 +10,12 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"Engine",
-				"CoreUObject",
-				"UMG",
-				"AIModule",
-				"GameplayTasks",
-				"NavigationSystem",
-				"AudioMixer",
-				"MetasoundEngine",
-				"AnimGraphRuntime",
-				"ControlRig",
-				"LevelSequence",
-				"MovieScene",
-				"CinematicCamera",
-				"Niagara",
-				"Paper2D",
-				"OnlineSubsystem",
-				"OnlineSubsystemUtils",
-				"Networking",
-				"Sockets",
-				"HTTP",
-				"Json",
-				"JsonUtilities",
-				"SlateCore",
-				"Slate",
-				"ToolMenus",
-				"EditorStyle",
-				"EditorWidgets",
-				"UnrealEd",
-				"BlueprintGraph",
-				"KismetCompiler",
-				"PropertyEditor",
-				"DetailCustomizations",
-				"ComponentVisualizers",
-				"AutomationController",
-				"FunctionalTesting"
+				"CoreUObject"
 			]
 		}
 	],
-	"Plugins": [
-		{
-			"Name": "ModelingToolsEditorMode",
-			"Enabled": true
-		},
-		{
-			"Name": "GeometryScript",
-			"Enabled": true
-		},
-		{
-			"Name": "StaticMeshEditorExtension",
-			"Enabled": true
-		},
-		{
-			"Name": "MetaHuman",
-			"Enabled": true
-		},
-		{
-			"Name": "MetaSounds",
-			"Enabled": true
-		},
-		{
-			"Name": "Niagara",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosVehiclesPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosClothEditor",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosCloth",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosNiagara",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosSolverPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "ChaosUserDataPT",
-			"Enabled": true
-		},
-		{
-			"Name": "GeometryCollectionPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "AutomationUtils",
-			"Enabled": true
-		},
-		{
-			"Name": "FunctionalTestingEditor",
-			"Enabled": true
-		},
-		{
-			"Name": "SequencerAnimTools",
-			"Enabled": true
-		},
-		{
-			"Name": "ControlRig",
-			"Enabled": true
-		},
-		{
-			"Name": "IKRig",
-			"Enabled": true
-		},
-		{
-			"Name": "LiveLink",
-			"Enabled": true
-		},
-		{
-			"Name": "LiveLinkControlRig",
-			"Enabled": true
-		},
-		{
-			"Name": "PythonScriptPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "EditorScriptingUtilities",
-			"Enabled": true
-		},
-		{
-			"Name": "OnlineSubsystemSteam",
-			"Enabled": true
-		},
-		{
-			"Name": "OnlineServicesEOS",
-			"Enabled": true
-		},
-		{
-			"Name": "OnlineServicesOSSAdapter",
-			"Enabled": true
-		}
-	],
+	"Plugins": [],
 	"TargetPlatforms": [
-		"Windows",
-		"Mac",
-		"Linux"
-	],
-	"EpicSampleNameHash": "0"
+		"Windows"
+	]
 }

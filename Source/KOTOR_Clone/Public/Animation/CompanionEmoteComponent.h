@@ -13,7 +13,7 @@
  * Companion emote types
  */
 UENUM(BlueprintType)
-enum class ECompanionEmoteType : uint8
+enum class ECompanionEmoteAnimType : uint8
 {
     Approval            UMETA(DisplayName = "Approval"),
     Disapproval         UMETA(DisplayName = "Disapproval"),

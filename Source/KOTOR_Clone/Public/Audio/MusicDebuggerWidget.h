@@ -62,7 +62,7 @@ struct KOTOR_CLONE_API FMusicLayerDebugInfo
  * Music debug log entry
  */
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FMusicDebugLogEntry
+struct KOTOR_CLONE_API FMusicDebuggerLogEntry
 {
     GENERATED_BODY()
 

@@ -14,7 +14,7 @@
  * Performance emotion types
  */
 UENUM(BlueprintType)
-enum class EPerformanceEmotion : uint8
+enum class EPerformanceEmotionV2 : uint8
 {
     Neutral             UMETA(DisplayName = "Neutral"),
     Happy               UMETA(DisplayName = "Happy"),

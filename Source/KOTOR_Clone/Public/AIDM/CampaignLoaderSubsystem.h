@@ -188,7 +188,7 @@ struct KOTOR_CLONE_API FNPCData
 };
 
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FEnemyData
+struct KOTOR_CLONE_API FCampaignEnemyData
 {
     GENERATED_BODY()
 

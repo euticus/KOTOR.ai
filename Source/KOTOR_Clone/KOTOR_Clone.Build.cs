@@ -8,33 +8,13 @@ public class KOTOR_Clone : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { 
-			"Core", 
-			"CoreUObject", 
-			"Engine", 
-			"InputCore",
-			"UMG",
-			"Slate",
-			"SlateCore",
-			"Json",
-			"JsonUtilities"
+		PublicDependencyModuleNames.AddRange(new string[] {
+			"Core",
+			"CoreUObject",
+			"Engine"
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { 
-			"Slate", 
-			"SlateCore",
-			"ToolMenus",
-			"EditorStyle",
-			"EditorWidgets",
-			"UnrealEd",
-			"BlueprintGraph",
-			"KismetCompiler",
-			"PropertyEditor",
-			"GraphEditor",
-			"Kismet",
-			"KismetWidgets",
-			"ToolMenus",
-			"CommonUI"
+		PrivateDependencyModuleNames.AddRange(new string[] {
 		});
 
 		// AIDM specific includes

@@ -56,7 +56,7 @@ enum class ECompanionOrder : uint8
  * Companion data structure
  */
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FCompanionData
+struct KOTOR_CLONE_API FCompanionManagerData
 {
     GENERATED_BODY()
 

@@ -120,17 +120,44 @@ if "%VERBOSE%"=="true" echo [INFO] Detecting Unreal Engine installation...
 
 REM Try to find UE5 installation
 if "%UE_ENGINE_DIR%"=="" (
-    REM Check common installation paths
+    REM Check common installation paths across multiple drives
     for %%d in (
         "C:\Program Files\Epic Games\UE_5.1"
         "C:\Program Files\Epic Games\UE_5.2"
         "C:\Program Files\Epic Games\UE_5.3"
         "C:\Program Files\Epic Games\UE_5.4"
         "C:\UnrealEngine"
+        "D:\Program Files\Epic Games\UE_5.1"
+        "D:\Program Files\Epic Games\UE_5.2"
+        "D:\Program Files\Epic Games\UE_5.3"
+        "D:\Program Files\Epic Games\UE_5.4"
         "D:\UnrealEngine"
+        "D:\Epic Games\UE_5.1"
+        "D:\Epic Games\UE_5.2"
+        "D:\Epic Games\UE_5.3"
+        "D:\Epic Games\UE_5.4"
+        "E:\Program Files\Epic Games\UE_5.1"
+        "E:\Program Files\Epic Games\UE_5.2"
+        "E:\Program Files\Epic Games\UE_5.3"
+        "E:\Program Files\Epic Games\UE_5.4"
+        "E:\UnrealEngine"
+        "E:\Epic Games\UE_5.1"
+        "E:\Epic Games\UE_5.2"
+        "E:\Epic Games\UE_5.3"
+        "E:\Epic Games\UE_5.4"
+        "F:\Program Files\Epic Games\UE_5.1"
+        "F:\Program Files\Epic Games\UE_5.2"
+        "F:\Program Files\Epic Games\UE_5.3"
+        "F:\Program Files\Epic Games\UE_5.4"
+        "F:\UnrealEngine"
+        "F:\Epic Games\UE_5.1"
+        "F:\Epic Games\UE_5.2"
+        "F:\Epic Games\UE_5.3"
+        "F:\Epic Games\UE_5.4"
     ) do (
         if exist "%%~d\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" (
             set UE_ENGINE_DIR=%%~d
+            if "%VERBOSE%"=="true" echo [INFO] Found UE5 at: %%~d
             goto :engine_found
         )
     )

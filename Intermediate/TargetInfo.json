@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "KOTOR_Clone",
+			"Path": "..\\Source\\KOTOR_Clone.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "KOTOR_CloneEditor",
+			"Path": "..\\Source\\KOTOR_CloneEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -17,7 +17,7 @@ class UWorld;
  * Spawn point data for dynamic content
  */
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FSpawnPointData
+struct KOTOR_CLONE_API FAIDirectorSpawnData
 {
     GENERATED_BODY()
 

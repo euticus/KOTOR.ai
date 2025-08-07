@@ -20,31 +20,4 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-	virtual void InitGame(const FString& MapName, const FString& Options, FString& ErrorMessage) override;
-
-public:
-	/** Initialize KOTOR.ai systems */
-	UFUNCTION(BlueprintCallable, Category = "KOTOR.ai")
-	void InitializeKOTORAISystems();
-
-	/** Get AI Director Subsystem */
-	UFUNCTION(BlueprintCallable, Category = "KOTOR.ai")
-	class UAIDirectorSubsystem* GetAIDirector() const;
-
-	/** Get Procedural Music Subsystem */
-	UFUNCTION(BlueprintCallable, Category = "KOTOR.ai")
-	class UProceduralMusicSubsystemV2* GetMusicSubsystem() const;
-
-protected:
-	/** Whether KOTOR.ai systems have been initialized */
-	UPROPERTY(BlueprintReadOnly, Category = "KOTOR.ai")
-	bool bKOTORAISystemsInitialized;
-
-	/** Default startup map for auto-loading */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "KOTOR.ai")
-	FString DefaultStartupMap;
-
-	/** Enable auto-initialization of KOTOR.ai systems */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "KOTOR.ai")
-	bool bAutoInitializeKOTORAI;
 };

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\KOTOR_Clone.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KOTOR_Clone.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\KOTOR_CloneEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.codexrc" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\demo_campaign_1.json" />
+    <None Include="..\..\demo_campaign_2.json" />
+    <None Include="..\..\demo_campaign_3.json" />
+    <None Include="..\..\eighth_tasks.md" />
+    <None Include="..\..\eleventh_tasks.md" />
+    <None Include="..\..\fifth_tasks.md" />
+    <None Include="..\..\first_tasks.md" />
+    <None Include="..\..\fourth_tasks.md" />
+    <None Include="..\..\KOTOR_Clone_FastDev.uproject" />
+    <None Include="..\..\main.py" />
+    <None Include="..\..\MCP_tasks.md" />
+    <None Include="..\..\multiagent_expansion.md" />
+    <None Include="..\..\ninth_tasks.md" />
+    <None Include="..\..\PHASE10_DYNAMIC_ANIMATION_ADAPTIVE_SOUNDTRACK_README.md" />
+    <None Include="..\..\PHASE11_AI_ANIMATION_PROCEDURAL_MUSIC_README.md" />
+    <None Include="..\..\PHASE12_BUILD_LAUNCH_STREAMLINING_README.md" />
+    <None Include="..\..\PHASE3_IMMERSION_README.md" />
+    <None Include="..\..\PHASE4_MULTIPLAYER_README.md" />
+    <None Include="..\..\PHASE5_EMOTIONAL_INTELLIGENCE_README.md" />
+    <None Include="..\..\PHASE6_WORLD_SIMULATION_README.md" />
+    <None Include="..\..\PHASE7_UNREAL_STREAMLINING_README.md" />
+    <None Include="..\..\PHASE8_OPTIMIZATION_PIPELINE_README.md" />
+    <None Include="..\..\PHASE9_CINEMATIC_PLAY_PARTY_DECISIONS_AI_AUDIO_README.md" />
+    <None Include="..\..\quick_campaign_20250805_124111.json" />
+    <None Include="..\..\README.md" />
+    <None Include="..\..\requirements.txt" />
+    <None Include="..\..\second_tasks.md" />
+    <None Include="..\..\seventh_tasks.md" />
+    <None Include="..\..\simulate_encounter.py" />
+    <None Include="..\..\sixth_tasks.md" />
+    <None Include="..\..\tenth_tasks.md" />
+    <None Include="..\..\tests_maybe.md" />
+    <None Include="..\..\third_tasks.md" />
+    <None Include="..\..\twelfth_tasks.md" />
+    <None Include="..\..\UNREAL_INTEGRATION_README.md" />
+    <None Include="..\..\VERSION.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\KOTOR_Clone">
+      <UniqueIdentifier>{F0851CA1-52A2-3084-8EC4-E98FF39D5FCC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KOTOR_Clone\KOTOR_Clone.Build.cs">
+      <Filter>Source\KOTOR_Clone</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\KOTOR_Clone.cpp">
+      <Filter>Source\KOTOR_Clone</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\KOTOR_Clone.h">
+      <Filter>Source\KOTOR_Clone</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Private">
+      <UniqueIdentifier>{4D4C3822-7CFD-3930-8479-72F967C788ED}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\KOTORGameMode.cpp">
+      <Filter>Source\KOTOR_Clone\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\AIDM">
+      <UniqueIdentifier>{90725144-E0C3-302D-B17C-2CC2145911AA}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\AIDM\AIDirectorComponent.cpp">
+      <Filter>Source\KOTOR_Clone\Private\AIDM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\AIDM\CampaignLoaderSubsystem.cpp">
+      <Filter>Source\KOTOR_Clone\Private\AIDM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\AIDM\QuestManagerComponent.cpp">
+      <Filter>Source\KOTOR_Clone\Private\AIDM</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\Audio">
+      <UniqueIdentifier>{F7A8254B-EB6F-3720-90B0-6D060A6427D9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Audio\VoiceSynthesisComponent.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Audio</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\Companions">
+      <UniqueIdentifier>{B6AD84C7-D0B2-3B18-BE85-39678A811C69}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Companions\CompanionManagerComponent.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Companions</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\Core">
+      <UniqueIdentifier>{1E2B2AE5-C82C-368E-85B2-11EDD3FE468F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Core\AutoMapLoader.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Core\KOTORAISubsystem.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Core</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\Debug">
+      <UniqueIdentifier>{B9064E3E-F921-3040-B913-62B56B99F3B9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Debug\AIDMDebugWidget.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Debug</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\Player">
+      <UniqueIdentifier>{77ED4990-03E5-3AD0-BD63-530DB2F4D438}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\Player\AIDMPlayerCharacter.cpp">
+      <Filter>Source\KOTOR_Clone\Private\Player</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Private\UI">
+      <UniqueIdentifier>{C7A65DD1-CB54-3274-BC89-ED7EAAF8C230}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KOTOR_Clone\Private\UI\DialogueWidget.cpp">
+      <Filter>Source\KOTOR_Clone\Private\UI</Filter>
+    </ClCompile>
+    <Filter Include="Source\KOTOR_Clone\Public">
+      <UniqueIdentifier>{A21A90C5-B40A-3196-8692-7AE6495B7611}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\KOTORGameMode.h">
+      <Filter>Source\KOTOR_Clone\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\AIDM">
+      <UniqueIdentifier>{39618BB6-07AD-3F71-BD4B-FC33948414DC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\AIDM\AIDirectorComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\AIDM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\AIDM\CampaignLoaderSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\AIDM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\AIDM\QuestManagerComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\AIDM</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Animation">
+      <UniqueIdentifier>{7350AE55-2AD0-38FB-812A-170102DF77E0}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\AnimationTagMap.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\AnimationTestConsole.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\AutoFaceAnimationComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\BossEntranceSequenceActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\CompanionEmoteComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\MetaHumanFacialAnimationComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\ProceduralPerformanceComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\ProceduralPerformanceComponentV2.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Animation\VOPerformanceIntegrationComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Animation</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Audio">
+      <UniqueIdentifier>{FC3F1D16-2CB6-3C45-B01E-576244952734}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\AIDMNarrativeMusicLinker.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\MetaSoundMusicController.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\MusicBlendingComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\MusicDebuggerWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\MusicGameplayIntegrationComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\ProceduralMusicSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\ProceduralMusicSubsystemV2.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\RuntimeMusicLayeringComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Audio\VoiceSynthesisComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Audio</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Character">
+      <UniqueIdentifier>{83B0E3A5-E424-33C0-B62D-BFA4A3A141F4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Character\LLMCharacterCreator.h">
+      <Filter>Source\KOTOR_Clone\Public\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Character\MutationManagerComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Character</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Cinematics">
+      <UniqueIdentifier>{D6D44342-CCD5-366A-B6A7-5ED34E3297F5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Cinematics\BossIntroSequencer.h">
+      <Filter>Source\KOTOR_Clone\Public\Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Cinematics\CinematicCameraSplineActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Cinematics\CinematicDirectorActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Cinematics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Cinematics\ProceduralCutsceneGenerator.h">
+      <Filter>Source\KOTOR_Clone\Public\Cinematics</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Cloud">
+      <UniqueIdentifier>{D406C5A9-502F-3F9E-9296-7325D90E0985}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Cloud\CloudSaveSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Cloud</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Companions">
+      <UniqueIdentifier>{013FCAB1-129A-311E-8AE0-881F1AA3D62C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Companions\CompanionBanterEngine.h">
+      <Filter>Source\KOTOR_Clone\Public\Companions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Companions\CompanionManagerComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Companions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Companions\CompanionReactionSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Companions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Companions\CompanionVoiceReactionComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Companions</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Core">
+      <UniqueIdentifier>{16F641A0-3067-32D5-A8DE-0AAE7C24FCB1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\AutoMapLoader.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\DefaultViewportPrepComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\GameStartupSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\KOTORAISubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\KOTORGameInstance.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Core\LiveCodingManager.h">
+      <Filter>Source\KOTOR_Clone\Public\Core</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Debug">
+      <UniqueIdentifier>{06603AB7-60B4-3336-939C-55690AF9FD2F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Debug\AIDMDebugWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\Debug</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Enemies">
+      <UniqueIdentifier>{5025AD19-C33A-3D1B-84FE-A863F2922398}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Enemies\BossIntroNarrationComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Enemies\EnemyActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Enemies</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Entity">
+      <UniqueIdentifier>{7F358E91-28A9-3713-B682-3AF55527B205}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Entity\HiddenEntityController.h">
+      <Filter>Source\KOTOR_Clone\Public\Entity</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Items">
+      <UniqueIdentifier>{B8FE2EA2-B5C4-3A0C-9E87-A896C8D25E9B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Items\MythicArtifactSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Items</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Layouts">
+      <UniqueIdentifier>{25CA2D6B-A66E-3852-8344-08670DD2CC2A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Layouts\LayoutPrefabManager.h">
+      <Filter>Source\KOTOR_Clone\Public\Layouts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Layouts\PlayableLayoutActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Layouts</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Loaders">
+      <UniqueIdentifier>{957FA736-9012-39F8-89D2-25E5F34F7D10}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Loaders\CampaignJSONLoader.h">
+      <Filter>Source\KOTOR_Clone\Public\Loaders</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Loot">
+      <UniqueIdentifier>{DD594F2E-334C-3A8C-80BA-7F24AD6EDA59}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Loot\LootPickupSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Loot</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Meditation">
+      <UniqueIdentifier>{48E33FB7-BD77-31AD-A983-1A5E677B66C5}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Meditation\ForceVisionWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\Meditation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Meditation\MeditationShrineActor.h">
+      <Filter>Source\KOTOR_Clone\Public\Meditation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Meditation\MeditationSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Meditation</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Modding">
+      <UniqueIdentifier>{09FD284D-55DA-3493-B4ED-FA92C88ADF64}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Modding\ModdingSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Modding</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Morality">
+      <UniqueIdentifier>{4D982047-808D-3CF7-B508-29B1D03AF9E2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Morality\MoralEchoSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Morality</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Narrative">
+      <UniqueIdentifier>{47DBDD39-4323-3864-BB3A-D496E1D0BA41}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Narrative\NarrativeLogGenerator.h">
+      <Filter>Source\KOTOR_Clone\Public\Narrative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Narrative\NarrativeMemoryComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Narrative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Narrative\NarrativeRhythmAnalyzer.h">
+      <Filter>Source\KOTOR_Clone\Public\Narrative</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Narrative\NarrativeToneTracker.h">
+      <Filter>Source\KOTOR_Clone\Public\Narrative</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\News">
+      <UniqueIdentifier>{59C8D52A-472C-334F-AF29-EE32A6B0D66F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\News\GalacticNewsSystem.h">
+      <Filter>Source\KOTOR_Clone\Public\News</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\NPCs">
+      <UniqueIdentifier>{7739618E-651F-34C1-93EE-0AB756796392}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\NPCs\NPCMemoryMatrixComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\NPCs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\NPCs\ProceduralNPCActor.h">
+      <Filter>Source\KOTOR_Clone\Public\NPCs</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Photography">
+      <UniqueIdentifier>{4E8B7185-C469-3094-A220-4BCACE5CFA64}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Photography\CinematicScreenshotNarrator.h">
+      <Filter>Source\KOTOR_Clone\Public\Photography</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Photography\PhotoModeSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Photography</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Photography\ScreenshotCaptureComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Photography</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Player">
+      <UniqueIdentifier>{71BE85A2-01FA-3C7F-9EFD-DE21B6A31B1D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Player\AIDMPlayerCharacter.h">
+      <Filter>Source\KOTOR_Clone\Public\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Player\KOTORPlayerController.h">
+      <Filter>Source\KOTOR_Clone\Public\Player</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Politics">
+      <UniqueIdentifier>{A84CA8AB-D273-3777-A66B-540BC20DA3AF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Politics\FactionDiplomacySystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Politics</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Procedural">
+      <UniqueIdentifier>{CBD115EB-F2BA-3A01-BDC9-59A5EAEFADC1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Procedural\GalaxyCampaignExpander.h">
+      <Filter>Source\KOTOR_Clone\Public\Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Procedural\ProceduralPlanetGenerator.h">
+      <Filter>Source\KOTOR_Clone\Public\Procedural</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Procedural\ProceduralQuestGenerator.h">
+      <Filter>Source\KOTOR_Clone\Public\Procedural</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Sandbox">
+      <UniqueIdentifier>{2032D20A-A49A-3E7D-A363-1A46A5A8E050}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Sandbox\SandboxModeComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Sandbox</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Simulation">
+      <UniqueIdentifier>{8BED734F-4655-3D9C-8A55-866EBF15F446}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Simulation\WorldStateSimulator.h">
+      <Filter>Source\KOTOR_Clone\Public\Simulation</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Space">
+      <UniqueIdentifier>{22C88984-2E89-31CB-8278-30CDBBF65475}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Space\ShipPawn.h">
+      <Filter>Source\KOTOR_Clone\Public\Space</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Space\SpaceEncounterManager.h">
+      <Filter>Source\KOTOR_Clone\Public\Space</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Testing">
+      <UniqueIdentifier>{626584A9-0D88-3B94-890C-DBA47D746D6E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Testing\AutoTestSubsystem.h">
+      <Filter>Source\KOTOR_Clone\Public\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Testing\DevTestMapManager.h">
+      <Filter>Source\KOTOR_Clone\Public\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Testing\ScenarioTestingWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\Testing</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Timeline">
+      <UniqueIdentifier>{4D4F18E5-4C74-3584-967D-50DBCE767183}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Timeline\CampaignTimelineComponent.h">
+      <Filter>Source\KOTOR_Clone\Public\Timeline</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\UI">
+      <UniqueIdentifier>{BC50D593-D63A-3497-B42E-CFB33A82EC03}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\AIDMDebugPanel.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\CampaignBrowserWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\CinematicPlayerWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\DialogueBoxWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\DialogueWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\EditorPrepUtilityWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\GalaxyMapWidget.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\MusicDebugPanel.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\UI\VODebugDashboard.h">
+      <Filter>Source\KOTOR_Clone\Public\UI</Filter>
+    </ClInclude>
+    <Filter Include="Source\KOTOR_Clone\Public\Visions">
+      <UniqueIdentifier>{E066B717-63D4-3247-8C48-621A8F66D709}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KOTOR_Clone\Public\Visions\AlternateRealitySimulator.h">
+      <Filter>Source\KOTOR_Clone\Public\Visions</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

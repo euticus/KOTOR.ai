@@ -148,7 +148,7 @@ struct KOTOR_CLONE_API FGalaxyExpansion
  * Infinite mode settings
  */
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FInfiniteModeSettings
+struct KOTOR_CLONE_API FGalaxyInfiniteModeSettings
 {
     GENERATED_BODY()
 

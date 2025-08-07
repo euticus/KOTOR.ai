@@ -26,7 +26,7 @@ enum class EMusicLayerState : uint8
  * Music layer data
  */
 USTRUCT(BlueprintType)
-struct KOTOR_CLONE_API FMusicLayerData
+struct KOTOR_CLONE_API FRuntimeMusicLayerData
 {
     GENERATED_BODY()
 

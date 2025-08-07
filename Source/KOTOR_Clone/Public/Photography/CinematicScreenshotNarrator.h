@@ -15,7 +15,7 @@
  * Photo mode states
  */
 UENUM(BlueprintType)
-enum class EPhotoModeState : uint8
+enum class ECinematicPhotoState : uint8
 {
     Inactive            UMETA(DisplayName = "Inactive"),
     Entering            UMETA(DisplayName = "Entering Photo Mode"),
