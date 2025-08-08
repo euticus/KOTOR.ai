@@ -9,27 +9,166 @@
   "planets": [
     {
       "name": "Tatooine",
-      "biome": "desert",
-      "climate": "hot",
+      "biome": "forest",
+      "climate": "mild",
       "population": "Sparse (Thousands)",
-      "government": "Theocracy",
+      "government": "Military Junta",
       "layouts": [
         {
-          "name": "Caves Gamma",
-          "layout_type": "caves",
-          "description": "A caves area featuring sand dunes, canyons",
+          "name": "Village Alpha",
+          "layout_type": "village",
+          "description": "A village area featuring wildlife, hidden temples",
           "estimated_time_hours": 1.5,
           "key_features": [
-            "sand dunes",
-            "canyons",
-            "oases"
+            "wildlife",
+            "hidden temples",
+            "rivers"
           ]
         },
         {
-          "name": "Ancient Ruins",
-          "layout_type": "ruins",
-          "description": "A ruins area featuring canyons, sand dunes",
+          "name": "Wilderness Prime",
+          "layout_type": "wilderness",
+          "description": "A wilderness area featuring dense forests, hidden temples",
+          "estimated_time_hours": 2.25,
+          "key_features": [
+            "dense forests",
+            "hidden temples",
+            "rivers"
+          ]
+        },
+        {
+          "name": "Village Prime",
+          "layout_type": "village",
+          "description": "A village area featuring rivers, dense forests",
           "estimated_time_hours": 1.5,
+          "key_features": [
+            "rivers",
+            "dense forests",
+            "wildlife"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Tatooine",
+      "side_quests": [
+        "Investigate strange creature sightings",
+        "Uncover corruption in the local government"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a forest world with a mild climate, home to a sparse (thousands) population \ngoverned by a military junta. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "urban",
+      "climate": "artificial",
+      "population": "Massive (Trillions)",
+      "government": "Republic Democracy",
+      "layouts": [
+        {
+          "name": "Lower City Gamma",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring skyscrapers, undercity",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "skyscrapers",
+            "undercity",
+            "technology"
+          ]
+        },
+        {
+          "name": "Government Alpha",
+          "layout_type": "government",
+          "description": "A government area featuring undercity, traffic",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "undercity",
+            "traffic",
+            "technology"
+          ]
+        },
+        {
+          "name": "Government Gamma",
+          "layout_type": "government",
+          "description": "A government area featuring skyscrapers, technology",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "skyscrapers",
+            "technology",
+            "traffic"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Coruscant",
+      "side_quests": [
+        "Investigate strange creature sightings",
+        "Rescue missing persons from dangerous areas"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a urban world with a artificial climate, home to a massive (trillions) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "ocean",
+      "climate": "tropical",
+      "population": "Uninhabited",
+      "government": "Corporate Oligarchy",
+      "layouts": [
+        {
+          "name": "Underwater Base Beta",
+          "layout_type": "underwater base",
+          "description": "A underwater base area featuring storms, coral reefs",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "storms",
+            "coral reefs",
+            "underwater cities"
+          ]
+        },
+        {
+          "name": "Platform Gamma",
+          "layout_type": "platform",
+          "description": "A platform area featuring storms, islands",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "storms",
+            "islands",
+            "coral reefs"
+          ]
+        },
+        {
+          "name": "Underwater Base Gamma",
+          "layout_type": "underwater base",
+          "description": "A underwater base area featuring storms, islands",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "storms",
+            "islands",
+            "coral reefs"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
+      "side_quests": [
+        "Investigate strange creature sightings",
+        "Uncover corruption in the local government"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 2,
+      "lore_description": "Naboo is a ocean world with a tropical climate, home to a uninhabited population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ocean environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Hoth",
+      "biome": "desert",
+      "climate": "hot",
+      "population": "Massive (Trillions)",
+      "government": "Trade Federation",
+      "layouts": [
+        {
+          "name": "Central City",
+          "layout_type": "settlement",
+          "description": "A settlement area featuring canyons, sand dunes",
+          "estimated_time_hours": 2.0,
           "key_features": [
             "canyons",
             "sand dunes",
@@ -37,237 +176,109 @@
           ]
         },
         {
-          "name": "Lost Ruins",
-          "layout_type": "ruins",
-          "description": "A ruins area featuring ancient ruins, oases",
-          "estimated_time_hours": 1.5,
+          "name": "Orbital Spaceport",
+          "layout_type": "spaceport",
+          "description": "A spaceport area featuring ancient ruins, oases",
+          "estimated_time_hours": 1.6,
           "key_features": [
             "ancient ruins",
             "oases",
             "canyons"
           ]
-        }
-      ],
-      "main_quest": "Investigate mysterious signals coming from Tatooine",
-      "side_quests": [
-        "Help local merchants deal with smuggler problems",
-        "Uncover corruption in the local government"
-      ],
-      "difficulty_tier": "early",
-      "planet_index": 0,
-      "lore_description": "Tatooine is a desert world with a hot climate, home to a sparse (thousands) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Coruscant",
-      "biome": "forest",
-      "climate": "mild",
-      "population": "Sparse (Thousands)",
-      "government": "Trade Federation",
-      "layouts": [
-        {
-          "name": "Sacred Temple",
-          "layout_type": "temple",
-          "description": "A temple area featuring wildlife, rivers",
-          "estimated_time_hours": 1.6500000000000001,
-          "key_features": [
-            "wildlife",
-            "rivers",
-            "hidden temples"
-          ]
         },
         {
-          "name": "Forgotten Temple",
-          "layout_type": "temple",
-          "description": "A temple area featuring rivers, wildlife",
-          "estimated_time_hours": 1.6500000000000001,
-          "key_features": [
-            "rivers",
-            "wildlife",
-            "dense forests"
-          ]
-        },
-        {
-          "name": "Village Gamma",
-          "layout_type": "village",
-          "description": "A village area featuring hidden temples, dense forests",
-          "estimated_time_hours": 1.5,
-          "key_features": [
-            "hidden temples",
-            "dense forests",
-            "rivers"
-          ]
-        }
-      ],
-      "main_quest": "Rescue stranded allies from Coruscant's hostile environment",
-      "side_quests": [
-        "Mediate a dispute between rival factions",
-        "Recover stolen goods from bandits"
-      ],
-      "difficulty_tier": "early",
-      "planet_index": 1,
-      "lore_description": "Coruscant is a forest world with a mild climate, home to a sparse (thousands) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Naboo",
-      "biome": "forest",
-      "climate": "humid",
-      "population": "Large (Billions)",
-      "government": "Imperial Autocracy",
-      "layouts": [
-        {
-          "name": "Forgotten Temple",
-          "layout_type": "temple",
-          "description": "A temple area featuring wildlife, hidden temples",
-          "estimated_time_hours": 2.2,
-          "key_features": [
-            "wildlife",
-            "hidden temples",
-            "dense forests"
-          ]
-        },
-        {
-          "name": "Wilderness Prime",
-          "layout_type": "wilderness",
-          "description": "A wilderness area featuring hidden temples, dense forests",
-          "estimated_time_hours": 3.0,
-          "key_features": [
-            "hidden temples",
-            "dense forests",
-            "wildlife"
-          ]
-        },
-        {
-          "name": "Village Alpha",
-          "layout_type": "village",
-          "description": "A village area featuring dense forests, wildlife",
+          "name": "Caves Prime",
+          "layout_type": "caves",
+          "description": "A caves area featuring oases, sand dunes",
           "estimated_time_hours": 2.0,
           "key_features": [
-            "dense forests",
-            "wildlife",
-            "hidden temples"
-          ]
-        }
-      ],
-      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
-      "side_quests": [
-        "Mediate a dispute between rival factions",
-        "Explore abandoned facilities for valuable technology"
-      ],
-      "difficulty_tier": "mid",
-      "planet_index": 2,
-      "lore_description": "Naboo is a forest world with a humid climate, home to a large (billions) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Hoth",
-      "biome": "forest",
-      "climate": "mild",
-      "population": "Large (Billions)",
-      "government": "Anarchist Collective",
-      "layouts": [
-        {
-          "name": "Village Beta",
-          "layout_type": "village",
-          "description": "A village area featuring wildlife, dense forests",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "wildlife",
-            "dense forests",
-            "rivers"
-          ]
-        },
-        {
-          "name": "Sacred Temple",
-          "layout_type": "temple",
-          "description": "A temple area featuring wildlife, rivers",
-          "estimated_time_hours": 2.2,
-          "key_features": [
-            "wildlife",
-            "rivers",
-            "dense forests"
-          ]
-        },
-        {
-          "name": "Village Alpha",
-          "layout_type": "village",
-          "description": "A village area featuring wildlife, dense forests",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "wildlife",
-            "dense forests",
-            "rivers"
+            "oases",
+            "sand dunes",
+            "ancient ruins"
           ]
         }
       ],
       "main_quest": "Prevent a civil war from erupting on Hoth",
       "side_quests": [
-        "Explore abandoned facilities for valuable technology",
-        "Recover stolen goods from bandits"
+        "Recover stolen goods from bandits",
+        "Investigate strange creature sightings"
       ],
       "difficulty_tier": "mid",
       "planet_index": 3,
-      "lore_description": "Hoth is a forest world with a mild climate, home to a large (billions) population \ngoverned by a anarchist collective. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Hoth is a desert world with a hot climate, home to a massive (trillions) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Endor",
-      "biome": "volcanic",
-      "climate": "hot",
+      "biome": "ice",
+      "climate": "frozen",
       "population": "Massive (Trillions)",
-      "government": "Corporate Oligarchy",
+      "government": "Trade Federation",
       "layouts": [
         {
-          "name": "Lava Tubes Prime",
-          "layout_type": "lava tubes",
-          "description": "A lava tubes area featuring lava flows, mining operations",
+          "name": "Frozen City Gamma",
+          "layout_type": "frozen city",
+          "description": "A frozen city area featuring glaciers, ice caves",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "lava flows",
-            "mining operations",
-            "geysers"
+            "glaciers",
+            "ice caves",
+            "blizzards"
           ]
         },
         {
-          "name": "Crystal Caves Alpha",
-          "layout_type": "crystal caves",
-          "description": "A crystal caves area featuring lava flows, geysers",
+          "name": "Research Station Gamma",
+          "layout_type": "research station",
+          "description": "A research station area featuring ice caves, frozen lakes",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "lava flows",
-            "geysers",
-            "mining operations"
+            "ice caves",
+            "frozen lakes",
+            "blizzards"
           ]
         },
         {
-          "name": "Observatory Gamma",
-          "layout_type": "observatory",
-          "description": "A observatory area featuring crystals, lava flows",
+          "name": "Research Station Alpha",
+          "layout_type": "research station",
+          "description": "A research station area featuring ice caves, blizzards",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "crystals",
-            "lava flows",
-            "mining operations"
+            "ice caves",
+            "blizzards",
+            "glaciers"
           ]
         }
       ],
-      "main_quest": "Prevent a civil war from erupting on Endor",
+      "main_quest": "Uncover ancient secrets hidden beneath Endor",
       "side_quests": [
         "Rescue missing persons from dangerous areas",
-        "Recover stolen goods from bandits"
+        "Explore abandoned facilities for valuable technology"
       ],
       "difficulty_tier": "late",
       "planet_index": 4,
-      "lore_description": "Endor is a volcanic world with a hot climate, home to a massive (trillions) population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Endor is a ice world with a frozen climate, home to a massive (trillions) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ice environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Dagobah",
       "biome": "ice",
-      "climate": "frozen",
+      "climate": "cold",
       "population": "Sparse (Thousands)",
-      "government": "Republic Democracy",
+      "government": "Corporate Oligarchy",
       "layouts": [
         {
-          "name": "Bunker Gamma",
+          "name": "Bunker Alpha",
           "layout_type": "bunker",
           "description": "A bunker area featuring ice caves, glaciers",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "ice caves",
+            "glaciers",
+            "frozen lakes"
+          ]
+        },
+        {
+          "name": "Frozen City Alpha",
+          "layout_type": "frozen city",
+          "description": "A frozen city area featuring ice caves, glaciers",
           "estimated_time_hours": 2.5,
           "key_features": [
             "ice caves",
@@ -276,55 +287,44 @@
           ]
         },
         {
-          "name": "Frozen City Gamma",
-          "layout_type": "frozen city",
-          "description": "A frozen city area featuring glaciers, frozen lakes",
+          "name": "Ice Caves Prime",
+          "layout_type": "ice caves",
+          "description": "A ice caves area featuring ice caves, glaciers",
           "estimated_time_hours": 2.5,
           "key_features": [
+            "ice caves",
             "glaciers",
-            "frozen lakes",
-            "blizzards"
-          ]
-        },
-        {
-          "name": "Research Station Gamma",
-          "layout_type": "research station",
-          "description": "A research station area featuring frozen lakes, blizzards",
-          "estimated_time_hours": 2.5,
-          "key_features": [
-            "frozen lakes",
-            "blizzards",
-            "ice caves"
+            "frozen lakes"
           ]
         }
       ],
       "main_quest": "Retrieve a powerful artifact from Dagobah's ruins",
       "side_quests": [
-        "Mediate a dispute between rival factions",
-        "Recover stolen goods from bandits"
+        "Investigate strange creature sightings",
+        "Help local merchants deal with smuggler problems"
       ],
       "difficulty_tier": "late",
       "planet_index": 5,
-      "lore_description": "Dagobah is a ice world with a frozen climate, home to a sparse (thousands) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ice environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Dagobah is a ice world with a cold climate, home to a sparse (thousands) population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ice environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     }
   ],
   "final_boss": {
-    "name": "Master Malel",
+    "name": "Overlord Kethak",
     "title": "Broken Knight",
-    "species": "Miraluka",
-    "motivation": "seeks to prevent a greater evil through lesser evils",
-    "backstory": "Master Malel, known as Broken Knight, is a Miraluka who seeks to prevent a greater evil through lesser evils. \n\nBorn during the old republic era, Master Malel was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves seeks to prevent a greater evil through lesser evils, which directly threatens the stability \nof the galaxy. The events described in \"generate a 20-hour neutral story about a smuggler caught between factions\" are merely the beginning \nof their grand design.\n\nMaster Malel has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "species": "Twi'lek",
+    "motivation": "believes the galaxy must be saved through extreme measures",
+    "backstory": "Overlord Kethak, known as Broken Knight, is a Twi'lek who believes the galaxy must be saved through extreme measures. \n\nBorn during the old republic era, Overlord Kethak was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves believes the galaxy must be saved through extreme measures, which directly threatens the stability \nof the galaxy. The events described in \"generate a 20-hour neutral story about a smuggler caught between factions\" are merely the beginning \nof their grand design.\n\nOverlord Kethak has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
     "mechanics": [
-      "Boss uses psychological warfare and illusions",
-      "Boss demonstrates mastery of multiple weapon types during combat",
-      "Arena features dangerous environmental elements that activate periodically"
+      "Boss creates zones of danger that players must avoid",
+      "Boss becomes more dangerous as health decreases",
+      "Boss alternates between aggressive and defensive phases"
     ],
     "phases": [
       {
         "name": "Opening Assault",
         "health_range": "100-75%",
         "abilities": [
-          "Light Bind",
+          "Force Push",
           "Mind Shield"
         ],
         "tactics": "Aggressive attacks to test the player's strength",
@@ -334,9 +334,9 @@
         "name": "Escalation",
         "health_range": "75-50%",
         "abilities": [
-          "Mind Shield",
-          "Force Push",
-          "Healing Corruption"
+          "Purifying Fire",
+          "Healing Corruption",
+          "Mind Shield"
         ],
         "tactics": "Introduces environmental hazards and summons minions",
         "special_effects": "Arena becomes more dangerous"
@@ -369,7 +369,7 @@
     ],
     "arena_description": "An elaborate throne room with multiple levels and hidden passages Located on Dagobah, this throne_room reflects the planet's ice environment. Elaborate architecture provides multiple levels and tactical advantages.",
     "loot_drop": {
-      "name": "Master Malel's Legacy",
+      "name": "Overlord Kethak's Legacy",
       "rarity": "legendary",
       "item_type": "armor",
       "bonuses": {
@@ -377,7 +377,7 @@
         "force_power": 8,
         "light_side": 5
       },
-      "flavor_text": "The final remnant of Broken Knight Master Malel's power. This legendary armor pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "flavor_text": "The final remnant of Broken Knight Overlord Kethak's power. This legendary armor pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
       "value_credits": 70000,
       "level_requirement": 20,
       "faction_theme": "light"
@@ -397,8 +397,7 @@
     "weaknesses": [
       "Dark side corruption",
       "Moral dilemmas",
-      "Protecting innocents",
-      "Can be turned against the boss"
+      "Protecting innocents"
     ],
     "minions": [
       "Fallen Jedi",
@@ -408,6 +407,6 @@
       "Ice Wraiths"
     ]
   },
-  "main_quest_outline": "MAIN QUEST: Generate A 20-Hour Neutral Story About A Smuggler Caught Between Factions\n\nACT I - The Gray Path\n- Start on Tatooine: Navigate complex moral choices\n- Discover Master Malel's true motivations\n- Choose your own path between light and dark\n\nACT II - Walking the Line\n- Visit 3 worlds making difficult decisions\n- Build relationships across all factions\n- Prepare for the confrontation with Master Malel\n\nACT III - Your Destiny\n- Face Master Malel on Dagobah\n- Make the ultimate choice in An elaborate throne room with multiple levels and hidden passages Located on Dagobah, this throne_room reflects the planet's ice environment. Elaborate architecture provides multiple levels and tactical advantages.\n- Shape the galaxy's future according to your vision",
-  "campaign_summary": "Campaign: Generate A 20-Hour Neutral Story About A Smuggler Caught Between Factions\nDuration: 20 hours\nEra: Old Republic\nAlignment: Neutral Side focus\n\nYour journey will take you across 6 worlds including Tatooine, Coruscant, Naboo, and 3 other worlds.\nThe ultimate confrontation awaits with Master Malel, seeks to prevent a greater evil through lesser evils.\n\nThis campaign emphasizes neutral side choices and is set during the old republic era."
+  "main_quest_outline": "MAIN QUEST: Generate A 20-Hour Neutral Story About A Smuggler Caught Between Factions\n\nACT I - The Gray Path\n- Start on Tatooine: Navigate complex moral choices\n- Discover Overlord Kethak's true motivations\n- Choose your own path between light and dark\n\nACT II - Walking the Line\n- Visit 3 worlds making difficult decisions\n- Build relationships across all factions\n- Prepare for the confrontation with Overlord Kethak\n\nACT III - Your Destiny\n- Face Overlord Kethak on Dagobah\n- Make the ultimate choice in An elaborate throne room with multiple levels and hidden passages Located on Dagobah, this throne_room reflects the planet's ice environment. Elaborate architecture provides multiple levels and tactical advantages.\n- Shape the galaxy's future according to your vision",
+  "campaign_summary": "Campaign: Generate A 20-Hour Neutral Story About A Smuggler Caught Between Factions\nDuration: 20 hours\nEra: Old Republic\nAlignment: Neutral Side focus\n\nYour journey will take you across 6 worlds including Tatooine, Coruscant, Naboo, and 3 other worlds.\nThe ultimate confrontation awaits with Overlord Kethak, believes the galaxy must be saved through extreme measures.\n\nThis campaign emphasizes neutral side choices and is set during the old republic era."
 }

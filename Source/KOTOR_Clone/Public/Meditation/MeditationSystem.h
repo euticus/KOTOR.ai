@@ -387,7 +387,11 @@ protected:
 
     // Vision templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Vision Templates")
-    TMap<EForceVisionType, TArray<FString>> VisionPromptTemplates;
+    /*  Flat list of vision prompt templates.
+        (UPROPERTY does not support TMap<Key, TArray<Value>> serialization, so
+        we store all prompts in a single array and filter by VisionType at
+        runtime inside the meditation system.) */
+    TArray<FString> VisionPromptTemplates;
 
     // Timer handles
     FTimerHandle VisionTimer;

@@ -227,7 +227,7 @@ public:
      */
     UFUNCTION(BlueprintCallable, Category = "Narrative Log")
     TArray<FCodexEntry> SearchCodexEntries(const FString& SearchTerm, 
-                                          const TArray<ECodexEntryType>& EntryTypes = TArray<ECodexEntryType>());
+                                          const TArray<ECodexEntryType>& EntryTypes = );
 
     /**
      * Get codex entries by type

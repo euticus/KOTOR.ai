@@ -39,7 +39,9 @@ struct KOTOR_CLONE_API FAIDirectorSpawnData
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Spawn Point")
     AActor* SpawnedActor;
 
-    FSpawnPointData()
+    /* Constructor name must match the struct name (UE requires this for
+       proper code generation and to avoid C++ compilation errors). */
+    FAIDirectorSpawnData()
     {
         Location = FVector::ZeroVector;
         Rotation = FRotator::ZeroRotator;
@@ -106,7 +108,7 @@ public:
      * @param SpawnPoint The spawn point data to register
      */
     UFUNCTION(BlueprintCallable, Category = "AI Director")
-    void RegisterSpawnPoint(const FSpawnPointData& SpawnPoint);
+    void RegisterSpawnPoint(const FAIDirectorSpawnData& SpawnPoint);
 
     /**
      * Spawn content for the current layout
@@ -141,7 +143,7 @@ public:
      * @return Array of spawn points of the specified type
      */
     UFUNCTION(BlueprintCallable, BlueprintPure, Category = "AI Director")
-    TArray<FSpawnPointData> GetSpawnPointsByType(const FString& SpawnType) const;
+    TArray<FAIDirectorSpawnData> GetSpawnPointsByType(const FString& SpawnType) const;
 
     /**
      * Check if the AI Director is initialized
@@ -180,7 +182,7 @@ protected:
 
     // Spawn point management
     UPROPERTY(BlueprintReadOnly, Category = "AI Director")
-    TArray<FSpawnPointData> RegisteredSpawnPoints;
+    TArray<FAIDirectorSpawnData> RegisteredSpawnPoints;
 
     UPROPERTY(BlueprintReadOnly, Category = "AI Director")
     TArray<AActor*> SpawnedActors;
@@ -236,7 +238,7 @@ private:
     // Helper methods
     TSubclassOf<APawn> GetNPCClassForSpecies(const FString& Species) const;
     TSubclassOf<APawn> GetEnemyClassForSpecies(const FString& Species) const;
-    FSpawnPointData* FindAvailableSpawnPoint(const FString& SpawnType, const FString& LayoutName);
+    FAIDirectorSpawnData* FindAvailableSpawnPoint(const FString& SpawnType, const FString& LayoutName);
     void SetupSpawnedActor(AActor* SpawnedActor, const FString& ActorType, const void* Data);
 
     // Debug helpers
@@ -255,7 +257,7 @@ public:
      * @return The spawned NPC actor (can be null if spawn failed)
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "AI Director|Spawning")
-    APawn* OnSpawnNPC(const FNPCData& NPCData, const FSpawnPointData& SpawnPoint);
+    APawn* OnSpawnNPC(const FNPCData& NPCData, const FAIDirectorSpawnData& SpawnPoint);
 
     /**
      * Called when an enemy should be spawned
@@ -264,7 +266,7 @@ public:
      * @return The spawned enemy actor (can be null if spawn failed)
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "AI Director|Spawning")
-    APawn* OnSpawnEnemy(const FEnemyData& EnemyData, const FSpawnPointData& SpawnPoint);
+    APawn* OnSpawnEnemy(const FCampaignEnemyData& EnemyData, const FAIDirectorSpawnData& SpawnPoint);
 
     /**
      * Called when loot should be spawned
@@ -273,7 +275,7 @@ public:
      * @return The spawned loot actor (can be null if spawn failed)
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "AI Director|Spawning")
-    AActor* OnSpawnLoot(const FLootItem& LootData, const FSpawnPointData& SpawnPoint);
+    AActor* OnSpawnLoot(const FLootItem& LootData, const FAIDirectorSpawnData& SpawnPoint);
 
     /**
      * Called when the layout changes (for custom logic)

@@ -1,0 +1,262 @@
+{
+  "config": {
+    "game_length_hours": 5,
+    "estimated_planets": 3,
+    "story_seed": "test the ai system while we fix ue5",
+    "time_period": "old republic",
+    "alignment_focus": "neutral"
+  },
+  "planets": [
+    {
+      "name": "Tatooine",
+      "biome": "urban",
+      "climate": "varied",
+      "population": "Large (Billions)",
+      "government": "Republic Democracy",
+      "layouts": [
+        {
+          "name": "Lower City Prime",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring undercity, technology",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "undercity",
+            "technology",
+            "traffic"
+          ]
+        },
+        {
+          "name": "Lower City Gamma",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring traffic, technology",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "traffic",
+            "technology",
+            "undercity"
+          ]
+        },
+        {
+          "name": "Upper City Gamma",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring skyscrapers, technology",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "skyscrapers",
+            "technology",
+            "undercity"
+          ]
+        }
+      ],
+      "main_quest": "Establish contact with the local government on Tatooine",
+      "side_quests": [
+        "Recover stolen goods from bandits",
+        "Investigate strange creature sightings"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a urban world with a varied climate, home to a large (billions) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "urban",
+      "climate": "varied",
+      "population": "Massive (Trillions)",
+      "government": "Military Junta",
+      "layouts": [
+        {
+          "name": "Lower City Prime",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring technology, skyscrapers",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "technology",
+            "skyscrapers",
+            "traffic"
+          ]
+        },
+        {
+          "name": "Industrial Prime",
+          "layout_type": "industrial",
+          "description": "A industrial area featuring skyscrapers, traffic",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "skyscrapers",
+            "traffic",
+            "undercity"
+          ]
+        },
+        {
+          "name": "Upper City Gamma",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring technology, undercity",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "technology",
+            "undercity",
+            "skyscrapers"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Coruscant",
+      "side_quests": [
+        "Defend settlements from hostile forces",
+        "Recover stolen goods from bandits"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a urban world with a varied climate, home to a massive (trillions) population \ngoverned by a military junta. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "desert",
+      "climate": "dry",
+      "population": "Large (Billions)",
+      "government": "Imperial Autocracy",
+      "layouts": [
+        {
+          "name": "Caves Prime",
+          "layout_type": "caves",
+          "description": "A caves area featuring oases, sand dunes",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "oases",
+            "sand dunes",
+            "canyons"
+          ]
+        },
+        {
+          "name": "Ancient Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring sand dunes, ancient ruins",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "sand dunes",
+            "ancient ruins",
+            "canyons"
+          ]
+        },
+        {
+          "name": "Central Settlement",
+          "layout_type": "settlement",
+          "description": "A settlement area featuring canyons, oases",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "canyons",
+            "oases",
+            "sand dunes"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Naboo",
+      "side_quests": [
+        "Explore abandoned facilities for valuable technology",
+        "Mediate a dispute between rival factions"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 2,
+      "lore_description": "Naboo is a desert world with a dry climate, home to a large (billions) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    }
+  ],
+  "final_boss": {
+    "name": "Emperor Zaroth",
+    "title": "Shadow Emperor",
+    "species": "Sith Pureblood",
+    "motivation": "seeks ultimate power through ancient Sith artifacts",
+    "backstory": "Emperor Zaroth, known as Shadow Emperor, is a Sith Pureblood who seeks ultimate power through ancient Sith artifacts. \n\nBorn during the old republic era, Emperor Zaroth was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves seeks ultimate power through ancient sith artifacts, which directly threatens the stability \nof the galaxy. The events described in \"test the ai system while we fix ue5\" are merely the beginning \nof their grand design.\n\nEmperor Zaroth has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "mechanics": [
+      "Boss uses powerful Force abilities that affect the entire battlefield",
+      "Boss summons waves of minions throughout the fight",
+      "Arena features dangerous environmental elements that activate periodically"
+    ],
+    "phases": [
+      {
+        "name": "Opening Assault",
+        "health_range": "100-75%",
+        "abilities": [
+          "Force Choke",
+          "Sith Sorcery"
+        ],
+        "tactics": "Aggressive attacks to test the player's strength",
+        "special_effects": "None"
+      },
+      {
+        "name": "Escalation",
+        "health_range": "75-50%",
+        "abilities": [
+          "Dark Rage",
+          "Mind Control",
+          "Sith Sorcery"
+        ],
+        "tactics": "Introduces environmental hazards and summons minions",
+        "special_effects": "Arena becomes more dangerous"
+      },
+      {
+        "name": "Desperation",
+        "health_range": "50-25%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery"
+        ],
+        "tactics": "Uses most powerful abilities and becomes more unpredictable",
+        "special_effects": "All mechanics active simultaneously"
+      },
+      {
+        "name": "Final Stand",
+        "health_range": "25-0%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery",
+          "Mind Control"
+        ],
+        "tactics": "Unleashes full power in a last desperate attempt",
+        "special_effects": "Boss gains new ultimate abilities"
+      }
+    ],
+    "arena_description": "Ancient Jedi ruins with crumbling architecture and Force echoes Located on Naboo, this jedi_ruins reflects the planet's desert environment. Broken lightsaber crystals litter the ground, still glowing faintly with residual energy.",
+    "loot_drop": {
+      "name": "Emperor Zaroth's Legacy",
+      "rarity": "legendary",
+      "item_type": "weapon",
+      "bonuses": {
+        "attack": 15,
+        "force_power": 10,
+        "dark_side": 5
+      },
+      "flavor_text": "The final remnant of Shadow Emperor Emperor Zaroth's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "value_credits": 55000,
+      "level_requirement": 5,
+      "faction_theme": "dark"
+    },
+    "challenge_rating": 8.0,
+    "hit_points": 500,
+    "armor_class": 22,
+    "special_abilities": [
+      "Force Lightning",
+      "Force Choke",
+      "Dark Rage",
+      "Sith Sorcery",
+      "Mind Control"
+    ],
+    "weaknesses": [
+      "Light side Force powers",
+      "Emotional connections",
+      "Overconfidence",
+      "Force exhaustion after major abilities",
+      "Vulnerable while summoning",
+      "Can be turned against the boss"
+    ],
+    "minions": [
+      "Sith Assassins",
+      "Dark Jedi",
+      "Corrupted Beasts",
+      "Shadow Troopers"
+    ]
+  },
+  "main_quest_outline": "MAIN QUEST: Test The Ai System While We Fix Ue5\n\nACT I - The Gray Path\n- Start on Tatooine: Navigate complex moral choices\n- Discover Emperor Zaroth's true motivations\n- Choose your own path between light and dark\n\nACT II - Walking the Line\n- Visit 0 worlds making difficult decisions\n- Build relationships across all factions\n- Prepare for the confrontation with Emperor Zaroth\n\nACT III - Your Destiny\n- Face Emperor Zaroth on Naboo\n- Make the ultimate choice in Ancient Jedi ruins with crumbling architecture and Force echoes Located on Naboo, this jedi_ruins reflects the planet's desert environment. Broken lightsaber crystals litter the ground, still glowing faintly with residual energy.\n- Shape the galaxy's future according to your vision",
+  "campaign_summary": "Campaign: Test The Ai System While We Fix Ue5\nDuration: 5 hours\nEra: Old Republic\nAlignment: Neutral Side focus\n\nYour journey will take you across 3 worlds including Tatooine, Coruscant, Naboo.\nThe ultimate confrontation awaits with Emperor Zaroth, seeks ultimate power through ancient Sith artifacts.\n\nThis campaign emphasizes neutral side choices and is set during the old republic era."
+}

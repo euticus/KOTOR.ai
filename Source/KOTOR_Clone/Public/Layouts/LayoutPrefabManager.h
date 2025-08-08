@@ -143,7 +143,7 @@ public:
      * @param PrefabData Data for this prefab
      */
     UFUNCTION(BlueprintCallable, Category = "Layout Prefab")
-    void InitializePrefab(const FLayoutPrefabData& PrefabData);
+    void InitializePrefab(const FLayoutPrefabData& TargetPrefabData);
 
     /**
      * Get prefab data
@@ -222,7 +222,7 @@ public:
      * @param PrefabData The prefab data for customization
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Prefab Events")
-    void CustomizePrefabGeometry(const FLayoutPrefabData& PrefabData);
+    void CustomizePrefabGeometry(const FLayoutPrefabData& TargetPrefabData);
 };
 
 /**
@@ -266,7 +266,7 @@ public:
      * @return Spawned prefab actor
      */
     UFUNCTION(BlueprintCallable, Category = "Prefab Manager")
-    ALayoutPrefabActor* SpawnPrefabFromData(const FLayoutPrefabData& PrefabData, const FVector& Location, const FRotator& Rotation = FRotator::ZeroRotator);
+    ALayoutPrefabActor* SpawnPrefabFromData(const FLayoutPrefabData& TargetPrefabData, const FVector& Location, const FRotator& Rotation = FRotator::ZeroRotator);
 
     /**
      * Get available prefab types
@@ -280,7 +280,7 @@ public:
      * @param PrefabData Custom prefab data to register
      */
     UFUNCTION(BlueprintCallable, Category = "Prefab Manager")
-    void RegisterCustomPrefab(const FLayoutPrefabData& PrefabData);
+    void RegisterCustomPrefab(const FLayoutPrefabData& TargetPrefabData);
 
     /**
      * Unregister prefab
@@ -364,7 +364,7 @@ public:
      * @param PrefabData The loaded prefab data
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Prefab Manager Events")
-    void OnPrefabLoadedEvent(const FLayoutPrefabData& PrefabData);
+    void OnPrefabLoadedEvent(const FLayoutPrefabData& TargetPrefabData);
 
     /**
      * Called when prefab is spawned (for custom setup)

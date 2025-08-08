@@ -187,7 +187,6 @@ public:
      * Set playback speed
      * @param Speed Playback speed (0.5 to 2.0)
      */
-    UFUNCTION(BlueprintCallable, Category = "Cinematic Player")
     void SetPlaybackSpeed(float Speed);
 
     /**

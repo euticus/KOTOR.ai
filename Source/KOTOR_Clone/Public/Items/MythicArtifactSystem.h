@@ -366,7 +366,14 @@ protected:
 
     // Resonance settings
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Resonance Settings")
-    TMap<FString, TArray<FString>> ResonanceTriggers; // Resonance type -> trigger events
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<FString, TArray<FString>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by FString when needed.
+     */
+    TArray<FString>ResonanceTriggers; // Resonance type -> trigger events
 
 private:
     // Helper methods

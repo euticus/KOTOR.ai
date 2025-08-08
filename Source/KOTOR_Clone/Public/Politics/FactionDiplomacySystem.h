@@ -414,7 +414,18 @@ protected:
 
     // Territory control
     UPROPERTY(BlueprintReadOnly, Category = "Faction Diplomacy")
-    TMap<FString, TArray<FString>> TerritoryControl; // Territory -> Controlling factions
+    /*
+     * NOTE:
+     * UPROPERTY does not support nested containers such as
+     * `TMap<Key, TArray<Value>>`.  Keeping territory control in that shape
+     * causes Unreal Header Tool compilation failures.
+     *
+     * We instead store the data in a flat array of strings using the format
+     * "TerritoryID::FactionID".  Helper functions inside the diplomacy system
+     * can reconstruct the map view (Territory -> Factions) at runtime when
+     * needed.
+     */
+    TArray<FString> TerritoryControl; 
 
     // Component references
     UPROPERTY()

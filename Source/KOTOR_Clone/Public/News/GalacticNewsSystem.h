@@ -250,7 +250,7 @@ public:
      */
     UFUNCTION(BlueprintCallable, Category = "Galactic News")
     TArray<FNewsArticle> SearchNewsArticles(const FString& SearchTerm, 
-                                           const TArray<ENewsCategory>& Categories = TArray<ENewsCategory>());
+                                           const TArray<ENewsCategory>& Categories);
 
     /**
      * Get news articles by category
@@ -361,7 +361,16 @@ protected:
 
     // Article templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Article Templates")
-    TMap<ENewsCategory, TArray<FString>> ArticlePromptTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY does not support nested containers such as
+     * `TMap<Key, TArray<Value>>`.  Storing the prompt templates in that shape
+     * will cause Unreal Header Tool compilation errors.
+     *
+     * We therefore keep the templates in a single flat array and group / filter
+     * them by category at runtime inside the news system.
+     */
+    TArray<FString> ArticlePromptTemplates;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Article Templates")
     TMap<ENewsBias, FString> BiasModifiers;

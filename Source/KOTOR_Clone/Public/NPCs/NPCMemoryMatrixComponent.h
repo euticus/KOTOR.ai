@@ -323,7 +323,14 @@ public:
 protected:
     // Memory data
     UPROPERTY(BlueprintReadOnly, Category = "NPC Memory")
-    TMap<FString, TArray<FNPCMemoryEntry>> NPCMemories; // NPCID -> Memories
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<FString, TArray<FNPCMemoryEntry>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by FString when needed.
+     */
+    TArray<FNPCMemoryEntry>NPCMemories; // NPCID -> Memories
 
     UPROPERTY(BlueprintReadOnly, Category = "NPC Memory")
     TArray<FSocialRelationship> SocialRelationships;

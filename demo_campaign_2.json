@@ -9,270 +9,320 @@
   "planets": [
     {
       "name": "Tatooine",
-      "biome": "urban",
-      "climate": "varied",
-      "population": "Massive (Trillions)",
+      "biome": "desert",
+      "climate": "arid",
+      "population": "Sparse (Thousands)",
       "government": "Imperial Autocracy",
       "layouts": [
         {
-          "name": "Government Beta",
-          "layout_type": "government",
-          "description": "A government area featuring technology, traffic",
-          "estimated_time_hours": 1.5,
+          "name": "Central Spaceport",
+          "layout_type": "spaceport",
+          "description": "A spaceport area featuring sand dunes, oases",
+          "estimated_time_hours": 1.2000000000000002,
           "key_features": [
-            "technology",
-            "traffic",
-            "undercity"
+            "sand dunes",
+            "oases",
+            "canyons"
           ]
         },
         {
-          "name": "Lower City Prime",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring skyscrapers, traffic",
+          "name": "Caves Gamma",
+          "layout_type": "caves",
+          "description": "A caves area featuring ancient ruins, sand dunes",
           "estimated_time_hours": 1.5,
           "key_features": [
-            "skyscrapers",
-            "traffic",
-            "technology"
+            "ancient ruins",
+            "sand dunes",
+            "canyons"
           ]
         },
         {
-          "name": "Lower City Beta",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring traffic, undercity",
+          "name": "Caves Gamma",
+          "layout_type": "caves",
+          "description": "A caves area featuring oases, ancient ruins",
           "estimated_time_hours": 1.5,
           "key_features": [
-            "traffic",
-            "undercity",
-            "technology"
+            "oases",
+            "ancient ruins",
+            "sand dunes"
           ]
         }
       ],
       "main_quest": "Rescue stranded allies from Tatooine's hostile environment",
       "side_quests": [
-        "Help local merchants deal with smuggler problems",
-        "Defend settlements from hostile forces"
+        "Recover stolen goods from bandits",
+        "Rescue missing persons from dangerous areas"
       ],
       "difficulty_tier": "early",
       "planet_index": 0,
-      "lore_description": "Tatooine is a urban world with a varied climate, home to a massive (trillions) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Tatooine is a desert world with a arid climate, home to a sparse (thousands) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Coruscant",
-      "biome": "urban",
-      "climate": "varied",
-      "population": "Massive (Trillions)",
-      "government": "Corporate Oligarchy",
+      "biome": "forest",
+      "climate": "mild",
+      "population": "Large (Billions)",
+      "government": "Theocracy",
       "layouts": [
         {
-          "name": "Upper City Alpha",
-          "layout_type": "upper city",
-          "description": "A upper city area featuring technology, skyscrapers",
-          "estimated_time_hours": 1.5,
+          "name": "Forgotten Temple",
+          "layout_type": "temple",
+          "description": "A temple area featuring wildlife, dense forests",
+          "estimated_time_hours": 1.6500000000000001,
           "key_features": [
-            "technology",
-            "skyscrapers",
-            "traffic"
+            "wildlife",
+            "dense forests",
+            "hidden temples"
           ]
         },
         {
-          "name": "Government Prime",
+          "name": "Sacred Temple",
+          "layout_type": "temple",
+          "description": "A temple area featuring hidden temples, dense forests",
+          "estimated_time_hours": 1.6500000000000001,
+          "key_features": [
+            "hidden temples",
+            "dense forests",
+            "rivers"
+          ]
+        },
+        {
+          "name": "Sacred Temple",
+          "layout_type": "temple",
+          "description": "A temple area featuring dense forests, wildlife",
+          "estimated_time_hours": 1.6500000000000001,
+          "key_features": [
+            "dense forests",
+            "wildlife",
+            "rivers"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Coruscant's hostile environment",
+      "side_quests": [
+        "Mediate a dispute between rival factions",
+        "Recover stolen goods from bandits"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a forest world with a mild climate, home to a large (billions) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "urban",
+      "climate": "varied",
+      "population": "Medium (Millions)",
+      "government": "Rebel Alliance",
+      "layouts": [
+        {
+          "name": "Government Beta",
           "layout_type": "government",
-          "description": "A government area featuring technology, skyscrapers",
-          "estimated_time_hours": 1.5,
-          "key_features": [
-            "technology",
-            "skyscrapers",
-            "traffic"
-          ]
-        },
-        {
-          "name": "Industrial Beta",
-          "layout_type": "industrial",
-          "description": "A industrial area featuring undercity, technology",
-          "estimated_time_hours": 1.5,
+          "description": "A government area featuring undercity, technology",
+          "estimated_time_hours": 2.0,
           "key_features": [
             "undercity",
             "technology",
             "skyscrapers"
           ]
+        },
+        {
+          "name": "Government Alpha",
+          "layout_type": "government",
+          "description": "A government area featuring undercity, skyscrapers",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "undercity",
+            "skyscrapers",
+            "technology"
+          ]
+        },
+        {
+          "name": "Government Gamma",
+          "layout_type": "government",
+          "description": "A government area featuring skyscrapers, undercity",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "skyscrapers",
+            "undercity",
+            "technology"
+          ]
         }
       ],
-      "main_quest": "Establish contact with the local government on Coruscant",
+      "main_quest": "Establish contact with the local government on Naboo",
       "side_quests": [
-        "Defend settlements from hostile forces",
-        "Rescue missing persons from dangerous areas"
+        "Investigate strange creature sightings",
+        "Defend settlements from hostile forces"
       ],
-      "difficulty_tier": "early",
-      "planet_index": 1,
-      "lore_description": "Coruscant is a urban world with a varied climate, home to a massive (trillions) population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "difficulty_tier": "mid",
+      "planet_index": 2,
+      "lore_description": "Naboo is a urban world with a varied climate, home to a medium (millions) population \ngoverned by a rebel alliance. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
-      "name": "Naboo",
+      "name": "Hoth",
       "biome": "ocean",
       "climate": "tropical",
-      "population": "Medium (Millions)",
-      "government": "Republic Democracy",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Military Junta",
       "layouts": [
         {
-          "name": "Platform Gamma",
-          "layout_type": "platform",
-          "description": "A platform area featuring storms, underwater cities",
+          "name": "Island Gamma",
+          "layout_type": "island",
+          "description": "A island area featuring storms, underwater cities",
           "estimated_time_hours": 2.0,
           "key_features": [
             "storms",
             "underwater cities",
-            "coral reefs"
-          ]
-        },
-        {
-          "name": "Underwater Base Alpha",
-          "layout_type": "underwater base",
-          "description": "A underwater base area featuring coral reefs, storms",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "coral reefs",
-            "storms",
             "islands"
           ]
         },
         {
           "name": "Underwater Base Beta",
           "layout_type": "underwater base",
-          "description": "A underwater base area featuring islands, underwater cities",
+          "description": "A underwater base area featuring coral reefs, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "coral reefs",
+            "storms",
+            "underwater cities"
+          ]
+        },
+        {
+          "name": "Island Gamma",
+          "layout_type": "island",
+          "description": "A island area featuring islands, underwater cities",
           "estimated_time_hours": 2.0,
           "key_features": [
             "islands",
             "underwater cities",
-            "coral reefs"
-          ]
-        }
-      ],
-      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
-      "side_quests": [
-        "Rescue missing persons from dangerous areas",
-        "Defend settlements from hostile forces"
-      ],
-      "difficulty_tier": "mid",
-      "planet_index": 2,
-      "lore_description": "Naboo is a ocean world with a tropical climate, home to a medium (millions) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ocean environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Hoth",
-      "biome": "urban",
-      "climate": "varied",
-      "population": "Small (Hundreds of Thousands)",
-      "government": "Tribal Council",
-      "layouts": [
-        {
-          "name": "Lower City Prime",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring undercity, technology",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "undercity",
-            "technology",
-            "skyscrapers"
-          ]
-        },
-        {
-          "name": "Upper City Alpha",
-          "layout_type": "upper city",
-          "description": "A upper city area featuring technology, skyscrapers",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "technology",
-            "skyscrapers",
-            "traffic"
-          ]
-        },
-        {
-          "name": "Lower City Beta",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring undercity, skyscrapers",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "undercity",
-            "skyscrapers",
-            "traffic"
+            "storms"
           ]
         }
       ],
       "main_quest": "Prevent a civil war from erupting on Hoth",
       "side_quests": [
-        "Uncover corruption in the local government",
-        "Recover stolen goods from bandits"
+        "Defend settlements from hostile forces",
+        "Mediate a dispute between rival factions"
       ],
       "difficulty_tier": "mid",
       "planet_index": 3,
-      "lore_description": "Hoth is a urban world with a varied climate, home to a small (hundreds of thousands) population \ngoverned by a tribal council. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Hoth is a ocean world with a tropical climate, home to a small (hundreds of thousands) population \ngoverned by a military junta. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ocean environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Endor",
       "biome": "urban",
-      "climate": "controlled",
-      "population": "Uninhabited",
-      "government": "Rebel Alliance",
+      "climate": "varied",
+      "population": "Large (Billions)",
+      "government": "Tribal Council",
       "layouts": [
-        {
-          "name": "Lower City Alpha",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring traffic, technology",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "traffic",
-            "technology",
-            "undercity"
-          ]
-        },
         {
           "name": "Industrial Alpha",
           "layout_type": "industrial",
-          "description": "A industrial area featuring undercity, skyscrapers",
+          "description": "A industrial area featuring skyscrapers, undercity",
           "estimated_time_hours": 2.0,
           "key_features": [
-            "undercity",
             "skyscrapers",
-            "technology"
+            "undercity",
+            "traffic"
           ]
         },
         {
-          "name": "Lower City Prime",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring traffic, undercity",
+          "name": "Upper City Gamma",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring undercity, technology",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "undercity",
+            "technology",
+            "traffic"
+          ]
+        },
+        {
+          "name": "Upper City Gamma",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring traffic, undercity",
           "estimated_time_hours": 2.0,
           "key_features": [
             "traffic",
             "undercity",
-            "technology"
+            "skyscrapers"
           ]
         }
       ],
-      "main_quest": "Prevent a civil war from erupting on Endor",
+      "main_quest": "Uncover ancient secrets hidden beneath Endor",
       "side_quests": [
-        "Uncover corruption in the local government",
-        "Mediate a dispute between rival factions"
+        "Defend settlements from hostile forces",
+        "Uncover corruption in the local government"
       ],
       "difficulty_tier": "mid",
       "planet_index": 4,
-      "lore_description": "Endor is a urban world with a controlled climate, home to a uninhabited population \ngoverned by a rebel alliance. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Endor is a urban world with a varied climate, home to a large (billions) population \ngoverned by a tribal council. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Dagobah",
       "biome": "volcanic",
-      "climate": "unstable",
-      "population": "Medium (Millions)",
-      "government": "Theocracy",
+      "climate": "dangerous",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Trade Federation",
       "layouts": [
         {
-          "name": "Mining Facility Gamma",
-          "layout_type": "mining facility",
-          "description": "A mining facility area featuring crystals, mining operations",
+          "name": "Lava Tubes Beta",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring crystals, lava flows",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "crystals",
+            "lava flows",
+            "mining operations"
+          ]
+        },
+        {
+          "name": "Observatory Gamma",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring crystals, mining operations",
           "estimated_time_hours": 2.5,
           "key_features": [
             "crystals",
             "mining operations",
-            "geysers"
+            "lava flows"
+          ]
+        },
+        {
+          "name": "Observatory Gamma",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring lava flows, crystals",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "crystals",
+            "mining operations"
+          ]
+        }
+      ],
+      "main_quest": "Retrieve a powerful artifact from Dagobah's ruins",
+      "side_quests": [
+        "Explore abandoned facilities for valuable technology",
+        "Defend settlements from hostile forces"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 5,
+      "lore_description": "Dagobah is a volcanic world with a dangerous climate, home to a small (hundreds of thousands) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Alderaan",
+      "biome": "volcanic",
+      "climate": "dangerous",
+      "population": "Large (Billions)",
+      "government": "Corporate Oligarchy",
+      "layouts": [
+        {
+          "name": "Observatory Alpha",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring geysers, crystals",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "geysers",
+            "crystals",
+            "lava flows"
           ]
         },
         {
@@ -287,9 +337,9 @@
           ]
         },
         {
-          "name": "Mining Facility Gamma",
-          "layout_type": "mining facility",
-          "description": "A mining facility area featuring mining operations, lava flows",
+          "name": "Observatory Prime",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring mining operations, lava flows",
           "estimated_time_hours": 2.5,
           "key_features": [
             "mining operations",
@@ -298,134 +348,84 @@
           ]
         }
       ],
-      "main_quest": "Prevent a civil war from erupting on Dagobah",
+      "main_quest": "Prevent a civil war from erupting on Alderaan",
       "side_quests": [
         "Rescue missing persons from dangerous areas",
         "Explore abandoned facilities for valuable technology"
       ],
       "difficulty_tier": "late",
-      "planet_index": 5,
-      "lore_description": "Dagobah is a volcanic world with a unstable climate, home to a medium (millions) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Alderaan",
-      "biome": "volcanic",
-      "climate": "dangerous",
-      "population": "Medium (Millions)",
-      "government": "Trade Federation",
-      "layouts": [
-        {
-          "name": "Observatory Beta",
-          "layout_type": "observatory",
-          "description": "A observatory area featuring mining operations, geysers",
-          "estimated_time_hours": 2.5,
-          "key_features": [
-            "mining operations",
-            "geysers",
-            "crystals"
-          ]
-        },
-        {
-          "name": "Crystal Caves Gamma",
-          "layout_type": "crystal caves",
-          "description": "A crystal caves area featuring crystals, mining operations",
-          "estimated_time_hours": 2.5,
-          "key_features": [
-            "crystals",
-            "mining operations",
-            "geysers"
-          ]
-        },
-        {
-          "name": "Observatory Beta",
-          "layout_type": "observatory",
-          "description": "A observatory area featuring lava flows, geysers",
-          "estimated_time_hours": 2.5,
-          "key_features": [
-            "lava flows",
-            "geysers",
-            "mining operations"
-          ]
-        }
-      ],
-      "main_quest": "Retrieve a powerful artifact from Alderaan's ruins",
-      "side_quests": [
-        "Investigate strange creature sightings",
-        "Rescue missing persons from dangerous areas"
-      ],
-      "difficulty_tier": "late",
       "planet_index": 6,
-      "lore_description": "Alderaan is a volcanic world with a dangerous climate, home to a medium (millions) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Alderaan is a volcanic world with a dangerous climate, home to a large (billions) population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Kashyyyk",
-      "biome": "desert",
-      "climate": "dry",
-      "population": "Large (Billions)",
-      "government": "Rebel Alliance",
+      "biome": "urban",
+      "climate": "controlled",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Republic Democracy",
       "layouts": [
         {
-          "name": "Caves Prime",
-          "layout_type": "caves",
-          "description": "A caves area featuring canyons, oases",
+          "name": "Industrial Alpha",
+          "layout_type": "industrial",
+          "description": "A industrial area featuring technology, traffic",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "canyons",
-            "oases",
-            "ancient ruins"
+            "technology",
+            "traffic",
+            "undercity"
           ]
         },
         {
-          "name": "Central Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring canyons, ancient ruins",
-          "estimated_time_hours": 2.0,
+          "name": "Upper City Alpha",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring traffic, technology",
+          "estimated_time_hours": 2.5,
           "key_features": [
-            "canyons",
-            "ancient ruins",
-            "sand dunes"
+            "traffic",
+            "technology",
+            "undercity"
           ]
         },
         {
-          "name": "Orbital Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring oases, sand dunes",
-          "estimated_time_hours": 2.0,
+          "name": "Upper City Beta",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring traffic, skyscrapers",
+          "estimated_time_hours": 2.5,
           "key_features": [
-            "oases",
-            "sand dunes",
-            "canyons"
+            "traffic",
+            "skyscrapers",
+            "technology"
           ]
         }
       ],
       "main_quest": "Confront the dark presence corrupting Kashyyyk",
       "side_quests": [
-        "Rescue missing persons from dangerous areas",
-        "Explore abandoned facilities for valuable technology"
+        "Explore abandoned facilities for valuable technology",
+        "Recover stolen goods from bandits"
       ],
       "difficulty_tier": "late",
       "planet_index": 7,
-      "lore_description": "Kashyyyk is a desert world with a dry climate, home to a large (billions) population \ngoverned by a rebel alliance. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Kashyyyk is a urban world with a controlled climate, home to a small (hundreds of thousands) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     }
   ],
   "final_boss": {
-    "name": "Admiral Morel",
-    "title": "Broken Knight",
-    "species": "Human",
-    "motivation": "thinks they alone can bring true peace",
-    "backstory": "Admiral Morel, known as Broken Knight, is a Human who thinks they alone can bring true peace. \n\nBorn during the galactic civil war era, Admiral Morel was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves thinks they alone can bring true peace, which directly threatens the stability \nof the galaxy. The events described in \"create a 25-hour dark side campaign where i build a sith empire\" are merely the beginning \nof their grand design.\n\nAdmiral Morel has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "name": "General Zarak",
+    "title": "Void Walker",
+    "species": "Zabrak",
+    "motivation": "wants to eliminate both Jedi and Sith",
+    "backstory": "General Zarak, known as Void Walker, is a Zabrak who wants to eliminate both Jedi and Sith. \n\nBorn during the galactic civil war era, General Zarak was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves wants to eliminate both jedi and sith, which directly threatens the stability \nof the galaxy. The events described in \"create a 25-hour dark side campaign where i build a sith empire\" are merely the beginning \nof their grand design.\n\nGeneral Zarak has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
     "mechanics": [
-      "Boss uses powerful Force abilities that affect the entire battlefield",
-      "Boss demonstrates mastery of multiple weapon types during combat",
-      "Arena features dangerous environmental elements that activate periodically"
+      "Boss becomes more dangerous as health decreases",
+      "Boss summons waves of minions throughout the fight",
+      "Boss uses powerful Force abilities that affect the entire battlefield"
     ],
     "phases": [
       {
         "name": "Opening Assault",
         "health_range": "100-75%",
         "abilities": [
-          "Light Bind",
-          "Force Push"
+          "Phase Shift",
+          "Reality Warp"
         ],
         "tactics": "Aggressive attacks to test the player's strength",
         "special_effects": "None"
@@ -434,9 +434,9 @@
         "name": "Escalation",
         "health_range": "75-50%",
         "abilities": [
-          "Healing Corruption",
-          "Mind Shield",
-          "Light Bind"
+          "Phase Shift",
+          "Neutral Ground",
+          "Force Balance"
         ],
         "tactics": "Introduces environmental hazards and summons minions",
         "special_effects": "Arena becomes more dangerous"
@@ -445,10 +445,10 @@
         "name": "Desperation",
         "health_range": "50-25%",
         "abilities": [
-          "Force Push",
-          "Healing Corruption",
-          "Light Bind",
-          "Purifying Fire"
+          "Force Balance",
+          "Void Touch",
+          "Neutral Ground",
+          "Phase Shift"
         ],
         "tactics": "Uses most powerful abilities and becomes more unpredictable",
         "special_effects": "All mechanics active simultaneously"
@@ -457,57 +457,58 @@
         "name": "Final Stand",
         "health_range": "25-0%",
         "abilities": [
-          "Force Push",
-          "Healing Corruption",
-          "Light Bind",
-          "Purifying Fire",
-          "Mind Shield"
+          "Force Balance",
+          "Void Touch",
+          "Neutral Ground",
+          "Phase Shift",
+          "Reality Warp"
         ],
         "tactics": "Unleashes full power in a last desperate attempt",
         "special_effects": "Boss gains new ultimate abilities"
       }
     ],
-    "arena_description": "A gladiatorial arena with mechanical traps and obstacles Located on Kashyyyk, this ancient_arena reflects the planet's desert environment. Mechanical traps activate randomly, adding chaos to the fight.",
+    "arena_description": "A gladiatorial arena with mechanical traps and obstacles Located on Kashyyyk, this ancient_arena reflects the planet's urban environment. Mechanical traps activate randomly, adding chaos to the fight.",
     "loot_drop": {
-      "name": "Admiral Morel's Legacy",
+      "name": "General Zarak's Legacy",
       "rarity": "legendary",
-      "item_type": "armor",
+      "item_type": "mod",
       "bonuses": {
-        "defense": 12,
-        "force_power": 8,
-        "light_side": 5
+        "balance": 10,
+        "force_power": 12,
+        "versatility": 8
       },
-      "flavor_text": "The final remnant of Broken Knight Admiral Morel's power. This legendary armor pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "flavor_text": "The final remnant of Void Walker General Zarak's power. This legendary mod pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
       "value_credits": 75000,
       "level_requirement": 25,
-      "faction_theme": "light"
+      "faction_theme": "neutral"
     },
     "challenge_rating": 11.0,
     "hit_points": 650,
     "armor_class": 23,
     "special_abilities": [
-      "Force Push",
-      "Healing Corruption",
-      "Light Bind",
-      "Purifying Fire",
-      "Mind Shield",
+      "Force Balance",
+      "Void Touch",
+      "Neutral Ground",
+      "Phase Shift",
+      "Reality Warp",
       "Legendary Actions",
       "Legendary Resistance"
     ],
     "weaknesses": [
-      "Dark side corruption",
-      "Moral dilemmas",
-      "Protecting innocents",
-      "Force exhaustion after major abilities",
-      "Can be turned against the boss"
+      "Extreme emotions",
+      "Unbalanced tactics",
+      "Commitment to ideals",
+      "Vulnerable while summoning",
+      "Force exhaustion after major abilities"
     ],
     "minions": [
-      "Fallen Jedi",
-      "Corrupted Guardians",
-      "Light Spirits",
-      "Purified Droids"
+      "Gray Guards",
+      "Balanced Constructs",
+      "Void Wraiths",
+      "Neutral Sentinels",
+      "Security Droids"
     ]
   },
-  "main_quest_outline": "MAIN QUEST: Create A 25-Hour Dark Side Campaign Where I Build A Sith Empire\n\nACT I - The Dark Path Begins\n- Start on Tatooine: Discover your dark potential\n- Learn of Admiral Morel's influence across the galaxy\n- Begin gathering power and followers\n\nACT II - Rise to Power  \n- Visit 5 worlds to build your dark empire\n- Eliminate rivals and claim ancient Sith artifacts\n- Uncover the location of Admiral Morel\n\nACT III - The Final Confrontation\n- Arrive at Kashyyyk for the ultimate showdown\n- Face Admiral Morel in A gladiatorial arena with mechanical traps and obstacles Located on Kashyyyk, this ancient_arena reflects the planet's desert environment. Mechanical traps activate randomly, adding chaos to the fight.\n- Claim your destiny as the new Dark Lord of the Sith",
-  "campaign_summary": "Campaign: Create A 25-Hour Dark Side Campaign Where I Build A Sith Empire\nDuration: 25 hours\nEra: Galactic Civil War\nAlignment: Dark Side focus\n\nYour journey will take you across 8 worlds including Tatooine, Coruscant, Naboo, and 5 other worlds.\nThe ultimate confrontation awaits with Admiral Morel, thinks they alone can bring true peace.\n\nThis campaign emphasizes dark side choices and is set during the galactic civil war era."
+  "main_quest_outline": "MAIN QUEST: Create A 25-Hour Dark Side Campaign Where I Build A Sith Empire\n\nACT I - The Dark Path Begins\n- Start on Tatooine: Discover your dark potential\n- Learn of General Zarak's influence across the galaxy\n- Begin gathering power and followers\n\nACT II - Rise to Power  \n- Visit 5 worlds to build your dark empire\n- Eliminate rivals and claim ancient Sith artifacts\n- Uncover the location of General Zarak\n\nACT III - The Final Confrontation\n- Arrive at Kashyyyk for the ultimate showdown\n- Face General Zarak in A gladiatorial arena with mechanical traps and obstacles Located on Kashyyyk, this ancient_arena reflects the planet's urban environment. Mechanical traps activate randomly, adding chaos to the fight.\n- Claim your destiny as the new Dark Lord of the Sith",
+  "campaign_summary": "Campaign: Create A 25-Hour Dark Side Campaign Where I Build A Sith Empire\nDuration: 25 hours\nEra: Galactic Civil War\nAlignment: Dark Side focus\n\nYour journey will take you across 8 worlds including Tatooine, Coruscant, Naboo, and 5 other worlds.\nThe ultimate confrontation awaits with General Zarak, wants to eliminate both Jedi and Sith.\n\nThis campaign emphasizes dark side choices and is set during the galactic civil war era."
 }

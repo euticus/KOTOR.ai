@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\proceduralmusicsubsystemv2.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\kotor_cloneeditor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kotor_clone\\definitions.kotor_clone.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\source\\kotor_clone\\public\\audio\\proceduralmusicsubsystemv2.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\components\\audiocomponent.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\public\\audio\\soundparametercontrollerinterface.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundparametercontrollerinterface.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\audioextensions\\public\\iaudioparametertransmitter.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerquantizedcommands.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerclock.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\audiomixer\\public\\quartz\\quartzmetronome.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscription.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscriptiontoken.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\quartzinterfaces.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\audiocomponent.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\soundcue.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\soundnode.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundnode.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundcue.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\soundmix.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundmix.generated.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\proceduralmusicsubsystemv2.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

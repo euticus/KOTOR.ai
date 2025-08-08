@@ -316,10 +316,23 @@ protected:
     TMap<ECharacterClass, FGeneratedCharacterStats> ClassStatTemplates;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Templates")
-    TMap<ECharacterBackground, TArray<FString>> BackgroundTraits;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise a nested container such as
+     *     TMap<ECharacterBackground, TArray<FString>>
+     * We therefore store all background-specific trait strings in a single
+     * flat array and, at runtime, helper functions group / filter by
+     * ECharacterBackground when required.
+     */
+    TArray<FString> BackgroundTraits;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character Templates")
-    TMap<ECharacterClass, TArray<FLootItem>> ClassStartingGear;
+    /*
+     * Same nested-container restriction as above.  Starting gear items are
+     * stored in one flat array and filtered by ECharacterClass in helper
+     * methods (e.g. GetStartingGearForClass).
+     */
+    TArray<FLootItem> ClassStartingGear;
 
     // LLM prompts
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "LLM Prompts")
@@ -333,7 +346,14 @@ protected:
 
     // Name generation
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Name Generation")
-    TMap<FString, TArray<FString>> SpeciesNamePools;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<FString, TArray<FString>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by FString when needed.
+     */
+    TArray<FString>SpeciesNamePools;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Name Generation")
     TArray<FString> PlanetNames;

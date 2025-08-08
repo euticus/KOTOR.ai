@@ -1,0 +1,413 @@
+{
+  "config": {
+    "game_length_hours": 20,
+    "estimated_planets": 6,
+    "story_seed": "i want a 20-hour jedi adventure about finding ancient sith artifacts",
+    "time_period": "old republic",
+    "alignment_focus": "light"
+  },
+  "planets": [
+    {
+      "name": "Tatooine",
+      "biome": "urban",
+      "climate": "varied",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Theocracy",
+      "layouts": [
+        {
+          "name": "Upper City Alpha",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring skyscrapers, traffic",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "skyscrapers",
+            "traffic",
+            "technology"
+          ]
+        },
+        {
+          "name": "Industrial Gamma",
+          "layout_type": "industrial",
+          "description": "A industrial area featuring technology, traffic",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "technology",
+            "traffic",
+            "undercity"
+          ]
+        },
+        {
+          "name": "Lower City Prime",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring skyscrapers, undercity",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "skyscrapers",
+            "undercity",
+            "technology"
+          ]
+        }
+      ],
+      "main_quest": "Establish contact with the local government on Tatooine",
+      "side_quests": [
+        "Defend settlements from hostile forces",
+        "Rescue missing persons from dangerous areas"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a urban world with a varied climate, home to a small (hundreds of thousands) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "forest",
+      "climate": "temperate",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Theocracy",
+      "layouts": [
+        {
+          "name": "Sacred Temple",
+          "layout_type": "temple",
+          "description": "A temple area featuring dense forests, rivers",
+          "estimated_time_hours": 1.6500000000000001,
+          "key_features": [
+            "dense forests",
+            "rivers",
+            "hidden temples"
+          ]
+        },
+        {
+          "name": "Village Gamma",
+          "layout_type": "village",
+          "description": "A village area featuring dense forests, hidden temples",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "dense forests",
+            "hidden temples",
+            "wildlife"
+          ]
+        },
+        {
+          "name": "Canopy City Beta",
+          "layout_type": "canopy city",
+          "description": "A canopy city area featuring hidden temples, dense forests",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "hidden temples",
+            "dense forests",
+            "wildlife"
+          ]
+        }
+      ],
+      "main_quest": "Establish contact with the local government on Coruscant",
+      "side_quests": [
+        "Investigate strange creature sightings",
+        "Explore abandoned facilities for valuable technology"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a forest world with a temperate climate, home to a small (hundreds of thousands) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "urban",
+      "climate": "artificial",
+      "population": "Large (Billions)",
+      "government": "Feudal System",
+      "layouts": [
+        {
+          "name": "Upper City Prime",
+          "layout_type": "upper city",
+          "description": "A upper city area featuring undercity, traffic",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "undercity",
+            "traffic",
+            "skyscrapers"
+          ]
+        },
+        {
+          "name": "Government Prime",
+          "layout_type": "government",
+          "description": "A government area featuring technology, undercity",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "technology",
+            "undercity",
+            "skyscrapers"
+          ]
+        },
+        {
+          "name": "Industrial Gamma",
+          "layout_type": "industrial",
+          "description": "A industrial area featuring traffic, technology",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "traffic",
+            "technology",
+            "undercity"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
+      "side_quests": [
+        "Explore abandoned facilities for valuable technology",
+        "Uncover corruption in the local government"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 2,
+      "lore_description": "Naboo is a urban world with a artificial climate, home to a large (billions) population \ngoverned by a feudal system. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Hoth",
+      "biome": "ocean",
+      "climate": "tropical",
+      "population": "Sparse (Thousands)",
+      "government": "Imperial Autocracy",
+      "layouts": [
+        {
+          "name": "Platform Prime",
+          "layout_type": "platform",
+          "description": "A platform area featuring islands, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "islands",
+            "storms",
+            "underwater cities"
+          ]
+        },
+        {
+          "name": "Floating City Alpha",
+          "layout_type": "floating city",
+          "description": "A floating city area featuring islands, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "islands",
+            "storms",
+            "coral reefs"
+          ]
+        },
+        {
+          "name": "Underwater Base Alpha",
+          "layout_type": "underwater base",
+          "description": "A underwater base area featuring storms, islands",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "storms",
+            "islands",
+            "underwater cities"
+          ]
+        }
+      ],
+      "main_quest": "Uncover ancient secrets hidden beneath Hoth",
+      "side_quests": [
+        "Recover stolen goods from bandits",
+        "Uncover corruption in the local government"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 3,
+      "lore_description": "Hoth is a ocean world with a tropical climate, home to a sparse (thousands) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ocean environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Endor",
+      "biome": "desert",
+      "climate": "arid",
+      "population": "Medium (Millions)",
+      "government": "Military Junta",
+      "layouts": [
+        {
+          "name": "Buried Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring oases, sand dunes",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "oases",
+            "sand dunes",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Caves Beta",
+          "layout_type": "caves",
+          "description": "A caves area featuring sand dunes, oases",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "sand dunes",
+            "oases",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Central Spaceport",
+          "layout_type": "spaceport",
+          "description": "A spaceport area featuring sand dunes, ancient ruins",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "sand dunes",
+            "ancient ruins",
+            "oases"
+          ]
+        }
+      ],
+      "main_quest": "Retrieve a powerful artifact from Endor's ruins",
+      "side_quests": [
+        "Uncover corruption in the local government",
+        "Investigate strange creature sightings"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 4,
+      "lore_description": "Endor is a desert world with a arid climate, home to a medium (millions) population \ngoverned by a military junta. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Dagobah",
+      "biome": "volcanic",
+      "climate": "unstable",
+      "population": "Large (Billions)",
+      "government": "Tribal Council",
+      "layouts": [
+        {
+          "name": "Mining Facility Alpha",
+          "layout_type": "mining facility",
+          "description": "A mining facility area featuring geysers, lava flows",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "geysers",
+            "lava flows",
+            "crystals"
+          ]
+        },
+        {
+          "name": "Lava Tubes Gamma",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring geysers, lava flows",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "geysers",
+            "lava flows",
+            "mining operations"
+          ]
+        },
+        {
+          "name": "Lava Tubes Beta",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring lava flows, mining operations",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "mining operations",
+            "geysers"
+          ]
+        }
+      ],
+      "main_quest": "Prevent a civil war from erupting on Dagobah",
+      "side_quests": [
+        "Recover stolen goods from bandits",
+        "Help local merchants deal with smuggler problems"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 5,
+      "lore_description": "Dagobah is a volcanic world with a unstable climate, home to a large (billions) population \ngoverned by a tribal council. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    }
+  ],
+  "final_boss": {
+    "name": "Zaron",
+    "title": "Shadow Emperor",
+    "species": "Sith Pureblood",
+    "motivation": "wants to corrupt the galaxy with dark side energy",
+    "backstory": "Zaron, known as Shadow Emperor, is a Sith Pureblood who wants to corrupt the galaxy with dark side energy. \n\nBorn during the old republic era, Zaron was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves wants to corrupt the galaxy with dark side energy, which directly threatens the stability \nof the galaxy. The events described in \"i want a 20-hour jedi adventure about finding ancient sith artifacts\" are merely the beginning \nof their grand design.\n\nZaron has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "mechanics": [
+      "Boss alternates between aggressive and defensive phases",
+      "Boss summons waves of minions throughout the fight",
+      "Boss uses psychological warfare and illusions"
+    ],
+    "phases": [
+      {
+        "name": "Opening Assault",
+        "health_range": "100-75%",
+        "abilities": [
+          "Force Choke",
+          "Dark Rage"
+        ],
+        "tactics": "Aggressive attacks to test the player's strength",
+        "special_effects": "None"
+      },
+      {
+        "name": "Escalation",
+        "health_range": "75-50%",
+        "abilities": [
+          "Sith Sorcery",
+          "Dark Rage",
+          "Mind Control"
+        ],
+        "tactics": "Introduces environmental hazards and summons minions",
+        "special_effects": "Arena becomes more dangerous"
+      },
+      {
+        "name": "Desperation",
+        "health_range": "50-25%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery"
+        ],
+        "tactics": "Uses most powerful abilities and becomes more unpredictable",
+        "special_effects": "All mechanics active simultaneously"
+      },
+      {
+        "name": "Final Stand",
+        "health_range": "25-0%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery",
+          "Mind Control"
+        ],
+        "tactics": "Unleashes full power in a last desperate attempt",
+        "special_effects": "Boss gains new ultimate abilities"
+      }
+    ],
+    "arena_description": "A location where the Force is unusually strong and unpredictable Located on Dagobah, this force_nexus reflects the planet's volcanic environment. The Force itself seems alive here, amplifying all abilities.",
+    "loot_drop": {
+      "name": "Zaron's Legacy",
+      "rarity": "legendary",
+      "item_type": "weapon",
+      "bonuses": {
+        "attack": 15,
+        "force_power": 10,
+        "dark_side": 5
+      },
+      "flavor_text": "The final remnant of Shadow Emperor Zaron's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "value_credits": 70000,
+      "level_requirement": 20,
+      "faction_theme": "dark"
+    },
+    "challenge_rating": 10.0,
+    "hit_points": 600,
+    "armor_class": 23,
+    "special_abilities": [
+      "Force Lightning",
+      "Force Choke",
+      "Dark Rage",
+      "Sith Sorcery",
+      "Mind Control",
+      "Legendary Actions",
+      "Legendary Resistance"
+    ],
+    "weaknesses": [
+      "Light side Force powers",
+      "Emotional connections",
+      "Overconfidence",
+      "Vulnerable while summoning"
+    ],
+    "minions": [
+      "Sith Assassins",
+      "Dark Jedi",
+      "Corrupted Beasts",
+      "Shadow Troopers",
+      "Lava Elementals"
+    ]
+  },
+  "main_quest_outline": "MAIN QUEST: I Want A 20-Hour Jedi Adventure About Finding Ancient Sith Artifacts\n\nACT I - The Call to Adventure\n- Begin on Tatooine: Discover the threat to the galaxy\n- Learn of Zaron's dark plans\n- Gather allies and begin your heroic journey\n\nACT II - The Hero's Journey\n- Travel to 3 worlds to stop the darkness\n- Save civilizations and gain powerful allies\n- Uncover Zaron's weakness\n\nACT III - The Light Triumphant\n- Confront Zaron on Dagobah\n- Rally your allies for the final battle in A location where the Force is unusually strong and unpredictable Located on Dagobah, this force_nexus reflects the planet's volcanic environment. The Force itself seems alive here, amplifying all abilities.\n- Restore peace and balance to the galaxy",
+  "campaign_summary": "Campaign: I Want A 20-Hour Jedi Adventure About Finding Ancient Sith Artifacts\nDuration: 20 hours\nEra: Old Republic\nAlignment: Light Side focus\n\nYour journey will take you across 6 worlds including Tatooine, Coruscant, Naboo, and 3 other worlds.\nThe ultimate confrontation awaits with Zaron, wants to corrupt the galaxy with dark side energy.\n\nThis campaign emphasizes light side choices and is set during the old republic era."
+}

@@ -306,7 +306,10 @@ public:
 protected:
     // Narrative music mappings
     UPROPERTY(BlueprintReadOnly, Category = "Narrative Mappings")
-    TMap<EAIDMNarrativeTag, TArray<FNarrativeMusicMapping>> NarrativeMusicMappings;
+    /* Flat list of narrative-music mappings.
+       (TMap<Enum, TArray<…>> is not supported by UPROPERTY, so we store a
+       single array and filter by NarrativeTag at runtime.) */
+    TArray<FNarrativeMusicMapping> NarrativeMusicMappings;
 
     // Current narrative context
     UPROPERTY(BlueprintReadOnly, Category = "Narrative Context")

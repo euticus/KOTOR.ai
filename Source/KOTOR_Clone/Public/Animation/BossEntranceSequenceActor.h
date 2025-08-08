@@ -386,7 +386,7 @@ public:
      * @return Customized entrance sequence
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Boss Entrance Events")
-    FBossEntranceSequence CustomizeEntranceSequence(AActor* BossActor, const FBossEntranceSequence& BaseSequence);
+    FBossEntranceSequence CustomizeEntranceSequence(AActor* TargetBoss, const FBossEntranceSequence& BaseSequence);
 
     /**
      * Called to generate dynamic entrance effects (override in Blueprint)
@@ -395,5 +395,5 @@ public:
      * @return Array of dynamic effects
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Boss Entrance Events")
-    TArray<FBossEntranceEffect> GenerateDynamicEntranceEffects(EBossEntranceType EntranceType, AActor* BossActor);
+    TArray<FBossEntranceEffect> GenerateDynamicEntranceEffects(EBossEntranceType EntranceType, AActor* TargetBoss);
 };

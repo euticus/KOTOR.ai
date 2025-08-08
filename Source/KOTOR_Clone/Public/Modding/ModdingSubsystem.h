@@ -346,7 +346,16 @@ protected:
 
     // Script hooks
     UPROPERTY()
-    TMap<FString, TArray<FString>> ScriptHooks; // HookName -> Array of script functions
+    /*
+     * NOTE:
+     * UPROPERTY does not support nested containers such as
+     * TMap<Key, TArray<Value>>.  To remain compatible with the reflection system
+     * we flatten the data into a single array and group / filter entries at
+     * runtime inside the subsystem (see RegisterScriptHook / ExecuteScriptHook).
+     *
+     * Element format:  "<HookName>::<FullyQualifiedFunction>"
+     */
+    TArray<FString> ScriptHooks; 
 
     // Asset overrides
     UPROPERTY()

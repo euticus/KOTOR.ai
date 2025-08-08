@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\kotorgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\kotor_cloneeditor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kotor_clone\\definitions.kotor_clone.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\source\\kotor_clone\\public\\kotorgamemode.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\kotorgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

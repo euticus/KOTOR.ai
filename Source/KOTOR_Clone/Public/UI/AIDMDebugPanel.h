@@ -170,7 +170,7 @@ public:
      * @return True if command was executed successfully
      */
     UFUNCTION(BlueprintCallable, Category = "AIDM Debug Panel")
-    bool ExecuteDebugCommand(const FString& CommandID, const TArray<FString>& Parameters = TArray<FString>());
+    bool ExecuteDebugCommand(const FString& CommandID, const TArray<FString>& Parameters);
 
     /**
      * Refresh debug data

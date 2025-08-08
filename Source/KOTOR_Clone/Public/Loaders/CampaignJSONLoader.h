@@ -108,7 +108,7 @@ struct KOTOR_CLONE_API FJSONValidationResult
  * Campaign loading events
  */
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnCampaignLoadStarted, const FString&, FilePath, const FString&, CampaignName);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnCampaignLoadCompleted, const FCampaignData&, CampaignData, EJSONParseResult, Result);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnCampaignLoadCompleted, const FCampaignPlan&, CampaignData, EJSONParseResult, Result);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnCampaignLoadFailed, const FString&, FilePath, const FString&, ErrorMessage);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCampaignListRefreshed, const TArray<FCampaignFileMetadata>&, AvailableCampaigns);
 
@@ -150,7 +150,7 @@ public:
      * @return True if save was successful
      */
     UFUNCTION(BlueprintCallable, Category = "Campaign JSON Loader")
-    bool SaveCampaignToFile(const FCampaignData& CampaignData, const FString& FilePath, bool bPrettyPrint = true);
+    bool SaveCampaignToFile(const FCampaignPlan& CampaignData, const FString& FilePath, bool bPrettyPrint = true);
 
     /**
      * Convert campaign to JSON string
@@ -159,7 +159,7 @@ public:
      * @return JSON string representation
      */
     UFUNCTION(BlueprintCallable, Category = "Campaign JSON Loader")
-    FString ConvertCampaignToJSON(const FCampaignData& CampaignData, bool bPrettyPrint = true);
+    FString ConvertCampaignToJSON(const FCampaignPlan& CampaignData, bool bPrettyPrint = true);
 
     /**
      * Validate JSON campaign data
@@ -204,7 +204,7 @@ public:
      * @return Last successfully loaded campaign data
      */
     UFUNCTION(BlueprintCallable, BlueprintPure, Category = "Campaign JSON Loader")
-    FCampaignData GetLastLoadedCampaign() const { return LastLoadedCampaign; }
+    FCampaignPlan GetLastLoadedCampaign() const { return LastLoadedCampaign; }
 
     /**
      * Check if campaign file exists
@@ -244,7 +244,7 @@ public:
 protected:
     // Campaign data
     UPROPERTY(BlueprintReadOnly, Category = "Campaign Data")
-    FCampaignData LastLoadedCampaign;
+    FCampaignPlan LastLoadedCampaign;
 
     UPROPERTY(BlueprintReadOnly, Category = "Campaign Data")
     TArray<FCampaignFileMetadata> AvailableCampaigns;
@@ -268,8 +268,8 @@ protected:
 private:
     // JSON parsing methods
     TSharedPtr<FJsonObject> ParseJSONString(const FString& JSONString);
-    FCampaignData ParseCampaignFromJSON(TSharedPtr<FJsonObject> JSONObject);
-    TSharedPtr<FJsonObject> ConvertCampaignToJSONObject(const FCampaignData& CampaignData);
+    FCampaignPlan ParseCampaignFromJSON(TSharedPtr<FJsonObject> JSONObject);
+    TSharedPtr<FJsonObject> ConvertCampaignToJSONObject(const FCampaignPlan& CampaignData);
     
     // Data parsing helpers
     FPlanetData ParsePlanetFromJSON(TSharedPtr<FJsonObject> PlanetObject);
@@ -322,7 +322,7 @@ public:
      * @param Result The parse result
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Campaign Loading Events")
-    void OnCampaignLoadCompletedEvent(const FCampaignData& CampaignData, EJSONParseResult Result);
+    void OnCampaignLoadCompletedEvent(const FCampaignPlan& CampaignData, EJSONParseResult Result);
 
     /**
      * Called to perform custom validation (override in Blueprint)

@@ -173,7 +173,7 @@ public:
      * @param NPCData Data to initialize the NPC with
      */
     UFUNCTION(BlueprintCallable, Category = "Procedural NPC")
-    void InitializeNPC(const FProceduralNPCData& NPCData);
+    void InitializeNPC(const FProceduralNPCData& TargetNPCData);
 
     /**
      * Start interaction with player
@@ -366,7 +366,7 @@ public:
      * @param NPCData The NPC data for customization
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "NPC Events")
-    void CustomizeNPCAppearance(const FProceduralNPCData& NPCData);
+    void CustomizeNPCAppearance(const FProceduralNPCData& TargetNPCData);
 
     /**
      * Called when dialogue option is selected (for custom responses)

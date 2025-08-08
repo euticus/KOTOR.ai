@@ -10,7 +10,7 @@
 
 // Forward declarations
 class UDataTable;
-struct FJsonObject;
+class FJsonObject;
 
 /**
  * Data structures for AIDM campaign data
@@ -222,7 +222,7 @@ struct KOTOR_CLONE_API FCampaignEnemyData
     UPROPERTY(BlueprintReadOnly, Category = "Enemy")
     FString Description;
 
-    FEnemyData()
+    FCampaignEnemyData()
     {
         Name = TEXT("");
         Species = TEXT("");
@@ -451,7 +451,7 @@ public:
      * @return Array of enemies for that planet
      */
     UFUNCTION(BlueprintCallable, Category = "AIDM")
-    TArray<FEnemyData> GetEnemiesForPlanet(int32 PlanetIndex) const;
+    TArray<FCampaignEnemyData> GetEnemiesForPlanet(int32 PlanetIndex) const;
 
 protected:
     // Current loaded campaign
@@ -464,18 +464,30 @@ protected:
 
     // Cached NPC data by location
     UPROPERTY()
-    TMap<FString, TArray<FNPCData>> CachedNPCData;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT does not support a nested container (e.g.  TMap<Key, TArray<Value>>).
+     * To keep the header tool happy we flatten the data into a single array.  At runtime
+     * helper methods filter/group this array by location as required.
+     */
+    TArray<FNPCData> CachedNPCData;
 
     // Cached enemy data by planet
     UPROPERTY()
-    TMap<int32, TArray<FEnemyData>> CachedEnemyData;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT does not support a nested container (e.g.  TMap<Key, TArray<Value>>).
+     *     TMap<int32, TArray<FCampaignEnemyData>>
+     * helper methods filter/group this array by location as required.
+     */
+    TArray<FCampaignEnemyData> CachedEnemyData;
 
 private:
     // JSON parsing helpers
     bool ParseCampaignFromJson(const TSharedPtr<FJsonObject>& JsonObject);
     bool ParsePlanetData(const TSharedPtr<FJsonObject>& JsonObject, FPlanetData& OutPlanet);
     bool ParseNPCData(const TSharedPtr<FJsonObject>& JsonObject, FNPCData& OutNPC);
-    bool ParseEnemyData(const TSharedPtr<FJsonObject>& JsonObject, FEnemyData& OutEnemy);
+    bool ParseEnemyData(const TSharedPtr<FJsonObject>& JsonObject, FCampaignEnemyData& OutEnemy);
     bool ParseLootItem(const TSharedPtr<FJsonObject>& JsonObject, FLootItem& OutItem);
     bool ParseBossData(const TSharedPtr<FJsonObject>& JsonObject, FBossData& OutBoss);
     bool ParseQuestData(const TSharedPtr<FJsonObject>& JsonObject, FQuestData& OutQuest);

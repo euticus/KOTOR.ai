@@ -418,11 +418,11 @@ public:
     /**
      * Called to generate custom hallucination (override in Blueprint)
      * @param TriggerContext What triggered the hallucination
-     * @param CorruptionLevel Current corruption level
+     * @param CurrentCorruption Current corruption level
      * @return Custom hallucination text
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Mutation Events")
-    FString GenerateCustomHallucination(const FString& TriggerContext, int32 CorruptionLevel);
+    FString GenerateCustomHallucination(const FString& TriggerContext, int32 CurrentCorruption);
 
     /**
      * Called to apply custom mutation effects (override in Blueprint)

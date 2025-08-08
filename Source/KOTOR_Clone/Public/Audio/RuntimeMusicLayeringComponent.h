@@ -69,7 +69,9 @@ struct KOTOR_CLONE_API FRuntimeMusicLayerData
     UPROPERTY(BlueprintReadWrite, Category = "Music Layer")
     EMusicTone AssociatedTone;
 
-    FMusicLayerData()
+    /* Constructor name must exactly match the struct name to satisfy
+       UE's reflection and C++ rules. */
+    FRuntimeMusicLayerData()
     {
         LayerID = TEXT("");
         StemType = EMusicStemType::Ambient;
@@ -155,7 +157,7 @@ public:
      * @return True if layer was added successfully
      */
     UFUNCTION(BlueprintCallable, Category = "Runtime Music Layering")
-    bool AddMusicLayer(const FMusicLayerData& LayerData);
+    bool AddMusicLayer(const FRuntimeMusicLayerData& LayerData);
 
     /**
      * Remove music layer
@@ -297,7 +299,7 @@ public:
 protected:
     // Music layers
     UPROPERTY(BlueprintReadOnly, Category = "Music Layers")
-    TMap<FString, FMusicLayerData> MusicLayers;
+    TMap<FString, FRuntimeMusicLayerData> MusicLayers;
 
     // Layer groups
     UPROPERTY(BlueprintReadOnly, Category = "Layer Groups")
@@ -328,7 +330,7 @@ private:
     bool CanActivateLayer(const FString& LayerID) const;
     void HandleMutuallyExclusiveGroups(const FString& LayerID);
     float CalculateEffectiveVolume(const FString& LayerID) const;
-    UAudioComponent* CreateAudioComponentForLayer(const FMusicLayerData& LayerData);
+    UAudioComponent* CreateAudioComponentForLayer(const FRuntimeMusicLayerData& LayerData);
 
 public:
     /**
@@ -370,5 +372,5 @@ public:
      * @return Custom fade time
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Music Layering Events")
-    float CustomizeFadeTime(const FString& LayerID, float DefaultFadeTime, bool bFadingIn);
+    float CustomizeFadeTime(const FString& LayerID, float InputFadeTime, bool bFadingIn);
 };

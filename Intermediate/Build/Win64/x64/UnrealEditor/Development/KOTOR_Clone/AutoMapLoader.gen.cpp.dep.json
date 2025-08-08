@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\automaploader.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\kotor_cloneeditor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kotor_clone\\definitions.kotor_clone.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\source\\kotor_clone\\public\\core\\automaploader.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\dialoguetypes.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystaticstypes.generated.h",
+            "d:\\epic games\\ue_5.6\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gameplaystatics.generated.h",
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\unrealeditor\\inc\\kotor_clone\\uht\\automaploader.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

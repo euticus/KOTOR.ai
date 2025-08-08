@@ -392,7 +392,14 @@ protected:
 
     // Effect templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Effect Templates")
-    TMap<EMoralAlignment, TArray<FEchoEffect>> AlignmentEffectTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EMoralAlignment, TArray<FEchoEffect>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EMoralAlignment when needed.
+     */
+    TArray<FEchoEffect>AlignmentEffectTemplates;
 
 private:
     // Helper methods

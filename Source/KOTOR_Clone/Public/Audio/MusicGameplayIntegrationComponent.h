@@ -319,7 +319,14 @@ public:
 protected:
     // Music triggers
     UPROPERTY(BlueprintReadOnly, Category = "Music Triggers")
-    TMap<EMusicTriggerType, TArray<FMusicTriggerData>> MusicTriggers;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EMusicTriggerType, TArray<FMusicTriggerData>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EMusicTriggerType when needed.
+     */
+    TArray<FMusicTriggerData>MusicTriggers;
 
     // Alignment mappings
     UPROPERTY(BlueprintReadOnly, Category = "Alignment Music")

@@ -326,7 +326,14 @@ protected:
 
     // Encounter templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Encounter Templates")
-    TMap<ESpaceEncounterType, TArray<FSpaceEncounter>> EncounterTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<ESpaceEncounterType, TArray<FSpaceEncounter>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by ESpaceEncounterType when needed.
+     */
+    TArray<FSpaceEncounter>EncounterTemplates;
 
     // Ship spawn classes
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ship Spawning")

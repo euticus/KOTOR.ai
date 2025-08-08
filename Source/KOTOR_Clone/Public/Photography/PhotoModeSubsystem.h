@@ -7,8 +7,10 @@
 #include "Camera/CameraActor.h"
 #include "Components/SceneCaptureComponent2D.h"
 #include "Engine/TextureRenderTarget2D.h"
-#include "Photography/CinematicScreenshotNarrator.h"
-#include "Photography/ScreenshotCaptureComponent.h"
+// Forward declarations to break circular dependencies with
+// CinematicScreenshotNarrator.h  and ScreenshotCaptureComponent.h
+class UCinematicScreenshotNarrator;
+class UScreenshotCaptureComponent;
 #include "PhotoModeSubsystem.generated.h"
 
 /**

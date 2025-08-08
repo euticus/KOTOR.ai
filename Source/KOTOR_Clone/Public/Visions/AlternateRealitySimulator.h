@@ -231,7 +231,7 @@ public:
      * @param ShrineType Type of the shrine
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Vision Shrine Events")
-    void UpdateShrineAppearance(EVisionShrineType ShrineType);
+    void UpdateShrineAppearance(EVisionShrineType InputShrineType);
 };
 
 /**
@@ -301,7 +301,7 @@ public:
      * @return Array of available scenarios
      */
     UFUNCTION(BlueprintCallable, Category = "Alternate Reality")
-    TArray<FWhatIfScenario> GetAvailableWhatIfScenarios(EVisionShrineType ShrineType) const;
+    TArray<FWhatIfScenario> GetAvailableWhatIfScenarios(EVisionShrineType InputShrineType) const;
 
     /**
      * Check if vision is active
@@ -389,10 +389,24 @@ protected:
 
     // Scenario templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Scenario Templates")
-    TMap<EWhatIfScenarioType, TArray<FString>> ScenarioPromptTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EWhatIfScenarioType, TArray<FString>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EWhatIfScenarioType when needed.
+     */
+    TArray<FString>ScenarioPromptTemplates;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Scenario Templates")
-    TMap<EVisionShrineType, TArray<EWhatIfScenarioType>> ShrineScenarioMapping;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EVisionShrineType, TArray<EWhatIfScenarioType>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EVisionShrineType when needed.
+     */
+    TArray<EWhatIfScenarioType>ShrineScenarioMapping;
 
 private:
     // Helper methods

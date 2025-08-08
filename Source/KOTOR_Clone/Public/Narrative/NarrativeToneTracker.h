@@ -50,6 +50,32 @@ enum class EEmotionalSignal : uint8
 };
 
 /**
+ * Entry for tracking individual emotional signals with a timestamp.
+ * Replaces use of TPair<EEmotionalSignal,float> which is not UHT-compatible.
+ */
+USTRUCT(BlueprintType)
+struct KOTOR_CLONE_API FEmotionalSignalEntry
+{
+    GENERATED_BODY()
+
+    UPROPERTY(BlueprintReadWrite, Category = "Emotional Signal")
+    EEmotionalSignal Signal;
+
+    UPROPERTY(BlueprintReadWrite, Category = "Emotional Signal")
+    float Timestamp;
+
+    FEmotionalSignalEntry()
+        : Signal(EEmotionalSignal::Joy)
+        , Timestamp(0.0f)
+    {}
+
+    FEmotionalSignalEntry(EEmotionalSignal InSignal, float InTimestamp)
+        : Signal(InSignal)
+        , Timestamp(InTimestamp)
+    {}
+};
+
+/**
  * Tone analysis data
  */
 USTRUCT(BlueprintType)
@@ -284,7 +310,11 @@ protected:
 
     // Emotional signals tracking
     UPROPERTY(BlueprintReadOnly, Category = "Narrative Tone")
-    TArray<TPair<EEmotionalSignal, float>> RecentSignals; // Signal + timestamp
+    /*
+     * UE5 reflection does not support TPair directly inside containers.
+     * We therefore use FEmotionalSignalEntry defined above.
+     */
+    TArray<FEmotionalSignalEntry> RecentSignals; // Signal + timestamp
 
     // Component references
     UPROPERTY()

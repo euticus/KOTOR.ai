@@ -317,7 +317,16 @@ public:
 protected:
     // Tile templates
     UPROPERTY(BlueprintReadOnly, Category = "Procedural Generation")
-    TMap<EPlanetBiome, TArray<FTileTemplate>> TileTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY does not support nested containers such as
+     * TMap<Key, TArray<Value>>.  Storing tile templates in that shape caused
+     * a reflection/serialization error during compilation.
+     *
+     * Instead, we store all templates in a flat array and filter by biome at
+     * runtime (e.g., inside GetTileTemplatesForBiome or helper methods).
+     */
+    TArray<FTileTemplate> TileTemplates;
 
     // Generation settings
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation Settings")
@@ -339,10 +348,22 @@ protected:
 
     // Name generation data
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Name Generation")
-    TMap<EPlanetBiome, TArray<FString>> PlanetNamePrefixes;
+    /*
+     * Prefix pool used for procedural name generation.
+     * NOTE: UPROPERTY reflection does not support nested containers
+     * such as `TMap<Key, TArray<Value>>`. We therefore store all
+     * possible prefixes in a flat array and filter / weight them for
+     * a given biome at runtime inside the generator.
+     */
+    TArray<FString> PlanetNamePrefixes;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Name Generation")
-    TMap<EPlanetBiome, TArray<FString>> PlanetNameSuffixes;
+    /*
+     * Suffix pool used for procedural name generation.
+     * These are likewise stored as a flat array for the same
+     * serialization-compatibility reasons explained above.
+     */
+    TArray<FString> PlanetNameSuffixes;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Name Generation")
     TArray<FString> GenericPlanetNames;

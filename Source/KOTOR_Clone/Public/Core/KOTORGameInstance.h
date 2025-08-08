@@ -52,7 +52,7 @@ struct KOTOR_CLONE_API FAutoLoadConfig
 /**
  * Game instance events
  */
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCampaignAutoLoaded, const FCampaignData&, CampaignData);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCampaignAutoLoaded, const FCampaignPlan&, CampaignData);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnAutoLoadFailed, const FString&, ErrorMessage);
 DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDevModeEnabled);
 
@@ -131,7 +131,7 @@ public:
      * @return Currently loaded campaign data
      */
     UFUNCTION(BlueprintCallable, BlueprintPure, Category = "KOTOR Game Instance")
-    FCampaignData GetLoadedCampaignData() const { return LoadedCampaignData; }
+    FCampaignPlan GetLoadedCampaignData() const { return LoadedCampaignData; }
 
     /**
      * Check if campaign is loaded
@@ -170,7 +170,7 @@ protected:
 
     // Campaign data
     UPROPERTY(BlueprintReadOnly, Category = "Campaign Data")
-    FCampaignData LoadedCampaignData;
+    FCampaignPlan LoadedCampaignData;
 
     UPROPERTY(BlueprintReadOnly, Category = "Campaign Data")
     bool bCampaignLoaded;
@@ -219,7 +219,7 @@ public:
      * @param CampaignData The loaded campaign data
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Game Instance Events")
-    void OnCampaignAutoLoadedEvent(const FCampaignData& CampaignData);
+    void OnCampaignAutoLoadedEvent(const FCampaignPlan& CampaignData);
 
     /**
      * Called when auto-load fails (for custom error handling)
@@ -241,7 +241,7 @@ public:
      * @return Custom generated campaign data
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Game Instance Events")
-    FCampaignData GenerateCustomTestCampaign(const FString& CampaignName, const TArray<FString>& PlanetNames);
+    FCampaignPlan GenerateCustomTestCampaign(const FString& CampaignName, const TArray<FString>& PlanetNames);
 
     /**
      * Called to customize auto-load behavior (override in Blueprint)

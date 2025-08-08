@@ -93,14 +93,14 @@ TArray<FNPCData> UCampaignLoaderSubsystem::GetNPCsForLocation(int32 PlanetIndex,
     return TArray<FNPCData>();
 }
 
-TArray<FEnemyData> UCampaignLoaderSubsystem::GetEnemiesForPlanet(int32 PlanetIndex) const
+TArray<FCampaignEnemyData> UCampaignLoaderSubsystem::GetEnemiesForPlanet(int32 PlanetIndex) const
 {
-    if (const TArray<FEnemyData>* FoundEnemies = CachedEnemyData.Find(PlanetIndex))
+    if (const TArray<FCampaignEnemyData>* FoundEnemies = CachedEnemyData.Find(PlanetIndex))
     {
         return *FoundEnemies;
     }
     
-    return TArray<FEnemyData>();
+    return TArray<FCampaignEnemyData>();
 }
 
 bool UCampaignLoaderSubsystem::ParseCampaignFromJson(const TSharedPtr<FJsonObject>& JsonObject)
@@ -367,7 +367,7 @@ bool UCampaignLoaderSubsystem::ParseNPCData(const TSharedPtr<FJsonObject>& JsonO
     return true;
 }
 
-bool UCampaignLoaderSubsystem::ParseEnemyData(const TSharedPtr<FJsonObject>& JsonObject, FEnemyData& OutEnemy)
+bool UCampaignLoaderSubsystem::ParseEnemyData(const TSharedPtr<FJsonObject>& JsonObject, FCampaignEnemyData& OutEnemy)
 {
     JsonObject->TryGetStringField(TEXT("name"), OutEnemy.Name);
     JsonObject->TryGetStringField(TEXT("species"), OutEnemy.Species);

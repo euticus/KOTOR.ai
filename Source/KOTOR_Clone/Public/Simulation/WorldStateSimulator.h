@@ -328,7 +328,15 @@ protected:
 
     // Event templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Event Templates")
-    TMap<FString, TArray<FGalacticEvent>> EventTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     * TMap<Key, TArray<Value>>.  To stay compatible with Unreal's reflection
+     * system we store all event templates in a single flat array.  Helper
+     * functions at runtime can filter or group this array by EventType when
+     * specific look-ups are required.
+     */
+    TArray<FGalacticEvent> EventTemplates;
 
 private:
     // Helper methods

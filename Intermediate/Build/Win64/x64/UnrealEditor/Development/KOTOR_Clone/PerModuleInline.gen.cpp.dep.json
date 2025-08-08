@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kotor_clone\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\kotor_cloneeditor\\development\\unrealed\\sharedpch.unrealed.project.novalfmtstr.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\users\\ryanmiller\\development\\kotor.ai\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\kotor_clone\\definitions.kotor_clone.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -156,7 +156,7 @@ public:
      * @param LootData Data for this loot item
      */
     UFUNCTION(BlueprintCallable, Category = "Loot Pickup")
-    void InitializeLootPickup(const FLootItemData& LootData);
+    void InitializeLootPickup(const FLootItemData& TargetLootData);
 
     /**
      * Pick up loot
@@ -247,7 +247,7 @@ public:
      * @param LootData The loot data for customization
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Loot Events")
-    void CustomizeLootAppearance(const FLootItemData& LootData);
+    void CustomizeLootAppearance(const FLootItemData& TargetLootData);
 };
 
 /**
@@ -270,7 +270,7 @@ public:
      * @param ContainerData Data for this container
      */
     UFUNCTION(BlueprintCallable, Category = "Loot Chest")
-    void InitializeLootChest(const FLootContainerData& ContainerData);
+    void InitializeLootChest(const FLootContainerData& TargetContainerData);
 
     /**
      * Open chest
@@ -392,7 +392,7 @@ public:
      * @param Opener Actor that opened the chest
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Loot Events")
-    void OnChestOpenedEvent(const FLootContainerData& ContainerData, AActor* Opener);
+    void OnChestOpenedEvent(const FLootContainerData& TargetContainerData, AActor* Opener);
 
     /**
      * Called when trap is triggered (for custom trap effects)
@@ -407,5 +407,5 @@ public:
      * @param ContainerData The container data for customization
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Loot Events")
-    void CustomizeChestAppearance(const FLootContainerData& ContainerData);
+    void CustomizeChestAppearance(const FLootContainerData& TargetContainerData);
 };

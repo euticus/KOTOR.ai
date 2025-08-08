@@ -208,7 +208,7 @@ bool UAIDirectorComponent::ChangeToLayout(const FString& LayoutName)
     return true;
 }
 
-void UAIDirectorComponent::RegisterSpawnPoint(const FSpawnPointData& SpawnPoint)
+void UAIDirectorComponent::RegisterSpawnPoint(const FAIDirectorSpawnData& SpawnPoint)
 {
     RegisteredSpawnPoints.Add(SpawnPoint);
     
@@ -271,7 +271,7 @@ void UAIDirectorComponent::ClearAllSpawnedContent()
     SpawnedActors.Empty();
     
     // Reset spawn point occupation
-    for (FSpawnPointData& SpawnPoint : RegisteredSpawnPoints)
+    for (FAIDirectorSpawnData& SpawnPoint : RegisteredSpawnPoints)
     {
         SpawnPoint.bIsOccupied = false;
         SpawnPoint.SpawnedActor = nullptr;
@@ -308,11 +308,11 @@ FMapLayout UAIDirectorComponent::GetCurrentLayoutData() const
     return FMapLayout();
 }
 
-TArray<FSpawnPointData> UAIDirectorComponent::GetSpawnPointsByType(const FString& SpawnType) const
+TArray<FAIDirectorSpawnData> UAIDirectorComponent::GetSpawnPointsByType(const FString& SpawnType) const
 {
-    TArray<FSpawnPointData> Result;
+    TArray<FAIDirectorSpawnData> Result;
     
-    for (const FSpawnPointData& SpawnPoint : RegisteredSpawnPoints)
+    for (const FAIDirectorSpawnData& SpawnPoint : RegisteredSpawnPoints)
     {
         if (SpawnPoint.SpawnType == SpawnType && SpawnPoint.LayoutName == CurrentLayoutName)
         {
@@ -330,7 +330,7 @@ void UAIDirectorComponent::SpawnNPCsForLayout()
     
     for (const FNPCData& NPCData : NPCs)
     {
-        FSpawnPointData* SpawnPoint = FindAvailableSpawnPoint(TEXT("NPC"), CurrentLayoutName);
+        FAIDirectorSpawnData* SpawnPoint = FindAvailableSpawnPoint(TEXT("NPC"), CurrentLayoutName);
         if (SpawnPoint)
         {
             // Try blueprint implementation first
@@ -372,17 +372,17 @@ void UAIDirectorComponent::SpawnNPCsForLayout()
 void UAIDirectorComponent::SpawnEnemiesForLayout()
 {
     // Get enemies for current planet
-    TArray<FEnemyData> Enemies = CampaignLoader->GetEnemiesForPlanet(CurrentPlanetIndex);
+    TArray<FCampaignEnemyData> Enemies = CampaignLoader->GetEnemiesForPlanet(CurrentPlanetIndex);
     
     // Limit number of enemies spawned (for performance)
     int32 MaxEnemies = FMath::Min(Enemies.Num(), 5);
     
     for (int32 i = 0; i < MaxEnemies; i++)
     {
-        FSpawnPointData* SpawnPoint = FindAvailableSpawnPoint(TEXT("Enemy"), CurrentLayoutName);
+        FAIDirectorSpawnData* SpawnPoint = FindAvailableSpawnPoint(TEXT("Enemy"), CurrentLayoutName);
         if (SpawnPoint && i < Enemies.Num())
         {
-            const FEnemyData& EnemyData = Enemies[i];
+            const FCampaignEnemyData& EnemyData = Enemies[i];
             
             // Try blueprint implementation first
             APawn* SpawnedEnemy = OnSpawnEnemy(EnemyData, *SpawnPoint);
@@ -423,9 +423,9 @@ void UAIDirectorComponent::SpawnEnemiesForLayout()
 void UAIDirectorComponent::SpawnLootForLayout()
 {
     // For now, spawn some basic loot at loot spawn points
-    TArray<FSpawnPointData> LootSpawnPoints = GetSpawnPointsByType(TEXT("Loot"));
+    TArray<FAIDirectorSpawnData> LootSpawnPoints = GetSpawnPointsByType(TEXT("Loot"));
 
-    for (FSpawnPointData& SpawnPoint : LootSpawnPoints)
+    for (FAIDirectorSpawnData& SpawnPoint : LootSpawnPoints)
     {
         if (!SpawnPoint.bIsOccupied)
         {
@@ -502,9 +502,9 @@ TSubclassOf<APawn> UAIDirectorComponent::GetEnemyClassForSpecies(const FString& 
     return DefaultEnemyClass;
 }
 
-FSpawnPointData* UAIDirectorComponent::FindAvailableSpawnPoint(const FString& SpawnType, const FString& LayoutName)
+FAIDirectorSpawnData* UAIDirectorComponent::FindAvailableSpawnPoint(const FString& SpawnType, const FString& LayoutName)
 {
-    for (FSpawnPointData& SpawnPoint : RegisteredSpawnPoints)
+    for (FAIDirectorSpawnData& SpawnPoint : RegisteredSpawnPoints)
     {
         if (SpawnPoint.SpawnType == SpawnType &&
             SpawnPoint.LayoutName == LayoutName &&
@@ -532,7 +532,7 @@ void UAIDirectorComponent::SetupSpawnedActor(AActor* SpawnedActor, const FString
     }
     else if (ActorType == TEXT("Enemy") && Data)
     {
-        const FEnemyData* EnemyData = static_cast<const FEnemyData*>(Data);
+        const FCampaignEnemyData* EnemyData = static_cast<const FCampaignEnemyData*>(Data);
         SpawnedActor->SetActorLabel(FString::Printf(TEXT("Enemy_%s"), *EnemyData->Name));
     }
     else if (ActorType == TEXT("Loot") && Data)
@@ -551,7 +551,7 @@ void UAIDirectorComponent::DrawSpawnPointDebug() const
         return;
     }
 
-    for (const FSpawnPointData& SpawnPoint : RegisteredSpawnPoints)
+    for (const FAIDirectorSpawnData& SpawnPoint : RegisteredSpawnPoints)
     {
         if (SpawnPoint.LayoutName == CurrentLayoutName)
         {

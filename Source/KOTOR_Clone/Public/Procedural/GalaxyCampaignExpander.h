@@ -359,7 +359,17 @@ protected:
 
     // Story arc templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Story Arc Templates")
-    TMap<EStoryArcType, TArray<FString>> ArcTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY reflection does not support nested containers such as
+     * TMap<Key, TArray<Value>>.  Storing the story-arc templates that way
+     * causes UHT compilation errors.
+     *
+     * Instead we keep all template strings in a single flat array and, when
+     * needed, filter/group them by EStoryArcType inside helper functions
+     * (e.g., LoadStoryArcTemplates or SelectTemplatesForType).
+     */
+    TArray<FString> ArcTemplates;
 
     // Expansion themes
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Expansion Themes")

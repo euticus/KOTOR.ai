@@ -115,7 +115,19 @@ struct KOTOR_CLONE_API FQuestTemplate
     TArray<FString> ObjectiveTemplates; // Objective templates
 
     UPROPERTY(BlueprintReadWrite, Category = "Quest Template")
-    TMap<FString, TArray<FString>> VariableOptions; // Variable -> Possible values
+    /*
+     * NOTE:
+     * UPROPERTY does not support nested containers such as
+     * `TMap<Key, TArray<Value>>`.  Storing the variable-options mapping in that
+     * shape prevents the header from compiling under the Unreal Header Tool.
+     * Instead we store all possible option strings in a flat array and filter /
+     * group them at runtime inside the quest generator.
+     *
+     * When you need the old behaviour, call a helper such as
+     *   GetVariableOptions(VariableName)
+     * which can build the mapping on demand.
+     */
+    TArray<FString> VariableOptions; // All possible variable option strings
 
     UPROPERTY(BlueprintReadWrite, Category = "Quest Template")
     TMap<FString, int32> RewardRanges; // Reward type -> amount range
@@ -313,7 +325,12 @@ public:
 protected:
     // Quest templates
     UPROPERTY(BlueprintReadOnly, Category = "Procedural Quests")
-    TMap<EProceduralQuestType, TArray<FQuestTemplate>> QuestTemplates;
+    /*
+     * Reflection does not support `TMap<Key, TArray<Value>>` as a UPROPERTY.
+     * We keep the templates in a single array and filter them by QuestType
+     * when querying (see GetQuestTemplates / SelectQuestTemplate helpers).
+     */
+    TArray<FQuestTemplate> QuestTemplates;
 
     // Infinite mode
     UPROPERTY(BlueprintReadOnly, Category = "Procedural Quests")

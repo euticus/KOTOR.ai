@@ -341,7 +341,14 @@ protected:
     TMap<FString, FHiddenEntity> EntityTemplates;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Entity Templates")
-    TMap<EEntityInfluenceType, TArray<FString>> InfluencePromptTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EEntityInfluenceType, TArray<FString>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EEntityInfluenceType when needed.
+     */
+    TArray<FString>InfluencePromptTemplates;
 
     // Timer handles
     FTimerHandle InfluenceTimer;

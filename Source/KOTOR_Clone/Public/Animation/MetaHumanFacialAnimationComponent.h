@@ -348,11 +348,33 @@ protected:
 
     // Expression to curve mappings
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Expression Mapping")
-    TMap<EMetaHumanExpression, TMap<FString, float>> ExpressionCurveMappings;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested maps such as TMap<Key, TMap<...>>
+     * There are two approaches to fix this:
+     * 1. Flatten to a single TArray and filter at runtime
+     * 2. Create a wrapper struct for the inner map:
+     *    USTRUCT() struct FMapWrapper { TMap<Key2, Value> InnerMap; };
+     *    TMap<EMetaHumanExpression, FMapWrapper> ExpressionCurveMappings;
+     *
+     * We've chosen approach #1 for simplicity.
+     */
+    TArray<FKeyValuePair>ExpressionCurveMappings;
 
     // Viseme to curve mappings
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Viseme Mapping")
-    TMap<EMetaHumanViseme, TMap<FString, float>> VisemeCurveMappings;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested maps such as TMap<Key, TMap<...>>
+     * There are two approaches to fix this:
+     * 1. Flatten to a single TArray and filter at runtime
+     * 2. Create a wrapper struct for the inner map:
+     *    USTRUCT() struct FMapWrapper { TMap<Key2, Value> InnerMap; };
+     *    TMap<EMetaHumanViseme, FMapWrapper> VisemeCurveMappings;
+     *
+     * We've chosen approach #1 for simplicity.
+     */
+    TArray<FKeyValuePair>VisemeCurveMappings;
 
     // Timer handles
     FTimerHandle BlinkTimer;

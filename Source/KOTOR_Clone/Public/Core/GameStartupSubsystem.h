@@ -262,7 +262,14 @@ protected:
 
     // Spawned actors
     UPROPERTY(BlueprintReadOnly, Category = "Spawned Actors")
-    TMap<EStartupActorType, TArray<AActor*>> SpawnedActors;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<EStartupActorType, TArray<AActor*>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by EStartupActorType when needed.
+     */
+    TArray<AActor*>SpawnedActors;
 
     // Subsystem references
     UPROPERTY()

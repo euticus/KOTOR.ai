@@ -208,7 +208,7 @@ public:
      * @param EnemyData Data to initialize the enemy with
      */
     UFUNCTION(BlueprintCallable, Category = "Enemy")
-    void InitializeEnemy(const FEnemyData& EnemyData);
+    void InitializeEnemy(const FEnemyData& TargetEnemyData);
 
     /**
      * Scale enemy to challenge rating
@@ -395,7 +395,7 @@ public:
      * @param EnemyData The enemy data for customization
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Enemy Events")
-    void CustomizeEnemyAppearance(const FEnemyData& EnemyData);
+    void CustomizeEnemyAppearance(const FEnemyData& TargetEnemyData);
 
     /**
      * Called when loot is dropped (for custom loot effects)

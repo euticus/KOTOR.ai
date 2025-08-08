@@ -301,7 +301,18 @@ protected:
 
     // Expression to morph target mapping
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Expression Mapping")
-    TMap<EFacialExpression, TMap<FString, float>> ExpressionMorphTargets;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested maps such as TMap<Key, TMap<...>>
+     * There are two approaches to fix this:
+     * 1. Flatten to a single TArray and filter at runtime
+     * 2. Create a wrapper struct for the inner map:
+     *    USTRUCT() struct FMapWrapper { TMap<Key2, Value> InnerMap; };
+     *    TMap<EFacialExpression, FMapWrapper> ExpressionMorphTargets;
+     *
+     * We've chosen approach #1 for simplicity.
+     */
+    TArray<FKeyValuePair>ExpressionMorphTargets;
 
     // Timer handles
     FTimerHandle BlinkTimer;

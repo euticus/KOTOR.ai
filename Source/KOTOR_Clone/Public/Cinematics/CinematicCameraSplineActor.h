@@ -355,7 +355,7 @@ public:
      * @param CurrentTime Current movement time
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Camera Spline Events")
-    void OnCameraKeyframeReachedEvent(const FCameraKeyframe& Keyframe, float CurrentTime);
+    void OnCameraKeyframeReachedEvent(const FCameraKeyframe& Keyframe, float InputTime);
 
     /**
      * Called to customize camera position (override in Blueprint)
@@ -390,5 +390,5 @@ public:
      * @param CurrentTime Current movement time
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Camera Spline Events")
-    void OnCameraEventTriggeredEvent(const FString& EventName, float CurrentTime);
+    void OnCameraEventTriggeredEvent(const FString& EventName, float InputTime);
 };

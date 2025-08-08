@@ -221,7 +221,7 @@ public:
     UFUNCTION(BlueprintCallable, Category = "Narrative Memory")
     TArray<FNarrativeMemory> SearchMemories(EMemoryEventType EventType = EMemoryEventType::Custom, 
                                            EMemoryImportance MinImportance = EMemoryImportance::Trivial,
-                                           const TArray<FString>& Tags = TArray<FString>(),
+                                           const TArray<FString>& Tags,
                                            int32 MaxResults = 10) const;
 
     /**
@@ -385,5 +385,5 @@ public:
      * @return Filtered memories for context
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Memory Events")
-    TArray<FNarrativeMemory> FilterMemoriesForContext(const TArray<FNarrativeMemory>& Memories, const FString& ContextType);
+    TArray<FNarrativeMemory> FilterMemoriesForContext(const TArray<FNarrativeMemory>& InputMemories, const FString& ContextType);
 };

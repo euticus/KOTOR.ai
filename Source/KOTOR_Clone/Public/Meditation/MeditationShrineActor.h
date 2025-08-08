@@ -187,7 +187,7 @@ public:
      * @param VisionShrineData Vision shrine data (optional)
      */
     UFUNCTION(BlueprintCallable, Category = "Meditation Shrine")
-    void InitializeShrine(const FMeditationSpotData& ShrineData, const FString& VisionShrineType = TEXT(""));
+    void InitializeShrine(const FMeditationSpotData& TargetShrineData, const FString& VisionShrineType = TEXT(""));
 
     /**
      * Activate shrine
@@ -382,7 +382,7 @@ public:
      * @param ActivationState Current activation state
      */
     UFUNCTION(BlueprintImplementableEvent, Category = "Shrine Events")
-    void CustomizeShrineAppearance(const FMeditationSpotData& ShrineData, EShrineActivationState ActivationState);
+    void CustomizeShrineAppearance(const FMeditationSpotData& TargetShrineData, EShrineActivationState InputActivationState);
 
     /**
      * Called to handle custom shrine interaction (override in Blueprint)

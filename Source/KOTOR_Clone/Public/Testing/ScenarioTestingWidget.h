@@ -380,7 +380,14 @@ protected:
 
     // Predefined test suites
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Testing Settings")
-    TMap<FString, TArray<FScenarioTestParams>> TestSuites;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<FString, TArray<FScenarioTestParams>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by FString when needed.
+     */
+    TArray<FScenarioTestParams>TestSuites;
 
 private:
     // Helper methods

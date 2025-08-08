@@ -23,15 +23,21 @@ from aidm import (
 
 def print_banner():
     """Print the AIDM banner"""
-    banner = """
-╔══════════════════════════════════════════════════════════════╗
-║                    KOTOR.ai AIDM System                     ║
-║              AI Dynamic Master - Campaign Generator         ║
-║                                                              ║
-║  Generate dynamic Star Wars campaigns with AI-powered       ║
-║  planets, NPCs, quests, encounters, loot, and bosses!       ║
-╚══════════════════════════════════════════════════════════════╝
-"""
+    # Use only ASCII characters to avoid encoding issues on some Windows consoles
+    banner_lines = [
+        "+" + "-" * 62 + "+",
+        "|{:^62}|".format("KOTOR.ai AIDM System"),
+        "|{:^62}|".format("AI Dynamic Master - Campaign Generator"),
+        "|" + " " * 62 + "|",
+        "|{:^62}|".format(
+            "Generate dynamic Star Wars campaigns with AI-powered"
+        ),
+        "|{:^62}|".format(
+            "planets, NPCs, quests, encounters, loot, and bosses!"
+        ),
+        "+" + "-" * 62 + "+",
+    ]
+    banner = "\n".join(banner_lines)
     print(banner)
 
 
@@ -188,10 +194,10 @@ def run_tests():
     result = runner.run(suite)
     
     if result.wasSuccessful():
-        print("\n✅ All tests passed!")
+        print("\n[PASS] All tests passed!")
         return True
     else:
-        print(f"\n❌ {len(result.failures)} test(s) failed, {len(result.errors)} error(s)")
+        print(f"\n[FAIL] {len(result.failures)} test(s) failed, {len(result.errors)} error(s)")
         return False
 
 

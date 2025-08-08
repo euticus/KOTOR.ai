@@ -1,0 +1,360 @@
+{
+  "config": {
+    "game_length_hours": 15,
+    "estimated_planets": 5,
+    "story_seed": "i want a 15-hour jedi adventure about finding ancient artifacts",
+    "time_period": "old republic",
+    "alignment_focus": "light"
+  },
+  "planets": [
+    {
+      "name": "Tatooine",
+      "biome": "forest",
+      "climate": "temperate",
+      "population": "Medium (Millions)",
+      "government": "Trade Federation",
+      "layouts": [
+        {
+          "name": "Village Prime",
+          "layout_type": "village",
+          "description": "A village area featuring hidden temples, rivers",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "hidden temples",
+            "rivers",
+            "dense forests"
+          ]
+        },
+        {
+          "name": "Village Beta",
+          "layout_type": "village",
+          "description": "A village area featuring rivers, dense forests",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "rivers",
+            "dense forests",
+            "wildlife"
+          ]
+        },
+        {
+          "name": "Village Prime",
+          "layout_type": "village",
+          "description": "A village area featuring dense forests, hidden temples",
+          "estimated_time_hours": 1.5,
+          "key_features": [
+            "dense forests",
+            "hidden temples",
+            "rivers"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Tatooine",
+      "side_quests": [
+        "Help local merchants deal with smuggler problems",
+        "Investigate strange creature sightings"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a forest world with a temperate climate, home to a medium (millions) population \ngoverned by a trade federation. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "desert",
+      "climate": "hot",
+      "population": "Uninhabited",
+      "government": "Republic Democracy",
+      "layouts": [
+        {
+          "name": "Caves Beta",
+          "layout_type": "caves",
+          "description": "A caves area featuring oases, canyons",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "oases",
+            "canyons",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Central Spaceport",
+          "layout_type": "spaceport",
+          "description": "A spaceport area featuring canyons, ancient ruins",
+          "estimated_time_hours": 1.6,
+          "key_features": [
+            "canyons",
+            "ancient ruins",
+            "sand dunes"
+          ]
+        },
+        {
+          "name": "Buried Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring sand dunes, canyons",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "sand dunes",
+            "canyons",
+            "ancient ruins"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Coruscant's hostile environment",
+      "side_quests": [
+        "Mediate a dispute between rival factions",
+        "Explore abandoned facilities for valuable technology"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 1,
+      "lore_description": "Coruscant is a desert world with a hot climate, home to a uninhabited population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Naboo",
+      "biome": "desert",
+      "climate": "dry",
+      "population": "Small (Hundreds of Thousands)",
+      "government": "Tribal Council",
+      "layouts": [
+        {
+          "name": "Ancient Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring canyons, sand dunes",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "canyons",
+            "sand dunes",
+            "ancient ruins"
+          ]
+        },
+        {
+          "name": "Old City",
+          "layout_type": "settlement",
+          "description": "A settlement area featuring oases, sand dunes",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "oases",
+            "sand dunes",
+            "canyons"
+          ]
+        },
+        {
+          "name": "New District",
+          "layout_type": "settlement",
+          "description": "A settlement area featuring canyons, oases",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "canyons",
+            "oases",
+            "ancient ruins"
+          ]
+        }
+      ],
+      "main_quest": "Investigate mysterious signals coming from Naboo",
+      "side_quests": [
+        "Investigate strange creature sightings",
+        "Explore abandoned facilities for valuable technology"
+      ],
+      "difficulty_tier": "mid",
+      "planet_index": 2,
+      "lore_description": "Naboo is a desert world with a dry climate, home to a small (hundreds of thousands) population \ngoverned by a tribal council. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Hoth",
+      "biome": "urban",
+      "climate": "artificial",
+      "population": "Uninhabited",
+      "government": "Imperial Autocracy",
+      "layouts": [
+        {
+          "name": "Government Prime",
+          "layout_type": "government",
+          "description": "A government area featuring technology, undercity",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "technology",
+            "undercity",
+            "traffic"
+          ]
+        },
+        {
+          "name": "Government Gamma",
+          "layout_type": "government",
+          "description": "A government area featuring traffic, undercity",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "traffic",
+            "undercity",
+            "technology"
+          ]
+        },
+        {
+          "name": "Lower City Gamma",
+          "layout_type": "lower city",
+          "description": "A lower city area featuring traffic, technology",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "traffic",
+            "technology",
+            "skyscrapers"
+          ]
+        }
+      ],
+      "main_quest": "Retrieve a powerful artifact from Hoth's ruins",
+      "side_quests": [
+        "Explore abandoned facilities for valuable technology",
+        "Defend settlements from hostile forces"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 3,
+      "lore_description": "Hoth is a urban world with a artificial climate, home to a uninhabited population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Endor",
+      "biome": "volcanic",
+      "climate": "unstable",
+      "population": "Sparse (Thousands)",
+      "government": "Republic Democracy",
+      "layouts": [
+        {
+          "name": "Crystal Caves Alpha",
+          "layout_type": "crystal caves",
+          "description": "A crystal caves area featuring mining operations, geysers",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "mining operations",
+            "geysers",
+            "lava flows"
+          ]
+        },
+        {
+          "name": "Mining Facility Alpha",
+          "layout_type": "mining facility",
+          "description": "A mining facility area featuring lava flows, geysers",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "geysers",
+            "crystals"
+          ]
+        },
+        {
+          "name": "Lava Tubes Gamma",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring crystals, mining operations",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "crystals",
+            "mining operations",
+            "lava flows"
+          ]
+        }
+      ],
+      "main_quest": "Retrieve a powerful artifact from Endor's ruins",
+      "side_quests": [
+        "Rescue missing persons from dangerous areas",
+        "Help local merchants deal with smuggler problems"
+      ],
+      "difficulty_tier": "late",
+      "planet_index": 4,
+      "lore_description": "Endor is a volcanic world with a unstable climate, home to a sparse (thousands) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    }
+  ],
+  "final_boss": {
+    "name": "Velak",
+    "title": "Destroyer",
+    "species": "Chiss",
+    "motivation": "wants to corrupt the galaxy with dark side energy",
+    "backstory": "Velak, known as Destroyer, is a Chiss who wants to corrupt the galaxy with dark side energy. \n\nBorn during the old republic era, Velak was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves wants to corrupt the galaxy with dark side energy, which directly threatens the stability \nof the galaxy. The events described in \"i want a 15-hour jedi adventure about finding ancient artifacts\" are merely the beginning \nof their grand design.\n\nVelak has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "mechanics": [
+      "Boss becomes more dangerous as health decreases",
+      "Boss alternates between aggressive and defensive phases",
+      "Boss can absorb and redirect player abilities"
+    ],
+    "phases": [
+      {
+        "name": "Opening Assault",
+        "health_range": "100-75%",
+        "abilities": [
+          "Force Lightning",
+          "Sith Sorcery"
+        ],
+        "tactics": "Aggressive attacks to test the player's strength",
+        "special_effects": "None"
+      },
+      {
+        "name": "Escalation",
+        "health_range": "75-50%",
+        "abilities": [
+          "Sith Sorcery",
+          "Mind Control",
+          "Force Choke"
+        ],
+        "tactics": "Introduces environmental hazards and summons minions",
+        "special_effects": "Arena becomes more dangerous"
+      },
+      {
+        "name": "Desperation",
+        "health_range": "50-25%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery"
+        ],
+        "tactics": "Uses most powerful abilities and becomes more unpredictable",
+        "special_effects": "All mechanics active simultaneously"
+      },
+      {
+        "name": "Final Stand",
+        "health_range": "25-0%",
+        "abilities": [
+          "Force Lightning",
+          "Force Choke",
+          "Dark Rage",
+          "Sith Sorcery",
+          "Mind Control"
+        ],
+        "tactics": "Unleashes full power in a last desperate attempt",
+        "special_effects": "Boss gains new ultimate abilities"
+      }
+    ],
+    "arena_description": "A cave filled with Force-sensitive crystals that amplify abilities Located on Endor, this crystal_cave reflects the planet's volcanic environment. Force-sensitive crystals resonate with the combatants' emotions.",
+    "loot_drop": {
+      "name": "Velak's Legacy",
+      "rarity": "legendary",
+      "item_type": "weapon",
+      "bonuses": {
+        "attack": 15,
+        "force_power": 10,
+        "dark_side": 5
+      },
+      "flavor_text": "The final remnant of Destroyer Velak's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "value_credits": 65000,
+      "level_requirement": 15,
+      "faction_theme": "dark"
+    },
+    "challenge_rating": 9.0,
+    "hit_points": 550,
+    "armor_class": 22,
+    "special_abilities": [
+      "Force Lightning",
+      "Force Choke",
+      "Dark Rage",
+      "Sith Sorcery",
+      "Mind Control"
+    ],
+    "weaknesses": [
+      "Light side Force powers",
+      "Emotional connections",
+      "Overconfidence"
+    ],
+    "minions": [
+      "Sith Assassins",
+      "Dark Jedi",
+      "Corrupted Beasts",
+      "Shadow Troopers",
+      "Lava Elementals"
+    ]
+  },
+  "main_quest_outline": "MAIN QUEST: I Want A 15-Hour Jedi Adventure About Finding Ancient Artifacts\n\nACT I - The Call to Adventure\n- Begin on Tatooine: Discover the threat to the galaxy\n- Learn of Velak's dark plans\n- Gather allies and begin your heroic journey\n\nACT II - The Hero's Journey\n- Travel to 2 worlds to stop the darkness\n- Save civilizations and gain powerful allies\n- Uncover Velak's weakness\n\nACT III - The Light Triumphant\n- Confront Velak on Endor\n- Rally your allies for the final battle in A cave filled with Force-sensitive crystals that amplify abilities Located on Endor, this crystal_cave reflects the planet's volcanic environment. Force-sensitive crystals resonate with the combatants' emotions.\n- Restore peace and balance to the galaxy",
+  "campaign_summary": "Campaign: I Want A 15-Hour Jedi Adventure About Finding Ancient Artifacts\nDuration: 15 hours\nEra: Old Republic\nAlignment: Light Side focus\n\nYour journey will take you across 5 worlds including Tatooine, Coruscant, Naboo, and 2 other worlds.\nThe ultimate confrontation awaits with Velak, wants to corrupt the galaxy with dark side energy.\n\nThis campaign emphasizes light side choices and is set during the old republic era."
+}

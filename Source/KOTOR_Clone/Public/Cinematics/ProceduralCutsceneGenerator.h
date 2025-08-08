@@ -399,7 +399,14 @@ protected:
 
     // Generation templates
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation Templates")
-    TMap<ECutsceneType, TArray<FString>> CutsceneTemplates;
+    /*
+     * NOTE:
+     * UPROPERTY/UHT cannot serialise nested containers such as
+     *     TMap<ECutsceneType, TArray<FString>>
+     * We therefore store all items in a single flat array and, at runtime,
+     * helper functions filter/group by ECutsceneType when needed.
+     */
+    TArray<FString>CutsceneTemplates;
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Generation Templates")
     TMap<ECameraShotType, FProceduralCameraShot> ShotTemplates;

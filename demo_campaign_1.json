@@ -9,265 +9,265 @@
   "planets": [
     {
       "name": "Tatooine",
-      "biome": "urban",
-      "climate": "controlled",
-      "population": "Sparse (Thousands)",
-      "government": "Republic Democracy",
-      "layouts": [
-        {
-          "name": "Industrial Prime",
-          "layout_type": "industrial",
-          "description": "A industrial area featuring skyscrapers, technology",
-          "estimated_time_hours": 1.5,
-          "key_features": [
-            "skyscrapers",
-            "technology",
-            "undercity"
-          ]
-        },
-        {
-          "name": "Lower City Beta",
-          "layout_type": "lower city",
-          "description": "A lower city area featuring skyscrapers, undercity",
-          "estimated_time_hours": 1.5,
-          "key_features": [
-            "skyscrapers",
-            "undercity",
-            "traffic"
-          ]
-        },
-        {
-          "name": "Upper City Alpha",
-          "layout_type": "upper city",
-          "description": "A upper city area featuring technology, skyscrapers",
-          "estimated_time_hours": 1.5,
-          "key_features": [
-            "technology",
-            "skyscrapers",
-            "undercity"
-          ]
-        }
-      ],
-      "main_quest": "Establish contact with the local government on Tatooine",
-      "side_quests": [
-        "Investigate strange creature sightings",
-        "Mediate a dispute between rival factions"
-      ],
-      "difficulty_tier": "early",
-      "planet_index": 0,
-      "lore_description": "Tatooine is a urban world with a controlled climate, home to a sparse (thousands) population \ngoverned by a republic democracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's urban environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Coruscant",
       "biome": "desert",
       "climate": "arid",
       "population": "Massive (Trillions)",
-      "government": "Imperial Autocracy",
+      "government": "Anarchist Collective",
       "layouts": [
         {
-          "name": "Central City",
-          "layout_type": "settlement",
-          "description": "A settlement area featuring oases, ancient ruins",
-          "estimated_time_hours": 2.0,
+          "name": "Buried Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring canyons, ancient ruins",
+          "estimated_time_hours": 1.5,
           "key_features": [
-            "oases",
+            "canyons",
             "ancient ruins",
             "sand dunes"
           ]
         },
         {
-          "name": "Buried Ruins",
-          "layout_type": "ruins",
-          "description": "A ruins area featuring canyons, ancient ruins",
-          "estimated_time_hours": 2.0,
+          "name": "Caves Prime",
+          "layout_type": "caves",
+          "description": "A caves area featuring canyons, oases",
+          "estimated_time_hours": 1.5,
           "key_features": [
             "canyons",
-            "ancient ruins",
-            "oases"
+            "oases",
+            "ancient ruins"
           ]
         },
         {
-          "name": "Main Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring oases, canyons",
-          "estimated_time_hours": 1.6,
+          "name": "Lost Ruins",
+          "layout_type": "ruins",
+          "description": "A ruins area featuring sand dunes, canyons",
+          "estimated_time_hours": 1.5,
           "key_features": [
-            "oases",
+            "sand dunes",
             "canyons",
             "ancient ruins"
+          ]
+        }
+      ],
+      "main_quest": "Rescue stranded allies from Tatooine's hostile environment",
+      "side_quests": [
+        "Recover stolen goods from bandits",
+        "Defend settlements from hostile forces"
+      ],
+      "difficulty_tier": "early",
+      "planet_index": 0,
+      "lore_description": "Tatooine is a desert world with a arid climate, home to a massive (trillions) population \ngoverned by a anarchist collective. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Coruscant",
+      "biome": "ocean",
+      "climate": "stormy",
+      "population": "Medium (Millions)",
+      "government": "Corporate Oligarchy",
+      "layouts": [
+        {
+          "name": "Island Beta",
+          "layout_type": "island",
+          "description": "A island area featuring coral reefs, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "coral reefs",
+            "storms",
+            "underwater cities"
+          ]
+        },
+        {
+          "name": "Floating City Prime",
+          "layout_type": "floating city",
+          "description": "A floating city area featuring coral reefs, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "coral reefs",
+            "storms",
+            "islands"
+          ]
+        },
+        {
+          "name": "Underwater Base Beta",
+          "layout_type": "underwater base",
+          "description": "A underwater base area featuring coral reefs, storms",
+          "estimated_time_hours": 2.0,
+          "key_features": [
+            "coral reefs",
+            "storms",
+            "underwater cities"
           ]
         }
       ],
       "main_quest": "Establish contact with the local government on Coruscant",
       "side_quests": [
-        "Help local merchants deal with smuggler problems",
-        "Mediate a dispute between rival factions"
+        "Investigate strange creature sightings",
+        "Help local merchants deal with smuggler problems"
       ],
       "difficulty_tier": "mid",
       "planet_index": 1,
-      "lore_description": "Coruscant is a desert world with a arid climate, home to a massive (trillions) population \ngoverned by a imperial autocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Coruscant is a ocean world with a stormy climate, home to a medium (millions) population \ngoverned by a corporate oligarchy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's ocean environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
       "name": "Naboo",
-      "biome": "desert",
-      "climate": "dry",
-      "population": "Large (Billions)",
-      "government": "Rebel Alliance",
-      "layouts": [
-        {
-          "name": "New City",
-          "layout_type": "settlement",
-          "description": "A settlement area featuring oases, canyons",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "oases",
-            "canyons",
-            "sand dunes"
-          ]
-        },
-        {
-          "name": "Central Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring oases, sand dunes",
-          "estimated_time_hours": 1.6,
-          "key_features": [
-            "oases",
-            "sand dunes",
-            "ancient ruins"
-          ]
-        },
-        {
-          "name": "New District",
-          "layout_type": "settlement",
-          "description": "A settlement area featuring canyons, sand dunes",
-          "estimated_time_hours": 2.0,
-          "key_features": [
-            "canyons",
-            "sand dunes",
-            "ancient ruins"
-          ]
-        }
-      ],
-      "main_quest": "Investigate mysterious signals coming from Naboo",
-      "side_quests": [
-        "Uncover corruption in the local government",
-        "Explore abandoned facilities for valuable technology"
-      ],
-      "difficulty_tier": "mid",
-      "planet_index": 2,
-      "lore_description": "Naboo is a desert world with a dry climate, home to a large (billions) population \ngoverned by a rebel alliance. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
-    },
-    {
-      "name": "Hoth",
-      "biome": "desert",
-      "climate": "hot",
-      "population": "Massive (Trillions)",
+      "biome": "forest",
+      "climate": "humid",
+      "population": "Uninhabited",
       "government": "Theocracy",
       "layouts": [
         {
-          "name": "Lost Ruins",
-          "layout_type": "ruins",
-          "description": "A ruins area featuring canyons, oases",
-          "estimated_time_hours": 2.5,
+          "name": "Ancient Temple",
+          "layout_type": "temple",
+          "description": "A temple area featuring wildlife, hidden temples",
+          "estimated_time_hours": 2.2,
           "key_features": [
-            "canyons",
-            "oases",
-            "sand dunes"
+            "wildlife",
+            "hidden temples",
+            "dense forests"
           ]
         },
         {
-          "name": "Central Settlement",
-          "layout_type": "settlement",
-          "description": "A settlement area featuring canyons, sand dunes",
-          "estimated_time_hours": 2.5,
+          "name": "Wilderness Prime",
+          "layout_type": "wilderness",
+          "description": "A wilderness area featuring hidden temples, wildlife",
+          "estimated_time_hours": 3.0,
           "key_features": [
-            "canyons",
-            "sand dunes",
-            "oases"
+            "hidden temples",
+            "wildlife",
+            "dense forests"
           ]
         },
         {
-          "name": "Central Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring canyons, ancient ruins",
+          "name": "Canopy City Beta",
+          "layout_type": "canopy city",
+          "description": "A canopy city area featuring rivers, dense forests",
           "estimated_time_hours": 2.0,
           "key_features": [
-            "canyons",
-            "ancient ruins",
-            "sand dunes"
+            "rivers",
+            "dense forests",
+            "wildlife"
           ]
         }
       ],
-      "main_quest": "Prevent a civil war from erupting on Hoth",
+      "main_quest": "Rescue stranded allies from Naboo's hostile environment",
       "side_quests": [
-        "Mediate a dispute between rival factions",
-        "Uncover corruption in the local government"
+        "Recover stolen goods from bandits",
+        "Help local merchants deal with smuggler problems"
       ],
-      "difficulty_tier": "late",
-      "planet_index": 3,
-      "lore_description": "Hoth is a desert world with a hot climate, home to a massive (trillions) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "difficulty_tier": "mid",
+      "planet_index": 2,
+      "lore_description": "Naboo is a forest world with a humid climate, home to a uninhabited population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's forest environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     },
     {
-      "name": "Endor",
-      "biome": "desert",
-      "climate": "arid",
-      "population": "Large (Billions)",
-      "government": "Rebel Alliance",
+      "name": "Hoth",
+      "biome": "volcanic",
+      "climate": "hot",
+      "population": "Medium (Millions)",
+      "government": "Tribal Council",
       "layouts": [
         {
-          "name": "New District",
-          "layout_type": "settlement",
-          "description": "A settlement area featuring sand dunes, ancient ruins",
+          "name": "Lava Tubes Gamma",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring lava flows, crystals",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "sand dunes",
-            "ancient ruins",
-            "canyons"
+            "lava flows",
+            "crystals",
+            "mining operations"
           ]
         },
         {
-          "name": "Central Spaceport",
-          "layout_type": "spaceport",
-          "description": "A spaceport area featuring canyons, oases",
-          "estimated_time_hours": 2.0,
+          "name": "Crystal Caves Prime",
+          "layout_type": "crystal caves",
+          "description": "A crystal caves area featuring geysers, lava flows",
+          "estimated_time_hours": 2.5,
           "key_features": [
-            "canyons",
-            "oases",
-            "sand dunes"
+            "geysers",
+            "lava flows",
+            "crystals"
           ]
         },
         {
-          "name": "Buried Ruins",
-          "layout_type": "ruins",
-          "description": "A ruins area featuring oases, ancient ruins",
+          "name": "Lava Tubes Beta",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring crystals, geysers",
           "estimated_time_hours": 2.5,
           "key_features": [
-            "oases",
-            "ancient ruins",
-            "sand dunes"
+            "crystals",
+            "geysers",
+            "mining operations"
           ]
         }
       ],
-      "main_quest": "Retrieve a powerful artifact from Endor's ruins",
+      "main_quest": "Retrieve a powerful artifact from Hoth's ruins",
       "side_quests": [
-        "Help local merchants deal with smuggler problems",
+        "Rescue missing persons from dangerous areas",
         "Recover stolen goods from bandits"
       ],
       "difficulty_tier": "late",
+      "planet_index": 3,
+      "lore_description": "Hoth is a volcanic world with a hot climate, home to a medium (millions) population \ngoverned by a tribal council. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+    },
+    {
+      "name": "Endor",
+      "biome": "volcanic",
+      "climate": "dangerous",
+      "population": "Large (Billions)",
+      "government": "Theocracy",
+      "layouts": [
+        {
+          "name": "Lava Tubes Prime",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring mining operations, lava flows",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "mining operations",
+            "lava flows",
+            "geysers"
+          ]
+        },
+        {
+          "name": "Observatory Alpha",
+          "layout_type": "observatory",
+          "description": "A observatory area featuring geysers, mining operations",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "geysers",
+            "mining operations",
+            "lava flows"
+          ]
+        },
+        {
+          "name": "Lava Tubes Beta",
+          "layout_type": "lava tubes",
+          "description": "A lava tubes area featuring lava flows, mining operations",
+          "estimated_time_hours": 2.5,
+          "key_features": [
+            "lava flows",
+            "mining operations",
+            "geysers"
+          ]
+        }
+      ],
+      "main_quest": "Uncover ancient secrets hidden beneath Endor",
+      "side_quests": [
+        "Explore abandoned facilities for valuable technology",
+        "Rescue missing persons from dangerous areas"
+      ],
+      "difficulty_tier": "late",
       "planet_index": 4,
-      "lore_description": "Endor is a desert world with a arid climate, home to a large (billions) population \ngoverned by a rebel alliance. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's desert environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
+      "lore_description": "Endor is a volcanic world with a dangerous climate, home to a large (billions) population \ngoverned by a theocracy. The planet's unique characteristics have shaped both \nits inhabitants and their culture over millennia.\n\nThe world's volcanic environment has created distinct challenges and opportunities for those \nwho call it home. Ancient ruins and mysterious phenomena suggest a rich history that \npredates current civilization, hinting at secrets waiting to be uncovered by those \nbrave enough to explore its depths."
     }
   ],
   "final_boss": {
-    "name": "Koran",
+    "name": "Overlord Nexar",
     "title": "Fallen One",
-    "species": "Chiss",
-    "motivation": "wants to corrupt the galaxy with dark side energy",
-    "backstory": "Koran, known as Fallen One, is a Chiss who wants to corrupt the galaxy with dark side energy. \n\nBorn during the old republic era, Koran was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves wants to corrupt the galaxy with dark side energy, which directly threatens the stability \nof the galaxy. The events described in \"i want a 15-hour light side adventure about rescuing jedi from sith captivity\" are merely the beginning \nof their grand design.\n\nKoran has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
+    "species": "Human",
+    "motivation": "plans to rule through fear and domination",
+    "backstory": "Overlord Nexar, known as Fallen One, is a Human who plans to rule through fear and domination. \n\nBorn during the old republic era, Overlord Nexar was once a promising individual who \nshowed great potential in the Force. However, their path took a dark turn when they \ndiscovered ancient secrets that changed their perspective on the galaxy.\n\nTheir current plan involves plans to rule through fear and domination, which directly threatens the stability \nof the galaxy. The events described in \"i want a 15-hour light side adventure about rescuing jedi from sith captivity\" are merely the beginning \nof their grand design.\n\nOverlord Nexar has spent years gathering followers and resources, preparing for this moment when \nthey can finally implement their vision for the galaxy's future. They see themselves \nnot as a villain, but as a necessary force for change in a corrupt and stagnant galaxy.",
     "mechanics": [
       "Boss can absorb and redirect player abilities",
-      "Boss gains new abilities and changes tactics at 75%, 50%, and 25% health",
-      "Boss alternates between aggressive and defensive phases"
+      "Boss alternates between aggressive and defensive phases",
+      "Boss gains new abilities and changes tactics at 75%, 50%, and 25% health"
     ],
     "phases": [
       {
@@ -275,7 +275,7 @@
         "health_range": "100-75%",
         "abilities": [
           "Sith Sorcery",
-          "Mind Control"
+          "Force Choke"
         ],
         "tactics": "Aggressive attacks to test the player's strength",
         "special_effects": "None"
@@ -284,9 +284,9 @@
         "name": "Escalation",
         "health_range": "75-50%",
         "abilities": [
-          "Sith Sorcery",
           "Force Lightning",
-          "Dark Rage"
+          "Force Choke",
+          "Sith Sorcery"
         ],
         "tactics": "Introduces environmental hazards and summons minions",
         "special_effects": "Arena becomes more dangerous"
@@ -317,9 +317,9 @@
         "special_effects": "Boss gains new ultimate abilities"
       }
     ],
-    "arena_description": "A platform in space with artificial atmosphere and gravity Located on Endor, this orbital_platform reflects the planet's desert environment. The artificial gravity can be manipulated during the battle.",
+    "arena_description": "A location where the Force is unusually strong and unpredictable Located on Endor, this force_nexus reflects the planet's volcanic environment. The Force itself seems alive here, amplifying all abilities.",
     "loot_drop": {
-      "name": "Koran's Legacy",
+      "name": "Overlord Nexar's Legacy",
       "rarity": "legendary",
       "item_type": "weapon",
       "bonuses": {
@@ -327,7 +327,7 @@
         "force_power": 10,
         "dark_side": 5
       },
-      "flavor_text": "The final remnant of Fallen One Koran's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
+      "flavor_text": "The final remnant of Fallen One Overlord Nexar's power. This legendary weapon pulses with the Force energy of its former owner, granting incredible abilities to those worthy enough to wield it.",
       "value_credits": 65000,
       "level_requirement": 15,
       "faction_theme": "dark"
@@ -352,9 +352,10 @@
       "Sith Assassins",
       "Dark Jedi",
       "Corrupted Beasts",
-      "Shadow Troopers"
+      "Shadow Troopers",
+      "Lava Elementals"
     ]
   },
-  "main_quest_outline": "MAIN QUEST: I Want A 15-Hour Light Side Adventure About Rescuing Jedi From Sith Captivity\n\nACT I - The Call to Adventure\n- Begin on Tatooine: Discover the threat to the galaxy\n- Learn of Koran's dark plans\n- Gather allies and begin your heroic journey\n\nACT II - The Hero's Journey\n- Travel to 2 worlds to stop the darkness\n- Save civilizations and gain powerful allies\n- Uncover Koran's weakness\n\nACT III - The Light Triumphant\n- Confront Koran on Endor\n- Rally your allies for the final battle in A platform in space with artificial atmosphere and gravity Located on Endor, this orbital_platform reflects the planet's desert environment. The artificial gravity can be manipulated during the battle.\n- Restore peace and balance to the galaxy",
-  "campaign_summary": "Campaign: I Want A 15-Hour Light Side Adventure About Rescuing Jedi From Sith Captivity\nDuration: 15 hours\nEra: Old Republic\nAlignment: Light Side focus\n\nYour journey will take you across 5 worlds including Tatooine, Coruscant, Naboo, and 2 other worlds.\nThe ultimate confrontation awaits with Koran, wants to corrupt the galaxy with dark side energy.\n\nThis campaign emphasizes light side choices and is set during the old republic era."
+  "main_quest_outline": "MAIN QUEST: I Want A 15-Hour Light Side Adventure About Rescuing Jedi From Sith Captivity\n\nACT I - The Call to Adventure\n- Begin on Tatooine: Discover the threat to the galaxy\n- Learn of Overlord Nexar's dark plans\n- Gather allies and begin your heroic journey\n\nACT II - The Hero's Journey\n- Travel to 2 worlds to stop the darkness\n- Save civilizations and gain powerful allies\n- Uncover Overlord Nexar's weakness\n\nACT III - The Light Triumphant\n- Confront Overlord Nexar on Endor\n- Rally your allies for the final battle in A location where the Force is unusually strong and unpredictable Located on Endor, this force_nexus reflects the planet's volcanic environment. The Force itself seems alive here, amplifying all abilities.\n- Restore peace and balance to the galaxy",
+  "campaign_summary": "Campaign: I Want A 15-Hour Light Side Adventure About Rescuing Jedi From Sith Captivity\nDuration: 15 hours\nEra: Old Republic\nAlignment: Light Side focus\n\nYour journey will take you across 5 worlds including Tatooine, Coruscant, Naboo, and 2 other worlds.\nThe ultimate confrontation awaits with Overlord Nexar, plans to rule through fear and domination.\n\nThis campaign emphasizes light side choices and is set during the old republic era."
 }
